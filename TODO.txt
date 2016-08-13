@@ -1,0 +1,63 @@
+
+op-37 suggests output current less than 10mA
+
+"high gain and excellent linearity can be achieved by operating the op amp with
+a peak output current of less than ± 10 mA"
+
+driver to npn common-emitter  at 5 volt. 5 / 1k is max of 5mA 
+
+
+fzt658
+  - 400V
+  - hfe 50 at 100mA
+  - continuous current 0.5A  
+
+----
+5mA op-amp output, * 50. 5 to 1 voltage ratio  3 
+
+transformer is 25V AC, assume 36 volts DC loaded peak, assume 38 V 
+
+need to use minimum, assume 25 Volts, 10 volts mosfet, therefore need 2 to 1 ratio 
+
+2k to 1k 
+30V / 1k is 30mA,  
+1k to 500... 2 / 1 approx volts
+
+maybe use 3 to 1 so can use near 15 volts...
+assume op-amp at 4 volt output, then 4 * 3 = 12 volt swing. so 1 to 3. ratio. 
+
+- op-amp
+  - 5mA op-amp output,  
+  - 5 volt swing, then use 1k output resistor to give 5mA
+
+- common-emitter
+  if 15V rail,
+    - 3 to 1 ratio. eg. 1k to 300 ohm.
+    - 5 volts will be max V swing away from rail. 
+    - 15V / 1k top will 15mA output 
+
+  - we don't want much current, because want zener to shunt excess voltage if exceeds value. 
+  - 15V * 15mA = 0.2W
+  - 30V * 30mA = 0.9W  (bit too high). maybe ok, because won't need to shunt all the voltage  
+
+- simple emitter-follower
+  if 15V rail
+    - 15mA * 50hfe = 750mA   
+  if 30V rail. 500mA continuous rating
+    don't think this is right. instead the degradation will be the minimum current. eg. 1k - the sink speed... 
+    R1 in emitter is chosen based on quintesent current. eg. lowest value when no signal applied.
+
+  - i think we need push-pull because mosfet has to be able to sink.
+  - but then we need biasing - so we at least need diodes. 
+  - but why not use diamond pattern
+
+  - push/pull
+    R = V / I = 30V / 500mA = 60 ohm gate resistor.
+
+
+
+----
+
+if use straight emitter follower, then how to calculate the degradation resistor? 
+
+

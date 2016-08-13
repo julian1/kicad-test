@@ -1,0 +1,223 @@
+EESchema Schematic File Version 2
+LIBS:my
+LIBS:Carlolib-disc
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 2N3906 Q4
+U 1 1 57E1EE78
+P 3800 1650
+F 0 "Q4" H 3925 1700 40  0000 L CNN
+F 1 "2N3906" H 3925 1625 40  0000 L CNN
+F 2 "" H 3800 1650 60  0000 C CNN
+F 3 "" H 3800 1650 60  0000 C CNN
+	1    3800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3906 Q2
+U 1 1 57E1EECB
+P 3100 1650
+F 0 "Q2" H 3225 1700 40  0000 L CNN
+F 1 "2N3906" H 3225 1625 40  0000 L CNN
+F 2 "" H 3100 1650 60  0000 C CNN
+F 3 "" H 3100 1650 60  0000 C CNN
+	1    3100 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1200 3900 1450
+Wire Wire Line
+	1700 1200 5100 1200
+Wire Wire Line
+	3000 1200 3000 1450
+Wire Wire Line
+	3250 1650 3650 1650
+Wire Wire Line
+	3000 1850 3000 2300
+Wire Wire Line
+	3900 1850 3900 2300
+Wire Wire Line
+	3350 1650 3350 2000
+Wire Wire Line
+	3350 2000 3000 2000
+Connection ~ 3000 2000
+Connection ~ 3350 1650
+Connection ~ 3000 1200
+$Comp
+L 2N3904 Q3
+U 1 1 57E1F110
+P 3500 3600
+F 0 "Q3" H 3650 3675 40  0000 C CNN
+F 1 "2N3904" H 3625 3600 40  0000 L CNN
+F 2 "" H 3500 3600 60  0000 C CNN
+F 3 "" H 3500 3600 60  0000 C CNN
+	1    3500 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 2N3904 Q6
+U 1 1 57E1F193
+P 4850 3600
+F 0 "Q6" H 5000 3675 40  0000 C CNN
+F 1 "2N3904" H 4975 3600 40  0000 L CNN
+F 2 "" H 4850 3600 60  0000 C CNN
+F 3 "" H 4850 3600 60  0000 C CNN
+	1    4850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3600 4700 3600
+Wire Wire Line
+	4950 1600 4950 3400
+Wire Wire Line
+	4950 3200 4550 3200
+Wire Wire Line
+	4550 3200 4550 3600
+Connection ~ 4550 3600
+Connection ~ 4950 3200
+Wire Wire Line
+	4950 4000 4950 3800
+Wire Wire Line
+	3400 4000 4950 4000
+Wire Wire Line
+	3400 4000 3400 3800
+Connection ~ 4950 4000
+Wire Wire Line
+	3400 3400 3400 3000
+Wire Wire Line
+	3000 3000 3900 3000
+Connection ~ 3400 3000
+$Comp
+L MOS_N Q5
+U 1 1 57E1F215
+P 4000 2500
+F 0 "Q5" H 4025 2700 40  0000 R CNN
+F 1 "MOS_N" H 4050 2325 40  0000 R CNN
+F 2 "" H 4000 2500 60  0000 C CNN
+F 3 "" H 4000 2500 60  0000 C CNN
+	1    4000 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3000 3900 2700
+$Comp
+L MOS_N Q1
+U 1 1 57E1F378
+P 2900 2500
+F 0 "Q1" H 2925 2700 40  0000 R CNN
+F 1 "MOS_N" H 2950 2325 40  0000 R CNN
+F 2 "" H 2900 2500 60  0000 C CNN
+F 3 "" H 2900 2500 60  0000 C CNN
+	1    2900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2700 3000 3000
+Wire Wire Line
+	2050 2100 3000 2100
+Connection ~ 3000 2100
+Wire Wire Line
+	1850 2500 2750 2500
+Wire Wire Line
+	4150 2500 4350 2500
+Wire Wire Line
+	4350 2500 4350 2850
+Wire Wire Line
+	4350 2850 1750 2850
+$Comp
+L CONN_01X06 P1
+U 1 1 57E2197C
+P 1500 1350
+F 0 "P1" H 1500 1700 50  0000 C CNN
+F 1 "CONN_01X06" V 1600 1350 50  0000 C CNN
+F 2 "" H 1500 1350 50  0000 C CNN
+F 3 "" H 1500 1350 50  0000 C CNN
+	1    1500 1350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2200 3900 2200
+Connection ~ 3900 2200
+Connection ~ 3400 4000
+Wire Wire Line
+	2050 2100 2050 1300
+Wire Wire Line
+	2050 1300 1700 1300
+Wire Wire Line
+	1950 2200 1950 1400
+Wire Wire Line
+	1950 1400 1700 1400
+Wire Wire Line
+	1850 2500 1850 1500
+Wire Wire Line
+	1850 1500 1700 1500
+Wire Wire Line
+	1750 2850 1750 1600
+Wire Wire Line
+	1750 1600 1700 1600
+$Comp
+L POT RV1
+U 1 1 57E22A2E
+P 5100 1600
+F 0 "RV1" H 5100 1520 50  0000 C CNN
+F 1 "POT" H 5100 1600 50  0000 C CNN
+F 2 "" H 5100 1600 50  0000 C CNN
+F 3 "" H 5100 1600 50  0000 C CNN
+	1    5100 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 1200 5100 1450
+Connection ~ 3900 1200
+Wire Wire Line
+	1700 1100 1700 900 
+Wire Wire Line
+	1700 900  1350 900 
+Wire Wire Line
+	1350 900  1350 4000
+Wire Wire Line
+	1350 4000 3450 4000
+$EndSCHEMATC

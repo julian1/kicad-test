@@ -91,7 +91,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 2250 4900 2250
 Wire Wire Line
-	4050 2050 4350 2050
+	4050 2050 4900 2050
 Wire Wire Line
 	5950 2150 6350 2150
 $Comp
@@ -302,11 +302,11 @@ Wire Wire Line
 Wire Wire Line
 	4250 3100 4250 3350
 Wire Wire Line
-	4100 3350 4350 3350
+	4100 3350 4900 3350
 Connection ~ 4250 3350
 Wire Notes Line
 	3450 4150 3450 2750
-Text GLabel 7550 4800 0    60   Input ~ 0
+Text GLabel 7550 4900 0    60   Input ~ 0
 I-SET
 Wire Wire Line
 	7000 1700 7000 1800
@@ -382,7 +382,7 @@ Text GLabel 7000 2950 1    60   Input ~ 0
 -VE
 Text GLabel 7550 4600 0    60   Input ~ 0
 GND
-Text GLabel 7550 4700 0    60   Input ~ 0
+Text GLabel 7550 4800 0    60   Input ~ 0
 REF
 Wire Wire Line
 	7850 4400 7550 4400
@@ -393,19 +393,16 @@ Wire Wire Line
 Wire Wire Line
 	7850 4700 7550 4700
 Wire Wire Line
-	7850 4800 7550 4800
-Text GLabel 7550 4900 0    60   Input ~ 0
+	7850 4900 7550 4900
+Text GLabel 7550 5000 0    60   Input ~ 0
 I-FB
 Wire Wire Line
-	7850 4900 7550 4900
+	7850 5000 7550 5000
 Connection ~ 6350 3450
 Text GLabel 6600 3450 2    60   Input ~ 0
 OUT
-Text GLabel 7550 5500 0    60   Input ~ 0
+Text GLabel 7550 4700 0    60   Input ~ 0
 OUT
-Wire Wire Line
-	7850 5500 7550 5500
-NoConn ~ 7850 5200
 NoConn ~ 7850 5300
 NoConn ~ 7850 5450
 NoConn ~ 7850 5400
@@ -444,7 +441,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 4850 4900 4850
 Wire Wire Line
-	4050 4650 4350 4650
+	4050 4650 4900 4650
 Wire Wire Line
 	6350 4750 5950 4750
 Wire Wire Line
@@ -477,16 +474,16 @@ NoConn ~ 5300 6350
 $Comp
 L 1N4148 D4
 U 1 1 580862BA
-P 5850 6050
-F 0 "D4" V 5775 6125 40  0000 L BNN
-F 1 "1N4148" H 5725 5975 40  0000 L CNN
-F 2 "Diodes_SMD:MiniMELF_Standard" H 5850 6200 30  0001 C CNN
-F 3 "" H 5850 6050 60  0000 C CNN
-	1    5850 6050
+P 5800 6050
+F 0 "D4" V 5725 6125 40  0000 L BNN
+F 1 "1N4148" H 5675 5975 40  0000 L CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 5800 6200 30  0001 C CNN
+F 3 "" H 5800 6050 60  0000 C CNN
+	1    5800 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 6050 5700 6050
+	5500 6050 5650 6050
 Connection ~ 6350 5400
 $Comp
 L LM741 U4
@@ -617,7 +614,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 5700 4250 5950
 Wire Wire Line
-	4100 5950 4350 5950
+	4100 5950 4900 5950
 Connection ~ 4250 5950
 Wire Notes Line
 	3450 6750 3450 5350
@@ -629,9 +626,9 @@ Text GLabel 1550 4850 0    60   Input ~ 0
 V-SET
 Text GLabel 1550 4650 0    60   Input ~ 0
 V-FB
-Text GLabel 7550 5100 0    60   Input ~ 0
+Text GLabel 7550 5200 0    60   Input ~ 0
 V-FB
-Text GLabel 7550 5000 0    60   Input ~ 0
+Text GLabel 7550 5100 0    60   Input ~ 0
 V-SET
 $Comp
 L CONN_01X12 P1
@@ -645,11 +642,9 @@ F 3 "" H 8050 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 5000 7850 5000
-Wire Wire Line
 	7550 5100 7850 5100
 Wire Wire Line
-	6350 6050 6000 6050
+	6350 6050 5950 6050
 $Comp
 L C C7
 U 1 1 5808760F
@@ -734,56 +729,9 @@ GND
 Connection ~ 8450 3050
 Text GLabel 8450 3350 3    60   Input ~ 0
 GND
-$Comp
-L R R14
-U 1 1 580AC25D
-P 4500 2050
-F 0 "R14" V 4580 2050 50  0000 C CNN
-F 1 "R" V 4500 2050 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4430 2050 50  0001 C CNN
-F 3 "" H 4500 2050 50  0000 C CNN
-	1    4500 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L R R15
-U 1 1 580AC35A
-P 4500 3350
-F 0 "R15" V 4580 3350 50  0000 C CNN
-F 1 "R" V 4500 3350 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4430 3350 50  0001 C CNN
-F 3 "" H 4500 3350 50  0000 C CNN
-	1    4500 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L R R16
-U 1 1 580AC44A
-P 4500 4650
-F 0 "R16" V 4580 4650 50  0000 C CNN
-F 1 "R" V 4500 4650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4430 4650 50  0001 C CNN
-F 3 "" H 4500 4650 50  0000 C CNN
-	1    4500 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L R R17
-U 1 1 580AC528
-P 4500 5950
-F 0 "R17" V 4580 5950 50  0000 C CNN
-F 1 "R" V 4500 5950 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4430 5950 50  0001 C CNN
-F 3 "" H 4500 5950 50  0000 C CNN
-	1    4500 5950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	4650 2050 4900 2050
+	7550 4800 7850 4800
 Wire Wire Line
-	4650 3350 4900 3350
-Wire Wire Line
-	4650 4650 4900 4650
-Wire Wire Line
-	4650 5950 4900 5950
+	7850 5200 7550 5200
+NoConn ~ 7850 5500
 $EndSCHEMATC

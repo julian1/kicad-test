@@ -91,6 +91,8 @@ Wire Wire Line
 Wire Wire Line
 	4750 2250 4900 2250
 Wire Wire Line
+	4250 1850 4250 2050
+Wire Wire Line
 	4050 2050 4900 2050
 Wire Wire Line
 	5950 2150 6350 2150
@@ -228,47 +230,43 @@ Wire Notes Line
 	3450 2750 2150 2750
 Text GLabel 7550 4500 0    60   Input ~ 0
 -VE
-Text GLabel 1550 2050 0    60   Input ~ 0
+Text GLabel 1550 1850 0    60   Input ~ 0
 I-FB
 Text GLabel 1500 1500 0    60   Input ~ 0
 REF
-Text GLabel 1550 2250 0    60   Input ~ 0
+Text GLabel 1550 2050 0    60   Input ~ 0
 I-SET
 $Comp
 L R R3
 U 1 1 5807AAE8
+P 3900 1850
+F 0 "R3" V 3980 1850 50  0000 C CNN
+F 1 "R" V 3900 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3830 1850 50  0001 C CNN
+F 3 "" H 3900 1850 50  0000 C CNN
+	1    3900 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5807AB49
 P 3900 2050
-F 0 "R3" V 3980 2050 50  0000 C CNN
+F 0 "R4" V 3980 2050 50  0000 C CNN
 F 1 "R" V 3900 2050 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206" V 3830 2050 50  0001 C CNN
 F 3 "" H 3900 2050 50  0000 C CNN
 	1    3900 2050
 	0    1    1    0   
 $EndComp
-$Comp
-L R R4
-U 1 1 5807AB49
-P 3900 2250
-F 0 "R4" V 3980 2250 50  0000 C CNN
-F 1 "R" V 3900 2250 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 3830 2250 50  0001 C CNN
-F 3 "" H 3900 2250 50  0000 C CNN
-	1    3900 2250
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	1550 1850 3750 1850
 Wire Wire Line
 	1550 2050 3750 2050
-Wire Wire Line
-	1550 2250 3750 2250
-Wire Wire Line
-	4050 2250 4250 2250
-Wire Wire Line
-	4250 2250 4250 2050
 Connection ~ 4250 2050
 Wire Wire Line
 	1950 3450 2150 3450
 Wire Wire Line
-	1950 2250 1950 3450
+	1950 2050 1950 3450
 $Comp
 L R R6
 U 1 1 5807B716
@@ -283,24 +281,19 @@ $EndComp
 $Comp
 L R R5
 U 1 1 5807B7C8
-P 3950 3100
-F 0 "R5" V 4030 3100 50  0000 C CNN
-F 1 "R" V 3950 3100 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 3880 3100 50  0001 C CNN
-F 3 "" H 3950 3100 50  0000 C CNN
-	1    3950 3100
+P 3950 3550
+F 0 "R5" V 4030 3550 50  0000 C CNN
+F 1 "R" V 3950 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3880 3550 50  0001 C CNN
+F 3 "" H 3950 3550 50  0000 C CNN
+	1    3950 3550
 	0    1    1    0   
 $EndComp
-Connection ~ 1950 2250
+Connection ~ 1950 2050
 Wire Wire Line
-	3650 2050 3650 3100
+	4100 3550 4250 3550
 Wire Wire Line
-	3650 3100 3800 3100
-Connection ~ 3650 2050
-Wire Wire Line
-	4100 3100 4250 3100
-Wire Wire Line
-	4250 3100 4250 3350
+	4250 3550 4250 3350
 Wire Wire Line
 	4100 3350 4900 3350
 Connection ~ 4250 3350
@@ -740,4 +733,15 @@ U 580BA788
 F0 "test" 60
 F1 "test.sch" 60
 $EndSheet
+Wire Wire Line
+	4250 1850 4050 1850
+Wire Wire Line
+	3800 3550 3700 3550
+Wire Wire Line
+	3700 3550 3700 4350
+Wire Wire Line
+	3700 4350 1800 4350
+Wire Wire Line
+	1800 4350 1800 1850
+Connection ~ 1800 1850
 $EndSCHEMATC

@@ -1,4 +1,36 @@
 
+But this means we may have been using it completely incorrectly when testing...
+
+
+----
+Actually - It's *not* an op-amp type summer. it's really just a buffer of the voltage difference. 
+  between SET and FB.
+
+
+OK - it is a summer. but one input is inverted so 
+  which means when -Feedback  = +set then there is 0V feedback difference
+  but the values are inverted - so that we expect to converge around 0 volts. 
+
+  So the difference is with respect to 0V.
+
+  - eg. +1V set. and -1V FB sum to 0V which means it's balanced. and 0V feedback.
+
+  I think this means that the resistor tolerances are *NOT* critical,  
+  eg. a summer using 9k and 10k, will give 0V when the two inputs are 1V and -1V.
+
+  the inverter may be critical. but that only needs a single prec 
+     
+
+I-set goes through one resistor to the + input of the op-amp 
+
+
+-----
+The op-amp inputs are a non-inverting summer . see here,
+
+------- 
+  http://www.ee.nmt.edu/~thomas/ee321/op-amp-std-ninv.html
+
+
 - use a precision TC resistor array - for all the resistor pairs 
 - shorter traces - particularly for the output
 

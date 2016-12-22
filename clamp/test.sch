@@ -105,7 +105,9 @@ Connection ~ 4200 2100
 Text GLabel 1200 2700 0    60   Input ~ 0
 REF
 Wire Wire Line
-	1200 2700 2900 2700
+	1200 2700 1500 2700
+Wire Wire Line
+	1500 2700 2900 2700
 Text GLabel 4500 3200 2    60   Input ~ 0
 RESET
 Wire Wire Line
@@ -145,9 +147,13 @@ F 3 "" H 5200 2100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2750 2100 5050 2100
+	2750 2100 4200 2100
 Wire Wire Line
-	5350 2100 5900 2100
+	4200 2100 5050 2100
+Wire Wire Line
+	5350 2100 5600 2100
+Wire Wire Line
+	5600 2100 5900 2100
 Text GLabel 5300 1900 0    60   Input ~ 0
 GND
 Wire Wire Line
@@ -160,7 +166,9 @@ Wire Wire Line
 Wire Wire Line
 	2750 3100 2900 3100
 Wire Wire Line
-	5300 1900 5900 1900
+	5300 1900 5750 1900
+Wire Wire Line
+	5750 1900 5900 1900
 Wire Wire Line
 	5750 3100 5750 1900
 Connection ~ 5750 1900
@@ -171,11 +179,11 @@ Wire Wire Line
 Text GLabel 6100 2500 3    60   Input ~ 0
 -VE
 Wire Wire Line
-	6650 2150 6100 2150
-Wire Wire Line
 	6100 2300 6100 2500
 Wire Wire Line
-	2950 4200 4200 4200
+	2950 4200 3050 4200
+Wire Wire Line
+	3050 4200 4200 4200
 $Comp
 L LM741 U?
 U 1 1 585BE628
@@ -216,7 +224,9 @@ F 3 "" H 1900 4300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2050 4300 2350 4300
+	2050 4300 2250 4300
+Wire Wire Line
+	2250 4300 2350 4300
 Wire Wire Line
 	2250 4300 2250 4850
 Wire Wire Line
@@ -241,7 +251,9 @@ Wire Wire Line
 	1500 2700 1500 4300
 Connection ~ 1500 2700
 Wire Wire Line
-	2750 2100 2750 3100
+	2750 2100 2750 2600
+Wire Wire Line
+	2750 2600 2750 3100
 Connection ~ 2750 2600
 Text GLabel 2450 2500 0    60   Input ~ 0
 REF_PLUS_CTL

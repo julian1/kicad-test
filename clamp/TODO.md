@@ -1,6 +1,73 @@
 
-But this means we may have been using it completely incorrectly when testing...
+We really need to re-test with our new understanding - that it's a diff.
+  see if ISET can go positive and negative 
 
+-------
+VERY IMPORTANT
+    - set to output 9V. ref is positive. compliance will be positive. 
+    - the issue is that there's no negative sink 
+    - but it will still sink.
+    - the only issue is that it might sink 10A. if DUT is a very power source. 
+
+opa333
+    input bias   current  +-70pA 
+    input offset current +-140pA 
+
+lf411
+    input bias current    +-50pA
+    input offset curren   +-25pA
+
+not too much difference
+
+
+VERY IMPORTANT
+    - voltage divider - must be temp stable - but offset voltage in op-amp and divider can be compensated, 
+        with the dac.  that means may not really need opa333. although opa333 has lower temp drift.
+    - in fact we may want to set the divider with an offset... to give control... 
+
+-----
+
+AD5532B  32channel sample and hold, 14Bit DAC, 1LSB differential.
+
+
+WOULD IT BE EASIER TO JUST INVERT THE FB ONCE - to control between sourcing and sinking?
+  - eg. then the dac output is always postive. 
+  - rather than have the two  
+  - changing the ref from +10 to -10 is going to glitch...
+  - I think yes.
+
+  - I think that now we understand how the diode system works to take the minimum value
+      we can do a lot more.
+
+  - this might give us the ability to regulate 3 ways...
+      eg. voltage out. and -current and +positive current  maxes.
+
+  - THE issue is that all the current ranges stuff would have to be duplicated
+  to give the ability to set +100mA current and -1A sink etc. 
+
+
+Important - if we multiplex the values. then do we need the invertors?
+  - instead just use a sample-and-hold for and one invertor for the negative value?
+
+  - or just use the single inverter...
+
+
+------
+Actually the resistor divider does need to be temperature stable - precision.
+  
+  - because it's a divider 10k and 9k will shift the centre point up from 0V when matched. 
+  - BUT - we can compensate with the DAC... 
+  
+
+-----
+If there is a 10k path for SET then we are going to need another op-amp for the sample and hold.
+
+-----
+- But this means we may have been using it completely incorrectly when testing...
+- but we should be able to test easily... 
+
+- this means that when have both running - normal operation will always be around 0V 
+  so that the diode offset clamps, will always prevent both operating at the same time
 
 ----
 Actually - It's *not* an op-amp type summer. it's really just a buffer of the voltage difference. 

@@ -93,7 +93,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 1850 4250 2050
 Wire Wire Line
-	4050 2050 4900 2050
+	4050 2050 4250 2050
+Wire Wire Line
+	4250 2050 4900 2050
 Wire Wire Line
 	5950 2150 6350 2150
 $Comp
@@ -110,11 +112,23 @@ $EndComp
 Wire Wire Line
 	5950 1500 6350 1500
 Wire Wire Line
-	6350 1500 6350 6050
+	6350 1500 6350 2150
+Wire Wire Line
+	6350 2150 6350 2800
+Wire Wire Line
+	6350 2800 6350 3450
+Wire Wire Line
+	6350 3450 6350 4750
+Wire Wire Line
+	6350 4750 6350 5400
+Wire Wire Line
+	6350 5400 6350 6050
 Wire Wire Line
 	1500 1500 5650 1500
 Wire Wire Line
-	4750 2250 4750 3550
+	4750 2250 4750 2800
+Wire Wire Line
+	4750 2800 4750 3550
 Wire Wire Line
 	6350 2800 4750 2800
 Connection ~ 6350 2150
@@ -144,7 +158,9 @@ Wire Wire Line
 	4750 3550 4900 3550
 Connection ~ 4750 2800
 Wire Wire Line
-	3200 3350 3800 3350
+	10350 1900 10450 1900
+Wire Wire Line
+	10450 1900 10950 1900
 Text GLabel 5100 3150 1    60   Input ~ 0
 +VE
 Text GLabel 5100 3750 3    60   Input ~ 0
@@ -165,69 +181,73 @@ $EndComp
 Wire Wire Line
 	5500 3450 5700 3450
 Wire Wire Line
-	6000 3450 6600 3450
+	6000 3450 6350 3450
+Wire Wire Line
+	6350 3450 6600 3450
 Connection ~ 6350 2800
 $Comp
 L LM741 U2
 U 1 1 58079399
-P 2900 3350
-F 0 "U2" H 2900 3600 50  0000 L CNN
-F 1 "LM741" H 2900 3500 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2950 3400 50  0001 C CNN
-F 3 "" H 3050 3500 50  0000 C CNN
-	1    2900 3350
+P 10050 1900
+F 0 "U2" H 10050 2150 50  0000 L CNN
+F 1 "LM741" H 10050 2050 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 10100 1950 50  0001 C CNN
+F 3 "" H 10200 2050 50  0000 C CNN
+	1    10050 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 3250 2600 3250
+	9500 1800 9750 1800
 Wire Wire Line
-	3300 3350 3300 4000
+	10450 1900 10450 2550
 Wire Wire Line
-	3300 4000 3000 4000
+	10450 2550 10150 2550
 $Comp
 L R R2
 U 1 1 580795D9
-P 2850 4000
-F 0 "R2" V 2930 4000 50  0000 C CNN
-F 1 "R" V 2850 4000 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 2780 4000 50  0001 C CNN
-F 3 "" H 2850 4000 50  0000 C CNN
-	1    2850 4000
+P 10000 2550
+F 0 "R2" V 10080 2550 50  0000 C CNN
+F 1 "R" V 10000 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9930 2550 50  0001 C CNN
+F 3 "" H 10000 2550 50  0000 C CNN
+	1    10000 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L R R1
 U 1 1 58079640
-P 2300 3450
-F 0 "R1" V 2380 3450 50  0000 C CNN
-F 1 "R" V 2300 3450 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 2230 3450 50  0001 C CNN
-F 3 "" H 2300 3450 50  0000 C CNN
-	1    2300 3450
+P 9450 2000
+F 0 "R1" V 9530 2000 50  0000 C CNN
+F 1 "R" V 9450 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9380 2000 50  0001 C CNN
+F 3 "" H 9450 2000 50  0000 C CNN
+	1    9450 2000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2450 3450 2600 3450
+	9600 2000 9650 2000
 Wire Wire Line
-	2500 3450 2500 4000
+	9650 2000 9750 2000
 Wire Wire Line
-	2500 4000 2700 4000
-Connection ~ 2500 3450
-Text GLabel 2800 3050 1    60   Input ~ 0
+	9650 2000 9650 2550
+Wire Wire Line
+	9650 2550 9850 2550
+Connection ~ 9650 2000
+Text GLabel 9950 1600 1    60   Input ~ 0
 +VE
-Text GLabel 2800 3650 3    60   Input ~ 0
+Text GLabel 9950 2200 3    60   Input ~ 0
 -VE
-NoConn ~ 2900 3650
-NoConn ~ 3000 3650
-Connection ~ 3300 3350
+NoConn ~ 10050 2200
+NoConn ~ 10150 2200
+Connection ~ 10450 1900
 Text GLabel 5100 1850 1    60   Input ~ 0
 +VE
 Wire Notes Line
-	2150 2750 2150 4150
+	9300 1300 9300 2700
 Wire Notes Line
-	2150 4150 3450 4150
+	9300 2700 10600 2700
 Wire Notes Line
-	3450 2750 2150 2750
+	10600 1300 9300 1300
 Text GLabel 7550 4500 0    60   Input ~ 0
 -VE
 Text GLabel 1550 1850 0    60   Input ~ 0
@@ -259,12 +279,16 @@ F 3 "" H 3900 2050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1550 1850 3750 1850
+	1550 1850 1800 1850
 Wire Wire Line
-	1550 2050 3750 2050
+	1800 1850 3750 1850
+Wire Wire Line
+	1550 2050 1950 2050
+Wire Wire Line
+	1950 2050 3750 2050
 Connection ~ 4250 2050
 Wire Wire Line
-	1950 3450 2150 3450
+	9100 2000 9300 2000
 Wire Wire Line
 	1950 2050 1950 3450
 $Comp
@@ -295,16 +319,30 @@ Wire Wire Line
 Wire Wire Line
 	4250 3550 4250 3350
 Wire Wire Line
-	4100 3350 4900 3350
+	4100 3350 4250 3350
+Wire Wire Line
+	4250 3350 4900 3350
 Connection ~ 4250 3350
 Wire Notes Line
-	3450 4150 3450 2750
+	10600 2700 10600 1300
 Text GLabel 7550 4900 0    60   Input ~ 0
 I-SET
 Wire Wire Line
 	7000 1700 7000 1800
 Wire Wire Line
-	7000 1800 8700 1800
+	7000 1800 7200 1800
+Wire Wire Line
+	7200 1800 7450 1800
+Wire Wire Line
+	7450 1800 7700 1800
+Wire Wire Line
+	7700 1800 7950 1800
+Wire Wire Line
+	7950 1800 8200 1800
+Wire Wire Line
+	8200 1800 8450 1800
+Wire Wire Line
+	8450 1800 8700 1800
 Connection ~ 7200 1800
 Text GLabel 7200 2100 3    60   Input ~ 0
 GND
@@ -350,7 +388,19 @@ $EndComp
 Wire Wire Line
 	7000 2950 7000 3050
 Wire Wire Line
-	7000 3050 8700 3050
+	7000 3050 7200 3050
+Wire Wire Line
+	7200 3050 7450 3050
+Wire Wire Line
+	7450 3050 7700 3050
+Wire Wire Line
+	7700 3050 7950 3050
+Wire Wire Line
+	7950 3050 8200 3050
+Wire Wire Line
+	8200 3050 8450 3050
+Wire Wire Line
+	8450 3050 8700 3050
 Connection ~ 7200 3050
 Text GLabel 7200 3350 3    60   Input ~ 0
 GND
@@ -399,10 +449,10 @@ OUT
 NoConn ~ 7850 5300
 NoConn ~ 7850 5450
 NoConn ~ 7850 5400
-Text GLabel 2350 3050 1    60   Input ~ 0
+Text GLabel 9500 1600 1    60   Input ~ 0
 GND
 Wire Wire Line
-	2350 3050 2350 3250
+	9500 1600 9500 1800
 $Comp
 L LM741 U5
 U 1 1 58086296
@@ -434,11 +484,15 @@ Wire Wire Line
 Wire Wire Line
 	4750 4850 4900 4850
 Wire Wire Line
-	4050 4650 4900 4650
+	4050 4650 4250 4650
+Wire Wire Line
+	4250 4650 4900 4650
 Wire Wire Line
 	6350 4750 5950 4750
 Wire Wire Line
-	4750 4850 4750 6150
+	4750 4850 4750 5400
+Wire Wire Line
+	4750 5400 4750 6150
 Wire Wire Line
 	6350 5400 4750 5400
 Connection ~ 6350 4750
@@ -457,7 +511,9 @@ Wire Wire Line
 	4750 6150 4900 6150
 Connection ~ 4750 5400
 Wire Wire Line
-	3200 5950 3800 5950
+	3200 5950 3300 5950
+Wire Wire Line
+	3300 5950 3800 5950
 Text GLabel 5100 5750 1    60   Input ~ 0
 +VE
 Text GLabel 5100 6350 3    60   Input ~ 0
@@ -518,7 +574,9 @@ F 3 "" H 2300 6050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2450 6050 2600 6050
+	2450 6050 2500 6050
+Wire Wire Line
+	2500 6050 2600 6050
 Wire Wire Line
 	2500 6050 2500 6600
 Wire Wire Line
@@ -562,9 +620,13 @@ F 3 "" H 3900 4850 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1550 4650 3750 4650
+	1550 4650 3650 4650
 Wire Wire Line
-	1550 4850 3750 4850
+	3650 4650 3750 4650
+Wire Wire Line
+	1550 4850 1950 4850
+Wire Wire Line
+	1950 4850 3750 4850
 Wire Wire Line
 	4050 4850 4250 4850
 Wire Wire Line
@@ -607,7 +669,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 5700 4250 5950
 Wire Wire Line
-	4100 5950 4900 5950
+	4100 5950 4250 5950
+Wire Wire Line
+	4250 5950 4900 5950
 Connection ~ 4250 5950
 Wire Notes Line
 	3450 6750 3450 5350
@@ -727,12 +791,6 @@ Wire Wire Line
 Wire Wire Line
 	7850 5200 7550 5200
 NoConn ~ 7850 5500
-$Sheet
-S 9350 2050 1300 1000
-U 580BA788
-F0 "test" 60
-F1 "test.sch" 60
-$EndSheet
 Wire Wire Line
 	4250 1850 4050 1850
 Wire Wire Line
@@ -744,4 +802,12 @@ Wire Wire Line
 Wire Wire Line
 	1800 4350 1800 1850
 Connection ~ 1800 1850
+Text GLabel 9150 4150 3    60   Input ~ 0
+GND
+$Sheet
+S 9450 3100 1300 1000
+U 585BBA35
+F0 "test" 60
+F1 "test.sch" 60
+$EndSheet
 $EndSCHEMATC

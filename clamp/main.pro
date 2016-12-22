@@ -1,4 +1,4 @@
-update=Sat 22 Oct 2016 16:43:07 AEDT
+update=Thu 22 Dec 2016 20:05:10 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../lib
@@ -70,3 +68,5 @@ NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[general]
+version=1

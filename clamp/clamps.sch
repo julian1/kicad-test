@@ -1,0 +1,741 @@
+EESchema Schematic File Version 2
+LIBS:my
+LIBS:Carlolib-disc
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C?
+U 1 1 586230E1
+P 7100 1550
+F 0 "C?" H 7125 1650 50  0000 L CNN
+F 1 "C" H 7125 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7138 1400 50  0001 C CNN
+F 3 "" H 7100 1550 50  0000 C CNN
+	1    7100 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 1300 1    60   Input ~ 0
++VE
+$Comp
+L LM741 U?
+U 1 1 586230E9
+P 4900 1500
+F 0 "U?" H 4900 1750 50  0000 L CNN
+F 1 "LM741" H 4900 1650 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4950 1550 50  0001 C CNN
+F 3 "" H 5050 1650 50  0000 C CNN
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7250 3750 0    60   Input ~ 0
++VE
+NoConn ~ 4900 1800
+NoConn ~ 5000 1800
+Text GLabel 4800 1800 3    60   Input ~ 0
+-VE
+$Comp
+L 1N4148 D?
+U 1 1 586230F4
+P 5500 1500
+F 0 "D?" V 5425 1575 40  0000 L BNN
+F 1 "1N4148" H 5375 1425 40  0000 L CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 5500 1650 30  0001 C CNN
+F 3 "" H 5500 1500 60  0000 C CNN
+	1    5500 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 1500 5200 1500
+Wire Wire Line
+	4450 1600 4600 1600
+Wire Wire Line
+	3950 1200 3950 1400
+Wire Wire Line
+	3750 1400 4600 1400
+Wire Wire Line
+	5650 1500 6050 1500
+$Comp
+L R R?
+U 1 1 58623100
+P 5500 850
+F 0 "R?" V 5580 850 50  0000 C CNN
+F 1 "R" V 5500 850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5430 850 50  0001 C CNN
+F 3 "" H 5500 850 50  0000 C CNN
+	1    5500 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 850  6050 850 
+Wire Wire Line
+	6050 850  6050 5400
+Wire Wire Line
+	1200 850  5350 850 
+Wire Wire Line
+	4450 1600 4450 2900
+Wire Wire Line
+	6050 2150 4450 2150
+Connection ~ 6050 1500
+$Comp
+L C C?
+U 1 1 5862310D
+P 7600 1550
+F 0 "C?" H 7625 1650 50  0000 L CNN
+F 1 "C" H 7625 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7638 1400 50  0001 C CNN
+F 3 "" H 7600 1550 50  0000 C CNN
+	1    7600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM741 U?
+U 1 1 58623114
+P 4900 2800
+F 0 "U?" H 4900 3050 50  0000 L CNN
+F 1 "LM741" H 4900 2950 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4950 2850 50  0001 C CNN
+F 3 "" H 5050 2950 50  0000 C CNN
+	1    4900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2900 4600 2900
+Connection ~ 4450 2150
+Text GLabel 4800 2500 1    60   Input ~ 0
++VE
+Text GLabel 4800 3100 3    60   Input ~ 0
+-VE
+NoConn ~ 4900 3100
+NoConn ~ 5000 3100
+$Comp
+L 1N4148 D?
+U 1 1 58623121
+P 5550 2800
+F 0 "D?" V 5475 2875 40  0000 L BNN
+F 1 "1N4148" H 5425 2725 40  0000 L CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 5550 2950 30  0001 C CNN
+F 3 "" H 5550 2800 60  0000 C CNN
+	1    5550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2800 5400 2800
+Wire Wire Line
+	5700 2800 6300 2800
+Connection ~ 6050 2150
+Text GLabel 4800 1200 1    60   Input ~ 0
++VE
+Text GLabel 7250 3850 0    60   Input ~ 0
+-VE
+Text GLabel 1250 1200 0    60   Input ~ 0
+I-FB
+Text GLabel 1200 850  0    60   Input ~ 0
+REF
+Text GLabel 1250 1400 0    60   Input ~ 0
+I-SET
+$Comp
+L R R?
+U 1 1 58623130
+P 3600 1200
+F 0 "R?" V 3680 1200 50  0000 C CNN
+F 1 "R" V 3600 1200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3530 1200 50  0001 C CNN
+F 3 "" H 3600 1200 50  0000 C CNN
+	1    3600 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58623137
+P 3600 1400
+F 0 "R?" V 3680 1400 50  0000 C CNN
+F 1 "R" V 3600 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3530 1400 50  0001 C CNN
+F 3 "" H 3600 1400 50  0000 C CNN
+	1    3600 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 1200 3450 1200
+Wire Wire Line
+	1250 1400 3450 1400
+Connection ~ 3950 1400
+Wire Wire Line
+	1650 1400 1650 2800
+$Comp
+L R R?
+U 1 1 58623142
+P 3650 2700
+F 0 "R?" V 3730 2700 50  0000 C CNN
+F 1 "R" V 3650 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3580 2700 50  0001 C CNN
+F 3 "" H 3650 2700 50  0000 C CNN
+	1    3650 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58623149
+P 3650 2900
+F 0 "R?" V 3730 2900 50  0000 C CNN
+F 1 "R" V 3650 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3580 2900 50  0001 C CNN
+F 3 "" H 3650 2900 50  0000 C CNN
+	1    3650 2900
+	0    1    1    0   
+$EndComp
+Connection ~ 1650 1400
+Wire Wire Line
+	3800 2900 3950 2900
+Wire Wire Line
+	3950 2900 3950 2700
+Wire Wire Line
+	3800 2700 4600 2700
+Connection ~ 3950 2700
+Text GLabel 7250 4250 0    60   Input ~ 0
+I-SET
+Wire Wire Line
+	6900 1300 6900 1400
+Wire Wire Line
+	6900 1400 8600 1400
+Connection ~ 7100 1400
+Text GLabel 7100 1700 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 5862315A
+P 7350 1550
+F 0 "C?" H 7375 1650 50  0000 L CNN
+F 1 "C" H 7375 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7388 1400 50  0001 C CNN
+F 3 "" H 7350 1550 50  0000 C CNN
+	1    7350 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 1400
+Text GLabel 7350 1700 3    60   Input ~ 0
+GND
+Connection ~ 7600 1400
+Text GLabel 7600 1700 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58623165
+P 7100 2550
+F 0 "C?" H 7125 2650 50  0000 L CNN
+F 1 "C" H 7125 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7138 2400 50  0001 C CNN
+F 3 "" H 7100 2550 50  0000 C CNN
+	1    7100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5862316C
+P 7600 2550
+F 0 "C?" H 7625 2650 50  0000 L CNN
+F 1 "C" H 7625 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7638 2400 50  0001 C CNN
+F 3 "" H 7600 2550 50  0000 C CNN
+	1    7600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2300 6900 2400
+Wire Wire Line
+	6900 2400 8600 2400
+Connection ~ 7100 2400
+Text GLabel 7100 2700 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58623177
+P 7350 2550
+F 0 "C?" H 7375 2650 50  0000 L CNN
+F 1 "C" H 7375 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7388 2400 50  0001 C CNN
+F 3 "" H 7350 2550 50  0000 C CNN
+	1    7350 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 2400
+Text GLabel 7350 2700 3    60   Input ~ 0
+GND
+Connection ~ 7600 2400
+Text GLabel 7600 2700 3    60   Input ~ 0
+GND
+Text GLabel 6900 2300 1    60   Input ~ 0
+-VE
+Text GLabel 7250 3950 0    60   Input ~ 0
+GND
+Text GLabel 7250 4150 0    60   Input ~ 0
+REF
+Wire Wire Line
+	7550 3750 7250 3750
+Wire Wire Line
+	7550 3850 7250 3850
+Wire Wire Line
+	7550 3950 7250 3950
+Wire Wire Line
+	7550 4050 7250 4050
+Wire Wire Line
+	7550 4250 7250 4250
+Text GLabel 7250 4350 0    60   Input ~ 0
+I-FB
+Wire Wire Line
+	7550 4350 7250 4350
+Connection ~ 6050 2800
+Text GLabel 6300 2800 2    60   Input ~ 0
+OUT
+Text GLabel 7250 4050 0    60   Input ~ 0
+OUT
+NoConn ~ 7550 4650
+NoConn ~ 7550 4800
+NoConn ~ 7550 4750
+$Comp
+L LM741 U?
+U 1 1 58623192
+P 4900 4100
+F 0 "U?" H 4900 4350 50  0000 L CNN
+F 1 "LM741" H 4900 4250 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4950 4150 50  0001 C CNN
+F 3 "" H 5050 4250 50  0000 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 4400
+NoConn ~ 5000 4400
+Text GLabel 4800 4400 3    60   Input ~ 0
+-VE
+$Comp
+L 1N4148 D?
+U 1 1 5862319C
+P 5500 4100
+F 0 "D?" V 5425 4175 40  0000 L BNN
+F 1 "1N4148" H 5375 4025 40  0000 L CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 5500 4250 30  0001 C CNN
+F 3 "" H 5500 4100 60  0000 C CNN
+	1    5500 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 4100 5200 4100
+Wire Wire Line
+	4450 4200 4600 4200
+Wire Wire Line
+	3750 4000 4600 4000
+Wire Wire Line
+	6050 4100 5650 4100
+Wire Wire Line
+	4450 4200 4450 5500
+Wire Wire Line
+	6050 4750 4450 4750
+Connection ~ 6050 4100
+$Comp
+L LM741 U?
+U 1 1 586231AA
+P 4900 5400
+F 0 "U?" H 4900 5650 50  0000 L CNN
+F 1 "LM741" H 4900 5550 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4950 5450 50  0001 C CNN
+F 3 "" H 5050 5550 50  0000 C CNN
+	1    4900 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5500 4600 5500
+Connection ~ 4450 4750
+Wire Wire Line
+	2900 5300 3500 5300
+Text GLabel 4800 5100 1    60   Input ~ 0
++VE
+Text GLabel 4800 5700 3    60   Input ~ 0
+-VE
+NoConn ~ 4900 5700
+NoConn ~ 5000 5700
+$Comp
+L 1N4148 D?
+U 1 1 586231B8
+P 5500 5400
+F 0 "D?" V 5425 5475 40  0000 L BNN
+F 1 "1N4148" H 5375 5325 40  0000 L CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 5500 5550 30  0001 C CNN
+F 3 "" H 5500 5400 60  0000 C CNN
+	1    5500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5400 5350 5400
+Connection ~ 6050 4750
+$Comp
+L LM741 U?
+U 1 1 586231C1
+P 2600 5300
+F 0 "U?" H 2600 5550 50  0000 L CNN
+F 1 "LM741" H 2600 5450 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2650 5350 50  0001 C CNN
+F 3 "" H 2750 5450 50  0000 C CNN
+	1    2600 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5200 2300 5200
+Wire Wire Line
+	3000 5300 3000 5950
+Wire Wire Line
+	3000 5950 2700 5950
+$Comp
+L R R?
+U 1 1 586231CB
+P 2550 5950
+F 0 "R?" V 2630 5950 50  0000 C CNN
+F 1 "R" V 2550 5950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2480 5950 50  0001 C CNN
+F 3 "" H 2550 5950 50  0000 C CNN
+	1    2550 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 586231D2
+P 2000 5400
+F 0 "R?" V 2080 5400 50  0000 C CNN
+F 1 "R" V 2000 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1930 5400 50  0001 C CNN
+F 3 "" H 2000 5400 50  0000 C CNN
+	1    2000 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 5400 2300 5400
+Wire Wire Line
+	2200 5400 2200 5950
+Wire Wire Line
+	2200 5950 2400 5950
+Connection ~ 2200 5400
+Text GLabel 2500 5000 1    60   Input ~ 0
++VE
+Text GLabel 2500 5600 3    60   Input ~ 0
+-VE
+NoConn ~ 2600 5600
+NoConn ~ 2700 5600
+Connection ~ 3000 5300
+Text GLabel 4800 3800 1    60   Input ~ 0
++VE
+Wire Notes Line
+	1850 4700 1850 6100
+Wire Notes Line
+	1850 6100 3150 6100
+Wire Notes Line
+	3150 4700 1850 4700
+$Comp
+L R R?
+U 1 1 586231E6
+P 3600 4000
+F 0 "R?" V 3680 4000 50  0000 C CNN
+F 1 "R" V 3600 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3530 4000 50  0001 C CNN
+F 3 "" H 3600 4000 50  0000 C CNN
+	1    3600 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 586231ED
+P 3600 4200
+F 0 "R?" V 3680 4200 50  0000 C CNN
+F 1 "R" V 3600 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3530 4200 50  0001 C CNN
+F 3 "" H 3600 4200 50  0000 C CNN
+	1    3600 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 4000 3450 4000
+Wire Wire Line
+	1250 4200 3450 4200
+Wire Wire Line
+	3750 4200 3950 4200
+Wire Wire Line
+	3950 4200 3950 4000
+Connection ~ 3950 4000
+Wire Wire Line
+	1650 5400 1850 5400
+Wire Wire Line
+	1650 4200 1650 5400
+$Comp
+L R R?
+U 1 1 586231FB
+P 3650 5300
+F 0 "R?" V 3730 5300 50  0000 C CNN
+F 1 "R" V 3650 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3580 5300 50  0001 C CNN
+F 3 "" H 3650 5300 50  0000 C CNN
+	1    3650 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58623202
+P 3650 5050
+F 0 "R?" V 3730 5050 50  0000 C CNN
+F 1 "R" V 3650 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3580 5050 50  0001 C CNN
+F 3 "" H 3650 5050 50  0000 C CNN
+	1    3650 5050
+	0    1    1    0   
+$EndComp
+Connection ~ 1650 4200
+Wire Wire Line
+	3350 4000 3350 5050
+Wire Wire Line
+	3350 5050 3500 5050
+Connection ~ 3350 4000
+Wire Wire Line
+	3800 5050 3950 5050
+Wire Wire Line
+	3950 5050 3950 5300
+Wire Wire Line
+	3800 5300 4600 5300
+Connection ~ 3950 5300
+Wire Notes Line
+	3150 6100 3150 4700
+Text GLabel 2050 5000 1    60   Input ~ 0
+GND
+Wire Wire Line
+	2050 5000 2050 5200
+Text GLabel 1250 4200 0    60   Input ~ 0
+V-SET
+Text GLabel 1250 4000 0    60   Input ~ 0
+V-FB
+Text GLabel 7250 4550 0    60   Input ~ 0
+V-FB
+Text GLabel 7250 4450 0    60   Input ~ 0
+V-SET
+$Comp
+L CONN_01X12 P?
+U 1 1 58623218
+P 7750 4300
+F 0 "P?" H 7750 4950 50  0000 C CNN
+F 1 "CONN_01X12" V 7850 4300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12" H 7750 4300 50  0001 C CNN
+F 3 "" H 7750 4300 50  0000 C CNN
+	1    7750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4450 7550 4450
+Wire Wire Line
+	6050 5400 5650 5400
+$Comp
+L C C?
+U 1 1 58623221
+P 7850 1550
+F 0 "C?" H 7875 1650 50  0000 L CNN
+F 1 "C" H 7875 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7888 1400 50  0001 C CNN
+F 3 "" H 7850 1550 50  0000 C CNN
+	1    7850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58623228
+P 8350 1550
+F 0 "C?" H 8375 1650 50  0000 L CNN
+F 1 "C" H 8375 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8388 1400 50  0001 C CNN
+F 3 "" H 8350 1550 50  0000 C CNN
+	1    8350 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 1400
+Text GLabel 7850 1700 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58623231
+P 8100 1550
+F 0 "C?" H 8125 1650 50  0000 L CNN
+F 1 "C" H 8125 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8138 1400 50  0001 C CNN
+F 3 "" H 8100 1550 50  0000 C CNN
+	1    8100 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 1400
+Text GLabel 8100 1700 3    60   Input ~ 0
+GND
+Connection ~ 8350 1400
+Text GLabel 8350 1700 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 5862323C
+P 7850 2550
+F 0 "C?" H 7875 2650 50  0000 L CNN
+F 1 "C" H 7875 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7888 2400 50  0001 C CNN
+F 3 "" H 7850 2550 50  0000 C CNN
+	1    7850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58623243
+P 8350 2550
+F 0 "C?" H 8375 2650 50  0000 L CNN
+F 1 "C" H 8375 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8388 2400 50  0001 C CNN
+F 3 "" H 8350 2550 50  0000 C CNN
+	1    8350 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 2400
+Text GLabel 7850 2700 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 5862324C
+P 8100 2550
+F 0 "C?" H 8125 2650 50  0000 L CNN
+F 1 "C" H 8125 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8138 2400 50  0001 C CNN
+F 3 "" H 8100 2550 50  0000 C CNN
+	1    8100 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 2400
+Text GLabel 8100 2700 3    60   Input ~ 0
+GND
+Connection ~ 8350 2400
+Text GLabel 8350 2700 3    60   Input ~ 0
+GND
+Wire Wire Line
+	7250 4150 7550 4150
+Wire Wire Line
+	7550 4550 7250 4550
+NoConn ~ 7550 4850
+Wire Wire Line
+	3950 1200 3750 1200
+Wire Wire Line
+	3500 2900 3400 2900
+Wire Wire Line
+	3400 2900 3400 3700
+Wire Wire Line
+	3400 3700 1500 3700
+Wire Wire Line
+	1500 3700 1500 1200
+Connection ~ 1500 1200
+Wire Wire Line
+	2900 2700 3500 2700
+$Comp
+L LM741 U?
+U 1 1 58623261
+P 2600 2700
+F 0 "U?" H 2600 2950 50  0000 L CNN
+F 1 "LM741" H 2600 2850 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2650 2750 50  0001 C CNN
+F 3 "" H 2750 2850 50  0000 C CNN
+	1    2600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2600 2300 2600
+Wire Wire Line
+	3000 2700 3000 3350
+Wire Wire Line
+	3000 3350 2700 3350
+$Comp
+L R R?
+U 1 1 5862326B
+P 2550 3350
+F 0 "R?" V 2630 3350 50  0000 C CNN
+F 1 "R" V 2550 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2480 3350 50  0001 C CNN
+F 3 "" H 2550 3350 50  0000 C CNN
+	1    2550 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58623272
+P 2000 2800
+F 0 "R?" V 2080 2800 50  0000 C CNN
+F 1 "R" V 2000 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1930 2800 50  0001 C CNN
+F 3 "" H 2000 2800 50  0000 C CNN
+	1    2000 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 2800 2300 2800
+Wire Wire Line
+	2200 2800 2200 3350
+Wire Wire Line
+	2200 3350 2400 3350
+Connection ~ 2200 2800
+Text GLabel 2500 2400 1    60   Input ~ 0
++VE
+Text GLabel 2500 3000 3    60   Input ~ 0
+-VE
+NoConn ~ 2600 3000
+NoConn ~ 2700 3000
+Connection ~ 3000 2700
+Wire Notes Line
+	1850 2100 1850 3500
+Wire Notes Line
+	1850 3500 3150 3500
+Wire Notes Line
+	3150 2100 1850 2100
+Wire Wire Line
+	1650 2800 1850 2800
+Wire Notes Line
+	3150 3500 3150 2100
+Text GLabel 2050 2400 1    60   Input ~ 0
+GND
+Wire Wire Line
+	2050 2400 2050 2600
+$EndSCHEMATC

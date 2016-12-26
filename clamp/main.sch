@@ -49,7 +49,7 @@ $Sheet
 S 1100 2500 1300 1000
 U 585BBA35
 F0 "ADC" 60
-F1 "test.sch" 60
+F1 "adc.sch" 60
 $EndSheet
 $Sheet
 S 1100 1200 1200 750 

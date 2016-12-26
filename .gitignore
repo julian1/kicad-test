@@ -3,4 +3,5 @@
 *.bck
 old*
 tmp
+**/gerber/**
 

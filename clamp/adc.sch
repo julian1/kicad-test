@@ -379,7 +379,9 @@ Wire Wire Line
 Wire Wire Line
 	6500 2000 6750 2000
 Wire Wire Line
-	6750 2000 7550 2000
+	6750 2000 7100 2000
+Wire Wire Line
+	7100 2000 7550 2000
 Wire Wire Line
 	6750 1650 6750 2000
 Wire Wire Line
@@ -423,7 +425,9 @@ Wire Wire Line
 Wire Wire Line
 	8150 2100 8300 2100
 Wire Wire Line
-	8300 2100 8900 2100
+	8300 2100 8500 2100
+Wire Wire Line
+	8750 2100 8900 2100
 Wire Wire Line
 	8300 2100 8300 2950
 Wire Wire Line
@@ -717,4 +721,30 @@ Text GLabel 9750 1550 1    60   Input ~ 0
 +VE
 Wire Wire Line
 	9750 1550 9750 1700
+$Comp
+L CONN_01X03 P?
+U 1 1 58621C5B
+P 9100 950
+F 0 "P?" H 9100 1150 50  0000 C CNN
+F 1 "CONN_01X03" V 9200 950 50  0000 C CNN
+F 2 "" H 9100 950 50  0000 C CNN
+F 3 "" H 9100 950 50  0000 C CNN
+	1    9100 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2000 7100 850 
+Wire Wire Line
+	7100 850  8900 850 
+Connection ~ 7100 2000
+Wire Wire Line
+	8900 950  8750 950 
+Wire Wire Line
+	8750 950  8750 1300
+Wire Wire Line
+	8750 1300 8750 2100
+Wire Wire Line
+	8900 1050 8500 1050
+Wire Wire Line
+	8500 1050 8500 2100
 $EndSCHEMATC

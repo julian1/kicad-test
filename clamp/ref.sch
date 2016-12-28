@@ -134,11 +134,11 @@ Wire Wire Line
 Connection ~ 4700 3800
 Connection ~ 4900 2750
 Wire Wire Line
-	3400 3250 5250 3250
+	3400 3250 5350 3250
 Wire Wire Line
-	5250 3250 5250 2950
+	5350 3250 5350 2950
 Wire Wire Line
-	5250 2950 5450 2950
+	5350 2950 5450 2950
 Connection ~ 3400 3250
 Wire Wire Line
 	3400 3700 3400 3800
@@ -172,25 +172,25 @@ Connection ~ 6750 1950
 $Comp
 L CONN_01X06 P4
 U 1 1 58643775
-P 2950 1450
-F 0 "P4" H 2950 1800 50  0000 C CNN
-F 1 "CONN_01X06" V 3050 1450 50  0000 C CNN
-F 2 "" H 2950 1450 50  0000 C CNN
-F 3 "" H 2950 1450 50  0000 C CNN
-	1    2950 1450
+P 2900 1300
+F 0 "P4" H 2900 1650 50  0000 C CNN
+F 1 "CONN_01X06" V 3000 1300 50  0000 C CNN
+F 2 "" H 2900 1300 50  0000 C CNN
+F 3 "" H 2900 1300 50  0000 C CNN
+	1    2900 1300
 	-1   0    0    -1  
 $EndComp
-Text GLabel 3150 1200 2    60   Input ~ 0
+Text GLabel 3100 1050 2    60   Input ~ 0
 +VE
-Text GLabel 3150 1400 2    60   Input ~ 0
+Text GLabel 3100 1250 2    60   Input ~ 0
 -VE
-Text GLabel 3150 1300 2    60   Input ~ 0
+Text GLabel 3100 1150 2    60   Input ~ 0
 GND
-Text GLabel 3150 1500 2    60   Input ~ 0
+Text GLabel 3100 1350 2    60   Input ~ 0
 REF
-Text GLabel 3150 1600 2    60   Input ~ 0
+Text GLabel 3100 1450 2    60   Input ~ 0
 GND
-Text GLabel 3150 1700 2    60   Input ~ 0
+Text GLabel 3100 1550 2    60   Input ~ 0
 GND
 NoConn ~ 5750 3150
 NoConn ~ 5850 3150
@@ -198,4 +198,184 @@ NoConn ~ 3550 2750
 NoConn ~ 3550 2850
 NoConn ~ 4550 2850
 NoConn ~ 4550 3050
+$Comp
+L C C?
+U 1 1 586449E6
+P 6550 1100
+F 0 "C?" H 6575 1200 50  0000 L CNN
+F 1 "C" H 6575 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6588 950 50  0001 C CNN
+F 3 "" H 6550 1100 50  0000 C CNN
+	1    6550 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 850  1    60   Input ~ 0
++VE
+$Comp
+L C C?
+U 1 1 586449EE
+P 7050 1100
+F 0 "C?" H 7075 1200 50  0000 L CNN
+F 1 "C" H 7075 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7088 950 50  0001 C CNN
+F 3 "" H 7050 1100 50  0000 C CNN
+	1    7050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 850  6350 950 
+Wire Wire Line
+	6350 950  8050 950 
+Connection ~ 6550 950 
+Text GLabel 6550 1250 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 586449F9
+P 6800 1100
+F 0 "C?" H 6825 1200 50  0000 L CNN
+F 1 "C" H 6825 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6838 950 50  0001 C CNN
+F 3 "" H 6800 1100 50  0000 C CNN
+	1    6800 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 950 
+Text GLabel 6800 1250 3    60   Input ~ 0
+GND
+Connection ~ 7050 950 
+Text GLabel 7050 1250 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58644A04
+P 8500 1100
+F 0 "C?" H 8525 1200 50  0000 L CNN
+F 1 "C" H 8525 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8538 950 50  0001 C CNN
+F 3 "" H 8500 1100 50  0000 C CNN
+	1    8500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58644A0B
+P 9000 1100
+F 0 "C?" H 9025 1200 50  0000 L CNN
+F 1 "C" H 9025 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 9038 950 50  0001 C CNN
+F 3 "" H 9000 1100 50  0000 C CNN
+	1    9000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 850  8300 950 
+Wire Wire Line
+	8300 950  10000 950 
+Connection ~ 8500 950 
+Text GLabel 8500 1250 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58644A16
+P 8750 1100
+F 0 "C?" H 8775 1200 50  0000 L CNN
+F 1 "C" H 8775 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8788 950 50  0001 C CNN
+F 3 "" H 8750 1100 50  0000 C CNN
+	1    8750 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8750 950 
+Text GLabel 8750 1250 3    60   Input ~ 0
+GND
+Connection ~ 9000 950 
+Text GLabel 9000 1250 3    60   Input ~ 0
+GND
+Text GLabel 8300 850  1    60   Input ~ 0
+-VE
+$Comp
+L C C?
+U 1 1 58644A22
+P 7300 1100
+F 0 "C?" H 7325 1200 50  0000 L CNN
+F 1 "C" H 7325 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7338 950 50  0001 C CNN
+F 3 "" H 7300 1100 50  0000 C CNN
+	1    7300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58644A29
+P 7800 1100
+F 0 "C?" H 7825 1200 50  0000 L CNN
+F 1 "C" H 7825 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7838 950 50  0001 C CNN
+F 3 "" H 7800 1100 50  0000 C CNN
+	1    7800 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 950 
+Text GLabel 7300 1250 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58644A32
+P 7550 1100
+F 0 "C?" H 7575 1200 50  0000 L CNN
+F 1 "C" H 7575 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7588 950 50  0001 C CNN
+F 3 "" H 7550 1100 50  0000 C CNN
+	1    7550 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7550 950 
+Text GLabel 7550 1250 3    60   Input ~ 0
+GND
+Connection ~ 7800 950 
+Text GLabel 7800 1250 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58644A3D
+P 9250 1100
+F 0 "C?" H 9275 1200 50  0000 L CNN
+F 1 "C" H 9275 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 9288 950 50  0001 C CNN
+F 3 "" H 9250 1100 50  0000 C CNN
+	1    9250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58644A44
+P 9750 1100
+F 0 "C?" H 9775 1200 50  0000 L CNN
+F 1 "C" H 9775 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 9788 950 50  0001 C CNN
+F 3 "" H 9750 1100 50  0000 C CNN
+	1    9750 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9250 950 
+Text GLabel 9250 1250 3    60   Input ~ 0
+GND
+$Comp
+L C C?
+U 1 1 58644A4D
+P 9500 1100
+F 0 "C?" H 9525 1200 50  0000 L CNN
+F 1 "C" H 9525 1000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 9538 950 50  0001 C CNN
+F 3 "" H 9500 1100 50  0000 C CNN
+	1    9500 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9500 950 
+Text GLabel 9500 1250 3    60   Input ~ 0
+GND
+Connection ~ 9750 950 
+Text GLabel 9750 1250 3    60   Input ~ 0
+GND
 $EndSCHEMATC

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/meteo/kicad-test/clamp/main.sch)
-    (date "Thu 29 Dec 2016 09:32:30 AEDT")
+    (date "Thu 29 Dec 2016 09:54:12 AEDT")
     (tool "Eeschema 4.0.4+dfsg1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -430,6 +430,7 @@
       (tstamp 58623272))
     (comp (ref U12)
       (value LTZ1000)
+      (footprint TO_SOT_Packages_THT:TO-78_Housing_8Pin)
       (libsource (lib my) (part LTZ1000))
       (sheetpath (names /ref/) (tstamps /58642788/))
       (tstamp 58642CA9))
@@ -441,7 +442,7 @@
       (tstamp 58642DF3))
     (comp (ref D7)
       (value 1N4148)
-      (footprint Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10)
+      (footprint Diodes_SMD:MiniMELF_Standard)
       (libsource (lib my) (part 1N4148))
       (sheetpath (names /ref/) (tstamps /58642788/))
       (tstamp 58642EDD))

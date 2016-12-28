@@ -87,7 +87,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 2850 6750 1950
 Wire Wire Line
-	6750 1950 3400 1950
+	3400 1950 6950 1950
 Wire Wire Line
 	3400 1950 3400 2950
 Wire Wire Line
@@ -166,4 +166,30 @@ Text GLabel 6750 3950 3    60   Input ~ 0
 GND
 Wire Wire Line
 	6750 3800 6750 3950
+Text GLabel 6950 1950 2    60   Input ~ 0
+REF
+Connection ~ 6750 1950
+$Comp
+L CONN_01X06 P?
+U 1 1 58643775
+P 2950 1450
+F 0 "P?" H 2950 1800 50  0000 C CNN
+F 1 "CONN_01X06" V 3050 1450 50  0000 C CNN
+F 2 "" H 2950 1450 50  0000 C CNN
+F 3 "" H 2950 1450 50  0000 C CNN
+	1    2950 1450
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3150 1200 2    60   Input ~ 0
++VE
+Text GLabel 3150 1400 2    60   Input ~ 0
+-VE
+Text GLabel 3150 1300 2    60   Input ~ 0
+GND
+Text GLabel 3150 1500 2    60   Input ~ 0
+REF
+Text GLabel 3150 1600 2    60   Input ~ 0
+GND
+Text GLabel 3150 1700 2    60   Input ~ 0
+GND
 $EndSCHEMATC

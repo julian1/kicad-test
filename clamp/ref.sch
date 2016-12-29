@@ -56,7 +56,7 @@ F 3 "" H 6100 3550 50  0000 C CNN
 	1    6100 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 8250 2700 1    60   Input ~ 0
+Text GLabel 8250 2650 1    60   Input ~ 0
 +VE
 $Comp
 L LM741 U13
@@ -124,10 +124,10 @@ Wire Wire Line
 Connection ~ 6800 4200
 Connection ~ 7400 3050
 Wire Wire Line
-	7900 3550 7900 3250
+	7900 3600 7900 3250
 Wire Wire Line
 	7900 3250 8050 3250
-Connection ~ 5500 3550
+Connection ~ 5500 3600
 Wire Wire Line
 	5500 4200 5500 4000
 $Comp
@@ -135,7 +135,7 @@ L C C26
 U 1 1 58643272
 P 7400 3850
 F 0 "C26" H 7425 3950 50  0000 L CNN
-F 1 "C" H 7425 3750 50  0000 L CNN
+F 1 "22nF" H 7425 3750 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206" H 7438 3700 50  0001 C CNN
 F 3 "" H 7400 3850 50  0000 C CNN
 	1    7400 3850
@@ -145,7 +145,7 @@ Wire Wire Line
 	7400 4000 7400 4450
 Connection ~ 7400 4200
 Wire Wire Line
-	8250 2700 8250 2850
+	8250 2650 8250 2850
 Text GLabel 8250 3600 3    60   Input ~ 0
 -VE
 Wire Wire Line
@@ -196,7 +196,7 @@ Text GLabel 6350 850  1    60   Input ~ 0
 Wire Wire Line
 	6350 850  6350 950 
 Wire Wire Line
-	6350 950  8050 950 
+	6350 950  6800 950 
 Connection ~ 6550 950 
 Text GLabel 6550 1250 3    60   Input ~ 0
 GND
@@ -228,7 +228,7 @@ $EndComp
 Wire Wire Line
 	8300 850  8300 950 
 Wire Wire Line
-	8300 950  10000 950 
+	8300 950  8750 950 
 Connection ~ 8500 950 
 Text GLabel 8500 1250 3    60   Input ~ 0
 GND
@@ -246,7 +246,6 @@ $EndComp
 Connection ~ 8750 950 
 Text GLabel 8750 1250 3    60   Input ~ 0
 GND
-Connection ~ 9000 950 
 Text GLabel 8300 850  1    60   Input ~ 0
 -VE
 $Comp
@@ -347,18 +346,18 @@ $EndComp
 $Comp
 L C C29
 U 1 1 5864BE17
-P 3400 3900
-F 0 "C29" H 3425 4000 50  0000 L CNN
-F 1 "0.1uF" H 3425 3800 50  0000 L CNN
-F 2 "" H 3438 3750 50  0000 C CNN
-F 3 "" H 3400 3900 50  0000 C CNN
-	1    3400 3900
+P 3400 3850
+F 0 "C29" H 3425 3950 50  0000 L CNN
+F 1 "0.1uF" H 3425 3750 50  0000 L CNN
+F 2 "" H 3438 3700 50  0000 C CNN
+F 3 "" H 3400 3850 50  0000 C CNN
+	1    3400 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 3600 3400 3750
+	3400 3600 3400 3700
 Wire Wire Line
-	3400 4050 3400 4200
+	3400 4000 3400 4200
 Connection ~ 4300 4200
 Wire Wire Line
 	3400 3100 3400 3300
@@ -374,10 +373,10 @@ F 3 "" H 1900 3000 60  0001 C CNN
 	1    1900 3000
 	-1   0    0    -1  
 $EndComp
-Text GLabel 1800 2650 1    60   Input ~ 0
+Text GLabel 1800 2550 1    60   Input ~ 0
 +VE
 Wire Wire Line
-	1800 2650 1800 2800
+	1800 2550 1800 2800
 $Comp
 L R R22
 U 1 1 5864C439
@@ -412,15 +411,15 @@ Wire Wire Line
 Wire Wire Line
 	3400 4200 7400 4200
 Wire Wire Line
-	5500 3550 7900 3550
+	5500 3600 7900 3600
 Wire Wire Line
 	8650 3150 8750 3150
 Text GLabel 3050 2550 1    60   Input ~ 0
 +VE
-Text GLabel 3050 3550 3    60   Input ~ 0
+Text GLabel 3050 3500 3    60   Input ~ 0
 -VE
 Wire Wire Line
-	3050 3550 3050 3300
+	3050 3500 3050 3300
 Wire Wire Line
 	3050 2550 3050 2700
 NoConn ~ 2850 3300

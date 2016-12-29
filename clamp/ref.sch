@@ -98,7 +98,7 @@ U 1 1 58642F48
 P 3400 3550
 F 0 "R20" V 3480 3550 50  0000 C CNN
 F 1 "120" V 3400 3550 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 3330 3550 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3330 3550 50  0001 C CNN
 F 3 "" H 3400 3550 50  0000 C CNN
 	1    3400 3550
 	1    0    0    -1  
@@ -115,7 +115,7 @@ U 1 1 5864309C
 P 4900 2350
 F 0 "R21" V 4980 2350 50  0000 C CNN
 F 1 "R" V 4900 2350 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 4830 2350 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 4830 2350 50  0001 C CNN
 F 3 "" H 4900 2350 50  0000 C CNN
 	1    4900 2350
 	1    0    0    -1  

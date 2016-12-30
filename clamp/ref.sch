@@ -83,7 +83,7 @@ $EndComp
 Wire Wire Line
 	9050 3150 9250 3150
 Wire Wire Line
-	9250 3150 9250 2250
+	9250 2250 9250 3150
 Wire Wire Line
 	5500 2250 5500 3250
 $Comp
@@ -118,7 +118,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 3250 6800 3250
 Wire Wire Line
-	6800 3250 6800 4200
+	6800 4200 6800 3250
 Connection ~ 6800 4200
 Connection ~ 7400 3050
 Wire Wire Line
@@ -315,8 +315,6 @@ Wire Wire Line
 	2750 3100 3050 3100
 Wire Wire Line
 	3350 3100 4150 3100
-Text GLabel 5050 4500 3    60   Input ~ 0
--VE
 Wire Wire Line
 	5050 3150 5500 3150
 $Comp
@@ -437,8 +435,6 @@ $EndComp
 Wire Wire Line
 	5050 3150 5050 3450
 Wire Wire Line
-	5050 3750 5050 4500
-Wire Wire Line
 	5050 3050 5500 3050
 $Comp
 L R R21
@@ -482,4 +478,7 @@ Connection ~ 4000 3100
 Wire Wire Line
 	4000 3750 4000 4200
 Connection ~ 4300 4200
+Wire Wire Line
+	5050 3750 5050 4200
+Connection ~ 5050 4200
 $EndSCHEMATC

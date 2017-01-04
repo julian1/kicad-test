@@ -266,24 +266,9 @@ F 3 "" H 2600 3150 50  0000 C CNN
 	1    2450 3000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L POT RV1
-U 1 1 5864A545
-P 4300 3100
-F 0 "RV1" H 4300 3020 50  0000 C CNN
-F 1 "POT" H 4300 3100 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 4300 3100 50  0001 C CNN
-F 3 "" H 4300 3100 50  0000 C CNN
-	1    4300 3100
-	0    -1   -1   0   
-$EndComp
 Connection ~ 5500 2250
 Wire Wire Line
 	2750 2900 6600 2900
-Wire Wire Line
-	4300 2250 4300 2950
-Wire Wire Line
-	4300 3250 4300 4200
 Connection ~ 5500 4200
 Wire Wire Line
 	6500 3350 6600 3350
@@ -303,7 +288,7 @@ $EndComp
 Wire Wire Line
 	2750 3100 3050 3100
 Wire Wire Line
-	3350 3100 4150 3100
+	3350 3100 4000 3100
 Wire Wire Line
 	5050 3150 5500 3150
 $Comp
@@ -438,12 +423,12 @@ $EndComp
 $Comp
 L R R25
 U 1 1 5865B477
-P 4000 2650
-F 0 "R25" V 4080 2650 50  0000 C CNN
-F 1 "12k" V 4000 2650 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3930 2650 50  0001 C CNN
-F 3 "" H 4000 2650 50  0000 C CNN
-	1    4000 2650
+P 4000 2500
+F 0 "R25" V 4080 2500 50  0000 C CNN
+F 1 "12k" V 4000 2500 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3930 2500 50  0001 C CNN
+F 3 "" H 4000 2500 50  0000 C CNN
+	1    4000 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -458,14 +443,10 @@ F 3 "" H 4000 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 2250 4000 2500
-Connection ~ 4300 2250
-Wire Wire Line
-	4000 2800 4000 3450
+	4000 3000 4000 3450
 Connection ~ 4000 3100
 Wire Wire Line
 	4000 3750 4000 4200
-Connection ~ 4300 4200
 Wire Wire Line
 	5050 3750 5050 4450
 Text GLabel 5050 4450 3    60   Input ~ 0
@@ -511,4 +492,19 @@ F 3 "" H 7150 1100 50  0000 C CNN
 $EndComp
 Text GLabel 7150 1250 3    60   Input ~ 0
 GND
+$Comp
+L R R27
+U 1 1 586C6B33
+P 4000 2850
+F 0 "R27" V 4080 2850 50  0000 C CNN
+F 1 "R" V 4000 2850 50  0000 C CNN
+F 2 "" V 3930 2850 50  0000 C CNN
+F 3 "" H 4000 2850 50  0000 C CNN
+	1    4000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2650 4000 2700
+Wire Wire Line
+	4000 2250 4000 2350
 $EndSCHEMATC

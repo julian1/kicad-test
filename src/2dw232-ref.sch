@@ -88,10 +88,8 @@ Text GLabel 6350 2200 1    60   Input ~ 0
 +VE
 Wire Wire Line
 	6350 2200 6350 2250
-Text GLabel 6350 4350 3    60   Input ~ 0
+Text GLabel 5750 4400 3    60   Input ~ 0
 0V
-Wire Wire Line
-	6350 2850 6350 4350
 Wire Wire Line
 	5350 2650 6150 2650
 Connection ~ 5350 2650
@@ -111,8 +109,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 2250 4750 2500
 Wire Wire Line
-	1400 4150 6350 4150
-Connection ~ 6350 4150
+	3850 4150 5750 4150
 Connection ~ 5350 4150
 $Comp
 L R R506
@@ -280,12 +277,12 @@ Wire Wire Line
 $Comp
 L R R501
 U 1 1 58821BA0
-P 1400 3850
-F 0 "R501" V 1480 3850 50  0000 C CNN
-F 1 "200R" V 1400 3850 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 1330 3850 50  0001 C CNN
-F 3 "" H 1400 3850 50  0000 C CNN
-	1    1400 3850
+P 1400 4000
+F 0 "R501" V 1480 4000 50  0000 C CNN
+F 1 "200R" V 1400 4000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 1330 4000 50  0001 C CNN
+F 3 "" H 1400 4000 50  0000 C CNN
+	1    1400 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -296,24 +293,19 @@ Wire Wire Line
 	7300 3000 7300 2750
 Wire Wire Line
 	7300 2200 7300 2350
-Connection ~ 2600 4150
 NoConn ~ 6450 2850
 NoConn ~ 6550 2850
 NoConn ~ 2400 3800
 NoConn ~ 2500 3800
-Wire Wire Line
-	1400 4000 1400 4150
 Wire Wire Line
 	4750 3550 4750 4150
 Wire Wire Line
 	5350 3800 5350 4150
 Wire Wire Line
 	3850 3950 3850 4150
-Wire Wire Line
-	2600 3800 2600 4150
 Connection ~ 8050 6800
 Wire Wire Line
-	5750 3550 5750 4150
+	5750 3550 5750 4400
 Connection ~ 5750 4150
 $Comp
 L R R509
@@ -397,22 +389,12 @@ Wire Wire Line
 Text GLabel 3850 2200 1    60   Input ~ 0
 REF
 Connection ~ 3850 2450
-Text GLabel 3950 1100 2    60   Input ~ 0
-REF
-Wire Wire Line
-	3700 1100 3950 1100
-Text GLabel 3950 1200 2    60   Input ~ 0
-0V
 Text GLabel 3950 1300 2    60   Input ~ 0
-0V
+REF
 Text GLabel 3950 1400 2    60   Input ~ 0
 0V
 Text GLabel 3950 1500 2    60   Input ~ 0
 0V
-Wire Wire Line
-	3700 1200 3950 1200
-Wire Wire Line
-	3700 1300 3950 1300
 Wire Wire Line
 	3700 1400 3950 1400
 Wire Wire Line
@@ -441,4 +423,47 @@ F 3 "" H 1500 3500 50  0000 L CNN
 	1    1500 3500
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	1400 3850 1400 3700
+Wire Wire Line
+	1400 4150 1400 4300
+Text GLabel 1400 4300 3    60   Input ~ 0
+H-0V
+Text GLabel 3950 1100 2    60   Input ~ 0
+-VE
+Wire Wire Line
+	3700 1100 3950 1100
+Text GLabel 3950 1200 2    60   Input ~ 0
+H-0V
+Wire Wire Line
+	3700 1200 3950 1200
+Wire Wire Line
+	3700 1300 3950 1300
+Text GLabel 2600 4050 3    60   Input ~ 0
+-VE
+Wire Wire Line
+	2600 3800 2600 4050
+Text GLabel 6350 3050 3    60   Input ~ 0
+-VE
+Wire Wire Line
+	6350 2850 6350 3050
+Text GLabel 5900 1050 2    60   Input ~ 0
+H-0V
+Text GLabel 5100 1050 0    60   Input ~ 0
+0V
+$Comp
+L R R510
+U 1 1 5883C0FE
+P 5500 1050
+F 0 "R510" V 5580 1050 50  0000 C CNN
+F 1 "R" V 5500 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5430 1050 50  0001 C CNN
+F 3 "" H 5500 1050 50  0000 C CNN
+	1    5500 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 1050 5350 1050
+Wire Wire Line
+	5650 1050 5900 1050
 $EndSCHEMATC

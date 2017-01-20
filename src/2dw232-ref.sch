@@ -62,7 +62,7 @@ U 1 1 5881849D
 P 5350 3650
 F 0 "R508" V 5430 3650 50  0000 C CNN
 F 1 "10k" V 5350 3650 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 5280 3650 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 5280 3650 50  0001 C CNN
 F 3 "" H 5350 3650 50  0000 C CNN
 	1    5350 3650
 	1    0    0    -1  
@@ -73,15 +73,13 @@ U 1 1 588184DE
 P 5350 2100
 F 0 "R507" V 5430 2100 50  0000 C CNN
 F 1 "5.1k" V 5350 2100 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 5280 2100 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 5280 2100 50  0001 C CNN
 F 3 "" H 5350 2100 50  0000 C CNN
 	1    5350 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 2550 6750 2550
-Wire Wire Line
-	4750 1750 7600 1750
+	4750 1750 7800 1750
 Wire Wire Line
 	5350 1750 5350 1950
 Wire Wire Line
@@ -122,7 +120,7 @@ U 1 1 5881872C
 P 4750 2100
 F 0 "R506" V 4830 2100 50  0000 C CNN
 F 1 "120" V 4750 2100 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 4680 2100 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 4680 2100 50  0001 C CNN
 F 3 "" H 4750 2100 50  0000 C CNN
 	1    4750 2100
 	1    0    0    -1  
@@ -131,17 +129,6 @@ Wire Wire Line
 	4750 1750 4750 1950
 Connection ~ 5350 1750
 Connection ~ 4750 2450
-$Comp
-L 2N3904 Q502
-U 1 1 588188E4
-P 7200 2550
-F 0 "Q502" H 7350 2625 40  0000 C CNN
-F 1 "2N3904" H 7325 2550 40  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 7200 2550 60  0001 C CNN
-F 3 "" H 7200 2550 60  0001 C CNN
-	1    7200 2550
-	1    0    0    -1  
-$EndComp
 Text GLabel 7300 2200 1    60   Input ~ 0
 +VE
 $Comp
@@ -177,7 +164,7 @@ U 1 1 58819A67
 P 3850 2700
 F 0 "R504" V 3930 2700 50  0000 C CNN
 F 1 "1k" V 3850 2700 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3780 2700 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 2700 50  0001 C CNN
 F 3 "" H 3850 2700 50  0000 C CNN
 	1    3850 2700
 	1    0    0    -1  
@@ -201,7 +188,7 @@ U 1 1 58819B03
 P 3850 3800
 F 0 "R505" V 3930 3800 50  0000 C CNN
 F 1 "10k" V 3850 3800 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3780 3800 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 3800 50  0001 C CNN
 F 3 "" H 3850 3800 50  0000 C CNN
 	1    3850 3800
 	1    0    0    -1  
@@ -277,23 +264,12 @@ Wire Wire Line
 Wire Wire Line
 	1900 3400 1900 3500
 Wire Wire Line
-	1650 3500 2200 3500
+	1700 3500 2200 3500
 Text GLabel 2600 2700 1    60   Input ~ 0
 +VE
 Wire Wire Line
 	2600 2700 2600 3200
 Connection ~ 3850 4150
-$Comp
-L 2N3904 Q501
-U 1 1 5881F2EF
-P 1500 3500
-F 0 "Q501" H 1650 3575 40  0000 C CNN
-F 1 "2N3904" H 1625 3500 40  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 1500 3500 60  0001 C CNN
-F 3 "" H 1500 3500 60  0001 C CNN
-	1    1500 3500
-	-1   0    0    -1  
-$EndComp
 Connection ~ 1900 3500
 Text GLabel 1400 2700 1    60   Input ~ 0
 +VE
@@ -313,9 +289,9 @@ F 3 "" H 1400 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 1750 7600 3000
+	7800 1750 7800 3000
 Wire Wire Line
-	7600 3000 7300 3000
+	7800 3000 7300 3000
 Wire Wire Line
 	7300 3000 7300 2750
 Wire Wire Line
@@ -345,7 +321,7 @@ U 1 1 58827B4A
 P 5350 3150
 F 0 "R509" V 5430 3150 50  0000 C CNN
 F 1 "0" V 5350 3150 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 5280 3150 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 5280 3150 50  0001 C CNN
 F 3 "" H 5350 3150 50  0000 C CNN
 	1    5350 3150
 	1    0    0    -1  
@@ -441,4 +417,28 @@ Wire Wire Line
 	3700 1400 3950 1400
 Wire Wire Line
 	3700 1500 3950 1500
+$Comp
+L MMBT3904 Q502
+U 1 1 58835E41
+P 7200 2550
+F 0 "Q502" H 7400 2625 50  0000 L CNN
+F 1 "MMBT3904" H 7400 2550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7400 2475 50  0000 L CIN
+F 3 "" H 7200 2550 50  0000 L CNN
+	1    7200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2550 6750 2550
+$Comp
+L MMBT3904 Q501
+U 1 1 58836CA2
+P 1500 3500
+F 0 "Q501" H 1700 3575 50  0000 L CNN
+F 1 "MMBT3904" H 1700 3500 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1700 3425 50  0000 L CIN
+F 3 "" H 1500 3500 50  0000 L CNN
+	1    1500 3500
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

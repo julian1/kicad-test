@@ -3,5 +3,6 @@
 *.bck
 old*
 tmp
-**/gerber/**
+gerber
+drill
 

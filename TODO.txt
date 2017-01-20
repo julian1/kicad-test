@@ -1,4 +1,8 @@
 
+drill hole size...
+
+----
+
 op-37 suggests output current less than 10mA
 
 "high gain and excellent linearity can be achieved by operating the op amp with

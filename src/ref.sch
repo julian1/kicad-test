@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -83,7 +83,7 @@ $EndComp
 Wire Wire Line
 	9050 3150 9250 3150
 Wire Wire Line
-	9250 2250 9250 3150
+	9250 3150 9250 2250
 Wire Wire Line
 	5500 2250 5500 3250
 $Comp
@@ -118,7 +118,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 3250 6800 3250
 Wire Wire Line
-	6800 4200 6800 3250
+	6800 3250 6800 4200
 Connection ~ 6800 4200
 Connection ~ 7400 3050
 Wire Wire Line

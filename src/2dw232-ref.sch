@@ -70,20 +70,26 @@ $EndComp
 $Comp
 L R R507
 U 1 1 588184DE
-P 6300 2100
-F 0 "R507" V 6380 2100 50  0000 C CNN
-F 1 "5.1k" V 6300 2100 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 2100 50  0001 C CNN
-F 3 "" H 6300 2100 50  0000 C CNN
-	1    6300 2100
+P 6300 2150
+F 0 "R507" V 6380 2150 50  0000 C CNN
+F 1 "5.1k" V 6300 2150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 2150 50  0001 C CNN
+F 3 "" H 6300 2150 50  0000 C CNN
+	1    6300 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 1750 8750 1750
+	3850 1750 4450 1750
 Wire Wire Line
-	6300 1750 6300 1950
+	4450 1750 6300 1750
 Wire Wire Line
-	6300 2250 6300 3050
+	6300 1750 8750 1750
+Wire Wire Line
+	6300 1750 6300 2000
+Wire Wire Line
+	6300 2300 6300 2650
+Wire Wire Line
+	6300 2650 6300 3050
 Text GLabel 7300 2200 1    60   Input ~ 0
 +VE
 Wire Wire Line
@@ -91,22 +97,30 @@ Wire Wire Line
 Text GLabel 6700 4400 3    60   Input ~ 0
 0V
 Wire Wire Line
-	6300 2650 7100 2650
+	6300 2650 6700 2650
+Wire Wire Line
+	6700 2650 7100 2650
 Connection ~ 6300 2650
 Wire Wire Line
-	4450 2450 7100 2450
+	4450 2450 4150 2450
 Wire Wire Line
-	3850 4150 6700 4150
+	4150 2450 7100 2450
+Wire Wire Line
+	3850 4150 4450 4150
+Wire Wire Line
+	4450 4150 6300 4150
+Wire Wire Line
+	6300 4150 6700 4150
 Connection ~ 6300 4150
 $Comp
 L R R506
 U 1 1 5881872C
-P 4450 2100
-F 0 "R506" V 4530 2100 50  0000 C CNN
-F 1 "120" V 4450 2100 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 4380 2100 50  0001 C CNN
-F 3 "" H 4450 2100 50  0000 C CNN
-	1    4450 2100
+P 4450 2150
+F 0 "R506" V 4530 2150 50  0000 C CNN
+F 1 "120" V 4450 2150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 4380 2150 50  0001 C CNN
+F 3 "" H 4450 2150 50  0000 C CNN
+	1    4450 2150
 	1    0    0    -1  
 $EndComp
 Connection ~ 6300 1750
@@ -164,9 +178,13 @@ $EndComp
 Wire Wire Line
 	3850 2700 3850 3050
 Wire Wire Line
-	3850 3350 3850 3600
+	3850 3350 3850 3400
 Wire Wire Line
-	2800 3400 4000 3400
+	3850 3400 3850 3600
+Wire Wire Line
+	2800 3400 3850 3400
+Wire Wire Line
+	3850 3400 4000 3400
 Connection ~ 3850 3400
 Wire Wire Line
 	4000 3400 4000 3200
@@ -193,7 +211,9 @@ F 3 "" H 3300 3000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2500 3000 3150 3000
+	2500 3000 3000 3000
+Wire Wire Line
+	3000 3000 3150 3000
 Wire Wire Line
 	3000 3000 3000 3600
 Wire Wire Line
@@ -228,7 +248,9 @@ Wire Wire Line
 Wire Wire Line
 	1900 3400 1900 3500
 Wire Wire Line
-	1700 3500 2200 3500
+	1700 3500 1900 3500
+Wire Wire Line
+	1900 3500 2200 3500
 Text GLabel 2600 2700 1    60   Input ~ 0
 +VE
 Wire Wire Line
@@ -255,10 +277,14 @@ Wire Wire Line
 Wire Wire Line
 	3850 3900 3850 4150
 Wire Wire Line
-	6700 3550 6700 4400
+	6700 3550 6700 4150
+Wire Wire Line
+	6700 4150 6700 4400
 Connection ~ 6700 4150
 Wire Wire Line
-	6300 3350 6300 3600
+	6300 3350 6300 3400
+Wire Wire Line
+	6300 3400 6300 3600
 $Comp
 L C C503
 U 1 1 5882E339
@@ -297,9 +323,13 @@ Text GLabel 1850 950  1    60   Input ~ 0
 Wire Wire Line
 	1850 950  1850 1100
 Wire Wire Line
-	1850 1100 2450 1100
+	1850 1100 2150 1100
 Wire Wire Line
-	1850 1400 2450 1400
+	2150 1100 2450 1100
+Wire Wire Line
+	1850 1400 2150 1400
+Wire Wire Line
+	2150 1400 2450 1400
 Connection ~ 2150 1100
 Connection ~ 2150 1400
 Text GLabel 1850 1600 3    60   Input ~ 0
@@ -309,32 +339,32 @@ Wire Wire Line
 $Comp
 L CONN_01X07 P501
 U 1 1 5883052B
-P 3500 1200
-F 0 "P501" H 3500 1600 50  0000 C CNN
-F 1 "CONN_01X07" V 3600 1200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 3500 1200 50  0001 C CNN
-F 3 "" H 3500 1200 50  0000 C CNN
-	1    3500 1200
+P 6800 1150
+F 0 "P501" H 6800 1550 50  0000 C CNN
+F 1 "CONN_01X07" V 6900 1150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 6800 1150 50  0001 C CNN
+F 3 "" H 6800 1150 50  0000 C CNN
+	1    6800 1150
 	-1   0    0    -1  
 $EndComp
-Text GLabel 3950 900  2    60   Input ~ 0
+Text GLabel 7250 850  2    60   Input ~ 0
 +VE
 Wire Wire Line
-	3700 900  3950 900 
-Text GLabel 3950 1000 2    60   Input ~ 0
+	7000 850  7250 850 
+Text GLabel 7250 950  2    60   Input ~ 0
 0V
 Wire Wire Line
-	3700 1000 3950 1000
-Text GLabel 3950 1300 2    60   Input ~ 0
+	7000 950  7250 950 
+Text GLabel 7250 1250 2    60   Input ~ 0
 REF
-Text GLabel 3950 1400 2    60   Input ~ 0
+Text GLabel 7250 1350 2    60   Input ~ 0
 0V
-Text GLabel 3950 1500 2    60   Input ~ 0
+Text GLabel 7250 1450 2    60   Input ~ 0
 0V
 Wire Wire Line
-	3700 1400 3950 1400
+	7000 1350 7250 1350
 Wire Wire Line
-	3700 1500 3950 1500
+	7000 1450 7250 1450
 $Comp
 L MMBT3904 Q502
 U 1 1 58835E41
@@ -363,16 +393,16 @@ Wire Wire Line
 	1400 3700 1400 4500
 Text GLabel 5850 2900 2    60   Input ~ 0
 H-0V
-Text GLabel 3950 1100 2    60   Input ~ 0
+Text GLabel 7250 1050 2    60   Input ~ 0
 -VE
 Wire Wire Line
-	3700 1100 3950 1100
-Text GLabel 3950 1200 2    60   Input ~ 0
+	7000 1050 7250 1050
+Text GLabel 7250 1150 2    60   Input ~ 0
 H-0V
 Wire Wire Line
-	3700 1200 3950 1200
+	7000 1150 7250 1150
 Wire Wire Line
-	3700 1300 3950 1300
+	7000 1250 7250 1250
 Text GLabel 2600 4050 3    60   Input ~ 0
 -VE
 Wire Wire Line
@@ -421,9 +451,11 @@ Wire Wire Line
 Wire Wire Line
 	4450 2600 4600 2600
 Wire Wire Line
-	4450 2250 4450 2600
+	4450 2300 4450 2450
 Wire Wire Line
-	4450 1750 4450 1950
+	4450 2450 4450 2600
+Wire Wire Line
+	4450 1750 4450 2000
 Connection ~ 4450 1750
 Connection ~ 4450 2450
 Wire Wire Line
@@ -488,18 +520,21 @@ Text GLabel 850  950  1    60   Input ~ 0
 Wire Wire Line
 	850  950  850  1100
 Wire Wire Line
-	850  1100 1450 1100
+	850  1100 1150 1100
 Wire Wire Line
-	850  1400 1450 1400
+	1150 1100 1450 1100
+Wire Wire Line
+	850  1400 1150 1400
+Wire Wire Line
+	1150 1400 1450 1400
 Connection ~ 1150 1100
 Connection ~ 1150 1400
 Text GLabel 850  1600 3    60   Input ~ 0
 0V
 Wire Wire Line
 	850  1400 850  1600
-Text GLabel 5200 1550 1    60   Input ~ 0
+Text GLabel 4150 1550 1    60   Input ~ 0
 REF
 Wire Wire Line
-	5200 1550 5200 2450
-Connection ~ 5200 2450
+	4150 1550 4150 2450
 $EndSCHEMATC

@@ -79,7 +79,7 @@ F 3 "" H 6300 2100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 1750 9100 1750
+	3850 1750 8750 1750
 Wire Wire Line
 	6300 1750 6300 1950
 Wire Wire Line
@@ -293,7 +293,7 @@ F 3 "" H 2450 1250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1850 950  1    60   Input ~ 0
-+VE
+-VE
 Wire Wire Line
 	1850 950  1850 1100
 Wire Wire Line
@@ -325,8 +325,6 @@ Text GLabel 3950 1000 2    60   Input ~ 0
 0V
 Wire Wire Line
 	3700 1000 3950 1000
-Text GLabel 9100 1750 2    60   Input ~ 0
-REF
 Text GLabel 3950 1300 2    60   Input ~ 0
 REF
 Text GLabel 3950 1400 2    60   Input ~ 0
@@ -408,7 +406,7 @@ U 1 1 5882A469
 P 5200 3150
 F 0 "U503" H 5150 3800 50  0000 L CNN
 F 1 "2DW232" H 5150 3200 50  0000 L CNN
-F 2 "" V 5000 3550 50  0000 C CNN
+F 2 "footprint:TO-5_Housing_2DW232_5Pin" V 5000 3550 50  0001 C CNN
 F 3 "" V 5000 3550 50  0000 C CNN
 	1    5200 3150
 	1    0    0    -1  
@@ -434,7 +432,6 @@ Wire Wire Line
 	5600 2700 5700 2700
 Wire Wire Line
 	5700 2700 5700 4500
-Connection ~ 8750 1750
 Wire Wire Line
 	5600 2900 5850 2900
 $Comp
@@ -453,4 +450,56 @@ Wire Wire Line
 Wire Wire Line
 	6450 3400 6300 3400
 Connection ~ 6300 3400
+$Comp
+L C C506
+U 1 1 5883AA71
+P 850 1250
+F 0 "C506" H 875 1350 50  0000 L CNN
+F 1 "10uF" H 875 1150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 888 1100 50  0001 C CNN
+F 3 "" H 850 1250 50  0000 C CNN
+	1    850  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C507
+U 1 1 5883AA77
+P 1150 1250
+F 0 "C507" H 1175 1350 50  0000 L CNN
+F 1 "0.1uF" H 1175 1150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1188 1100 50  0001 C CNN
+F 3 "" H 1150 1250 50  0000 C CNN
+	1    1150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C508
+U 1 1 5883AA7D
+P 1450 1250
+F 0 "C508" H 1475 1350 50  0000 L CNN
+F 1 "0.1uF" H 1475 1150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1488 1100 50  0001 C CNN
+F 3 "" H 1450 1250 50  0000 C CNN
+	1    1450 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  950  1    60   Input ~ 0
++VE
+Wire Wire Line
+	850  950  850  1100
+Wire Wire Line
+	850  1100 1450 1100
+Wire Wire Line
+	850  1400 1450 1400
+Connection ~ 1150 1100
+Connection ~ 1150 1400
+Text GLabel 850  1600 3    60   Input ~ 0
+0V
+Wire Wire Line
+	850  1400 850  1600
+Text GLabel 5200 1550 1    60   Input ~ 0
+REF
+Wire Wire Line
+	5200 1550 5200 2450
+Connection ~ 5200 2450
 $EndSCHEMATC

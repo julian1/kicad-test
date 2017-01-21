@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -50,5 +50,11 @@ S 5200 2850 1500 800
 U 588183EB
 F0 "2dw232-ref" 60
 F1 "2dw232-ref.sch" 60
+$EndSheet
+$Sheet
+S 1550 2850 1600 750 
+U 58843A43
+F0 "adc" 60
+F1 "adc.sch" 60
 $EndSheet
 $EndSCHEMATC

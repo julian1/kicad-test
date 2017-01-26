@@ -1,4 +1,12 @@
 
+- pull the inverted reference out to pin headers - to be able to use
+- heatsink pad for p:ower mmbt3904
+- mounting holes in corners.
+- fix diodes
+- tidy silk-screen positioning 
+- get rid of 2n3904? no because may use th
+- copyrights
+
 drill hole size...
 
 ----

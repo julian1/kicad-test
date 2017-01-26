@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:main-rescue
 LIBS:my
 LIBS:Carlolib-disc
 LIBS:power
@@ -35,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -56,5 +57,11 @@ S 1550 2850 1600 750
 U 58843A43
 F0 "adc" 60
 F1 "adc.sch" 60
+$EndSheet
+$Sheet
+S 3700 4350 2000 1000
+U 5889A78C
+F0 "clamps" 60
+F1 "clamps.sch" 60
 $EndSheet
 $EndSCHEMATC

@@ -1,4 +1,13 @@
 
+TODO
+  - change 0V to AGND and DGND, REFGND etc. and HEATGND,  etc.
+  - decoupling.
+  - pricing of larger boards...
+
+  - do the 144 pin fpga?
+
+TODO
+
 - pull the inverted reference out to pin headers - to be able to use
 - heatsink pad for p:ower mmbt3904
 - mounting holes in corners.

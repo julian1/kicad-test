@@ -90,7 +90,7 @@ Text GLabel 7300 2200 1    60   Input ~ 0
 Wire Wire Line
 	7300 2200 7300 2250
 Text GLabel 6700 4400 3    60   Input ~ 0
-0V
+AGND
 Wire Wire Line
 	6300 2650 7100 2650
 Connection ~ 6300 2650
@@ -304,7 +304,7 @@ Wire Wire Line
 Connection ~ 2150 1100
 Connection ~ 2150 1400
 Text GLabel 1850 1600 3    60   Input ~ 0
-0V
+AGND
 Wire Wire Line
 	1850 1400 1850 1600
 $Comp
@@ -323,15 +323,15 @@ Text GLabel 7250 850  2    60   Input ~ 0
 Wire Wire Line
 	7000 850  7250 850 
 Text GLabel 7250 950  2    60   Input ~ 0
-0V
+AGND
 Wire Wire Line
 	7000 950  7250 950 
 Text GLabel 7250 1250 2    60   Input ~ 0
 REF
 Text GLabel 7250 1350 2    60   Input ~ 0
-0V
+AGND
 Text GLabel 7250 1450 2    60   Input ~ 0
-0V
+AGND
 Wire Wire Line
 	7000 1350 7250 1350
 Wire Wire Line
@@ -363,13 +363,13 @@ $EndComp
 Wire Wire Line
 	1400 3700 1400 4500
 Text GLabel 5850 2900 2    60   Input ~ 0
-H-0V
+H-GND
 Text GLabel 7250 1050 2    60   Input ~ 0
 -VE
 Wire Wire Line
 	7000 1050 7250 1050
 Text GLabel 7250 1150 2    60   Input ~ 0
-H-0V
+H-GND
 Wire Wire Line
 	7000 1150 7250 1150
 Wire Wire Line
@@ -383,9 +383,9 @@ Text GLabel 7300 3000 3    60   Input ~ 0
 Wire Wire Line
 	7300 2850 7300 3000
 Text GLabel 5800 1050 2    60   Input ~ 0
-H-0V
+H-GND
 Text GLabel 5150 1050 0    60   Input ~ 0
-0V
+AGND
 $Comp
 L R R510
 U 1 1 5883C0FE
@@ -495,7 +495,7 @@ Wire Wire Line
 Connection ~ 1150 1100
 Connection ~ 1150 1400
 Text GLabel 850  1600 3    60   Input ~ 0
-0V
+AGND
 Wire Wire Line
 	850  1400 850  1600
 Text GLabel 4150 1550 1    60   Input ~ 0

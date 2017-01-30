@@ -65,11 +65,11 @@ F 3 "" H 3500 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2450 2900 0    60   Input ~ 0
-0V
+AGND
 Text GLabel 1750 800  2    60   Input ~ 0
 +VE
 Text GLabel 1750 900  2    60   Input ~ 0
-0V
+AGND
 Text GLabel 1750 1000 2    60   Input ~ 0
 -VE
 Text GLabel 1650 2700 0    60   Input ~ 0
@@ -107,7 +107,7 @@ F 3 "" H 4950 2100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 5750 1900 0    60   Input ~ 0
-0V
+AGND
 Text GLabel 2450 3200 0    60   Input ~ 0
 IN_CTL
 Text GLabel 6100 1650 1    60   Input ~ 0
@@ -154,7 +154,7 @@ Text GLabel 3350 4500 3    60   Input ~ 0
 NoConn ~ 3450 4500
 NoConn ~ 3550 4500
 Text GLabel 2900 3900 1    60   Input ~ 0
-0V
+AGND
 Text GLabel 1650 2500 0    60   Input ~ 0
 REF_PLUS_CTL
 Text GLabel 4450 2500 2    60   Input ~ 0
@@ -198,9 +198,9 @@ F 3 "" H 1300 1500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 1750 1100 2    60   Input ~ 0
-0V
+AGND
 Text GLabel 1750 1400 2    60   Input ~ 0
-0V
+AGND
 $Comp
 L LM741 U304
 U 1 1 585C05C6
@@ -213,7 +213,7 @@ F 3 "" H 8000 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7350 4250 3    60   Input ~ 0
-0V
+AGND
 Text GLabel 7750 1750 1    60   Input ~ 0
 +VE
 Text GLabel 7750 2500 3    60   Input ~ 0
@@ -274,9 +274,9 @@ F 3 "" H 9200 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1750 2100 2    60   Input ~ 0
-0V
+AGND
 Text GLabel 1750 2200 2    60   Input ~ 0
-0V
+AGND
 $Comp
 L TEST_1P W301
 U 1 1 5860E975
@@ -289,13 +289,13 @@ F 3 "" H 6950 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8700 2300 0    60   Input ~ 0
-0V
+AGND
 Text GLabel 9100 1700 1    60   Input ~ 0
 +VE
 Text GLabel 9100 2750 3    60   Input ~ 0
 -VE
 Text GLabel 9200 2750 3    60   Input ~ 0
-0V
+AGND
 Text GLabel 9900 2200 2    60   Input ~ 0
 TRIGGER
 Text GLabel 1750 2000 2    60   Input ~ 0
@@ -497,7 +497,7 @@ Wire Wire Line
 	4900 4550 6600 4550
 Connection ~ 5100 4550
 Text GLabel 5100 4850 3    60   Input ~ 0
-0V
+AGND
 $Comp
 L C C303
 U 1 1 5861682C
@@ -511,10 +511,10 @@ F 3 "" H 5350 4700 50  0000 C CNN
 $EndComp
 Connection ~ 5350 4550
 Text GLabel 5350 4850 3    60   Input ~ 0
-0V
+AGND
 Connection ~ 5600 4550
 Text GLabel 5600 4850 3    60   Input ~ 0
-0V
+AGND
 $Comp
 L C C302
 U 1 1 58616837
@@ -543,7 +543,7 @@ Wire Wire Line
 	4900 5550 6600 5550
 Connection ~ 5100 5550
 Text GLabel 5100 5850 3    60   Input ~ 0
-0V
+AGND
 $Comp
 L C C304
 U 1 1 58616849
@@ -557,10 +557,10 @@ F 3 "" H 5350 5700 50  0000 C CNN
 $EndComp
 Connection ~ 5350 5550
 Text GLabel 5350 5850 3    60   Input ~ 0
-0V
+AGND
 Connection ~ 5600 5550
 Text GLabel 5600 5850 3    60   Input ~ 0
-0V
+AGND
 Text GLabel 4900 5450 1    60   Input ~ 0
 -VE
 $Comp
@@ -587,7 +587,7 @@ F 3 "" H 6350 4700 50  0000 C CNN
 $EndComp
 Connection ~ 5850 4550
 Text GLabel 5850 4850 3    60   Input ~ 0
-0V
+AGND
 $Comp
 L C C309
 U 1 1 58616865
@@ -601,10 +601,10 @@ F 3 "" H 6100 4700 50  0000 C CNN
 $EndComp
 Connection ~ 6100 4550
 Text GLabel 6100 4850 3    60   Input ~ 0
-0V
+AGND
 Connection ~ 6350 4550
 Text GLabel 6350 4850 3    60   Input ~ 0
-0V
+AGND
 $Comp
 L C C308
 U 1 1 58616870
@@ -629,7 +629,7 @@ F 3 "" H 6350 5700 50  0000 C CNN
 $EndComp
 Connection ~ 5850 5550
 Text GLabel 5850 5850 3    60   Input ~ 0
-0V
+AGND
 $Comp
 L C C310
 U 1 1 58616880
@@ -643,10 +643,10 @@ F 3 "" H 6100 5700 50  0000 C CNN
 $EndComp
 Connection ~ 6100 5550
 Text GLabel 6100 5850 3    60   Input ~ 0
-0V
+AGND
 Connection ~ 6350 5550
 Text GLabel 6350 5850 3    60   Input ~ 0
-0V
+AGND
 $Comp
 L R R306
 U 1 1 58620487

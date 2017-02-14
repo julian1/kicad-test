@@ -4,3 +4,6 @@
 ln -sf $(pwd)/sheets/adc.sch  ./projects/smu/
 
 
+# to open a project
+kicad projects/dw232/main.pro
+

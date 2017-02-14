@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/meteo/kicad-dw232/projects/dw232/main.sch)
-    (date "Wed 15 Feb 2017 09:59:28 AEDT")
+    (date "Wed 15 Feb 2017 10:01:56 AEDT")
     (tool "Eeschema 4.0.4+dfsg1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

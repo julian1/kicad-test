@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -308,35 +308,6 @@ AGND
 Wire Wire Line
 	1850 1400 1850 1600
 $Comp
-L CONN_01X07 P501
-U 1 1 5883052B
-P 6800 1150
-F 0 "P501" H 6800 1550 50  0000 C CNN
-F 1 "CONN_01X07" V 6900 1150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 6800 1150 50  0001 C CNN
-F 3 "" H 6800 1150 50  0000 C CNN
-	1    6800 1150
-	-1   0    0    -1  
-$EndComp
-Text GLabel 7250 850  2    60   Input ~ 0
-+VE
-Wire Wire Line
-	7000 850  7250 850 
-Text GLabel 7250 950  2    60   Input ~ 0
-AGND
-Wire Wire Line
-	7000 950  7250 950 
-Text GLabel 7250 1250 2    60   Input ~ 0
-REF
-Text GLabel 7250 1350 2    60   Input ~ 0
-AGND
-Text GLabel 7250 1450 2    60   Input ~ 0
-AGND
-Wire Wire Line
-	7000 1350 7250 1350
-Wire Wire Line
-	7000 1450 7250 1450
-$Comp
 L MMBT3904 Q502
 U 1 1 58835E41
 P 8150 2550
@@ -364,16 +335,6 @@ Wire Wire Line
 	1400 3700 1400 4500
 Text GLabel 5850 2900 2    60   Input ~ 0
 H-GND
-Text GLabel 7250 1050 2    60   Input ~ 0
--VE
-Wire Wire Line
-	7000 1050 7250 1050
-Text GLabel 7250 1150 2    60   Input ~ 0
-H-GND
-Wire Wire Line
-	7000 1150 7250 1150
-Wire Wire Line
-	7000 1250 7250 1250
 Text GLabel 2600 4050 3    60   Input ~ 0
 -VE
 Wire Wire Line
@@ -382,25 +343,6 @@ Text GLabel 7300 3000 3    60   Input ~ 0
 -VE
 Wire Wire Line
 	7300 2850 7300 3000
-Text GLabel 5800 1050 2    60   Input ~ 0
-H-GND
-Text GLabel 5150 1050 0    60   Input ~ 0
-AGND
-$Comp
-L R R510
-U 1 1 5883C0FE
-P 5500 1050
-F 0 "R510" V 5580 1050 50  0000 C CNN
-F 1 "R" V 5500 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 5430 1050 50  0001 C CNN
-F 3 "" H 5500 1050 50  0000 C CNN
-	1    5500 1050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5150 1050 5350 1050
-Wire Wire Line
-	5650 1050 5800 1050
 $Comp
 L 2DW232 U503
 U 1 1 5882A469

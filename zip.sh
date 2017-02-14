@@ -1,9 +1,11 @@
 #!/bin/bash -x
 
-zip -r gerber.zip gerber
+rm -f gerber/gerber.zip
 
-rm -rf tmp/* 
-cp gerber.zip tmp
-pushd tmp
-unzip gerber.zip
-popd
+FILE="$(mktemp).zip"
+
+zip -r "$FILE" gerber
+
+mv "$FILE" gerber/gerber.zip
+
+

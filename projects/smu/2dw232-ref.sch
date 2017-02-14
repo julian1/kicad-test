@@ -1,0 +1,1 @@
+/home/meteo/kicad-dw232/sheets/2dw232-ref.sch

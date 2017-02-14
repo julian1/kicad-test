@@ -1,5 +1,14 @@
 
 TODO
+  - definitely add teh comparison op-amp after the clamps - because
+    it needs the precision gnd value.
+   - it might also make sensei to use the dac for filter and slew control
+   - and multiplx the fb into the adc
+   - 
+
+  - add divider to knock down the DAC range to 5V - to give us 10V range. 
+
+TODO
   - change 0V to AGND and DGND, REFGND etc. and HEATGND,  etc.
   - decoupling.
   - pricing of larger boards...

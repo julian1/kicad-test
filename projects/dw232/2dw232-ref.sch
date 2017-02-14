@@ -60,31 +60,31 @@ $EndComp
 $Comp
 L R R508
 U 1 1 5881849D
-P 6300 3750
-F 0 "R508" V 6380 3750 50  0000 C CNN
-F 1 "10k" V 6300 3750 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 3750 50  0001 C CNN
-F 3 "" H 6300 3750 50  0000 C CNN
-	1    6300 3750
+P 6300 3300
+F 0 "R508" V 6380 3300 50  0000 C CNN
+F 1 "10k" V 6300 3300 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 3300 50  0001 C CNN
+F 3 "" H 6300 3300 50  0000 C CNN
+	1    6300 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R507
 U 1 1 588184DE
-P 6300 2150
-F 0 "R507" V 6380 2150 50  0000 C CNN
-F 1 "5.1k" V 6300 2150 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 2150 50  0001 C CNN
-F 3 "" H 6300 2150 50  0000 C CNN
-	1    6300 2150
+P 6300 1900
+F 0 "R507" V 6380 1900 50  0000 C CNN
+F 1 "5.1k" V 6300 1900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 1900 50  0001 C CNN
+F 3 "" H 6300 1900 50  0000 C CNN
+	1    6300 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 1750 8750 1750
+	3850 1650 8750 1650
 Wire Wire Line
-	6300 1750 6300 2000
+	6300 1650 6300 1750
 Wire Wire Line
-	6300 2300 6300 3050
+	6300 2400 6300 2750
 Text GLabel 7300 2200 1    60   Input ~ 0
 +VE
 Wire Wire Line
@@ -104,13 +104,13 @@ L R R506
 U 1 1 5881872C
 P 4450 2150
 F 0 "R506" V 4530 2150 50  0000 C CNN
-F 1 "120" V 4450 2150 50  0000 C CNN
+F 1 "100" V 4450 2150 50  0000 C CNN
 F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 4380 2150 50  0001 C CNN
 F 3 "" H 4450 2150 50  0000 C CNN
 	1    4450 2150
 	1    0    0    -1  
 $EndComp
-Connection ~ 6300 1750
+Connection ~ 6300 1650
 Text GLabel 8250 2200 1    60   Input ~ 0
 +VE
 $Comp
@@ -130,47 +130,30 @@ Connection ~ 6700 2650
 $Comp
 L R R504
 U 1 1 58819A67
-P 3850 2550
-F 0 "R504" V 3930 2550 50  0000 C CNN
-F 1 "1k" V 3850 2550 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 2550 50  0001 C CNN
-F 3 "" H 3850 2550 50  0000 C CNN
-	1    3850 2550
+P 3850 2750
+F 0 "R504" V 3930 2750 50  0000 C CNN
+F 1 "1k" V 3850 2750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 2750 50  0001 C CNN
+F 3 "" H 3850 2750 50  0000 C CNN
+	1    3850 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 1750 3850 2400
-$Comp
-L POT RV501
-U 1 1 58819ACE
-P 3850 3200
-F 0 "RV501" H 3850 3120 50  0000 C CNN
-F 1 "1k" H 3850 3200 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 3850 3200 50  0001 C CNN
-F 3 "" H 3850 3200 50  0000 C CNN
-	1    3850 3200
-	0    1    1    0   
-$EndComp
+	3850 1650 3850 2600
 $Comp
 L R R505
 U 1 1 58819B03
-P 3850 3750
-F 0 "R505" V 3930 3750 50  0000 C CNN
-F 1 "10k" V 3850 3750 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 3750 50  0001 C CNN
-F 3 "" H 3850 3750 50  0000 C CNN
-	1    3850 3750
+P 3850 3950
+F 0 "R505" V 3930 3950 50  0000 C CNN
+F 1 "10k" V 3850 3950 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 3950 50  0001 C CNN
+F 3 "" H 3850 3950 50  0000 C CNN
+	1    3850 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 2700 3850 3050
-Wire Wire Line
-	3850 3350 3850 3600
-Wire Wire Line
-	2800 3400 4000 3400
+	3850 2900 3850 3050
 Connection ~ 3850 3400
-Wire Wire Line
-	4000 3400 4000 3200
 $Comp
 L LM741 U501
 U 1 1 5881A522
@@ -223,24 +206,24 @@ F 3 "" H 1900 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 3000 1900 3000
+	1700 3000 2200 3000
 Wire Wire Line
 	1900 3000 1900 3100
 Wire Wire Line
 	1900 3400 1900 3500
 Wire Wire Line
-	1700 3500 2200 3500
+	1650 3500 2200 3500
 Text GLabel 2600 2700 1    60   Input ~ 0
 +VE
 Wire Wire Line
 	2600 2700 2600 3200
 Connection ~ 1900 3500
-Text GLabel 1400 2700 1    60   Input ~ 0
+Text GLabel 1350 2700 1    60   Input ~ 0
 +VE
 Wire Wire Line
-	1400 2700 1400 3300
+	1350 2700 1350 3300
 Wire Wire Line
-	8750 1750 8750 3000
+	8750 1650 8750 3000
 Wire Wire Line
 	8750 3000 8250 3000
 Wire Wire Line
@@ -252,14 +235,14 @@ NoConn ~ 7500 2850
 NoConn ~ 2400 3800
 NoConn ~ 2500 3800
 Wire Wire Line
-	6300 3900 6300 4150
+	6300 3450 6300 4150
 Wire Wire Line
-	3850 3900 3850 4150
+	3850 4100 3850 4150
 Wire Wire Line
 	6700 3550 6700 4400
 Connection ~ 6700 4150
 Wire Wire Line
-	6300 3350 6300 3600
+	6300 3050 6300 3150
 $Comp
 L C C503
 U 1 1 5882E339
@@ -323,17 +306,17 @@ Wire Wire Line
 $Comp
 L MMBT3904 Q501
 U 1 1 58836CA2
-P 1500 3500
-F 0 "Q501" H 1700 3575 50  0000 L CNN
-F 1 "MMBT3904" H 1700 3500 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 1700 3425 50  0000 L CIN
-F 3 "" H 1500 3500 50  0000 L CNN
-	1    1500 3500
+P 1450 3500
+F 0 "Q501" H 1650 3575 50  0000 L CNN
+F 1 "MMBT3904" H 1650 3500 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1650 3425 50  0000 L CIN
+F 3 "" H 1450 3500 50  0000 L CNN
+	1    1450 3500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 3700 1400 4500
-Text GLabel 5850 2900 2    60   Input ~ 0
+	1350 3700 1350 4500
+Text GLabel 5800 2900 2    60   Input ~ 0
 H-GND
 Text GLabel 2600 4050 3    60   Input ~ 0
 -VE
@@ -366,33 +349,17 @@ Wire Wire Line
 Wire Wire Line
 	4450 2300 4450 2600
 Wire Wire Line
-	4450 1750 4450 2000
-Connection ~ 4450 1750
+	4450 1650 4450 2000
+Connection ~ 4450 1650
 Connection ~ 4450 2450
 Wire Wire Line
-	1400 4500 5700 4500
+	1350 4500 5700 4500
 Wire Wire Line
 	5600 2700 5700 2700
 Wire Wire Line
 	5700 2700 5700 4500
 Wire Wire Line
-	5600 2900 5850 2900
-$Comp
-L POT RV502
-U 1 1 588334E0
-P 6300 3200
-F 0 "RV502" H 6300 3120 50  0000 C CNN
-F 1 "1k" H 6300 3200 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 6300 3200 50  0001 C CNN
-F 3 "" H 6300 3200 50  0000 C CNN
-	1    6300 3200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6450 3200 6450 3400
-Wire Wire Line
-	6450 3400 6300 3400
-Connection ~ 6300 3400
+	5600 2900 5800 2900
 $Comp
 L C C506
 U 1 1 5883AA71
@@ -444,4 +411,73 @@ Text GLabel 4150 1550 1    60   Input ~ 0
 REF
 Wire Wire Line
 	4150 1550 4150 2450
+$Comp
+L R R?
+U 1 1 58A3A42F
+P 3850 3600
+F 0 "R?" V 3930 3600 50  0000 C CNN
+F 1 "0" V 3850 3600 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 3600 50  0001 C CNN
+F 3 "" H 3850 3600 50  0000 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3750 3850 3800
+Wire Wire Line
+	3850 3350 3850 3450
+Wire Wire Line
+	3850 3400 2800 3400
+$Comp
+L R R?
+U 1 1 58A3A676
+P 3850 3200
+F 0 "R?" V 3930 3200 50  0000 C CNN
+F 1 "0" V 3850 3200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 3780 3200 50  0001 C CNN
+F 3 "" H 3850 3200 50  0000 C CNN
+	1    3850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58A3AFA3
+P 6300 2900
+F 0 "R?" V 6380 2900 50  0000 C CNN
+F 1 "0" V 6300 2900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0000 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58A3B1B3
+P 6300 2250
+F 0 "R?" V 6380 2250 50  0000 C CNN
+F 1 "0" V 6300 2250 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 6230 2250 50  0001 C CNN
+F 3 "" H 6300 2250 50  0000 C CNN
+	1    6300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2050 6300 2100
+$Comp
+L C C?
+U 1 1 58A3D583
+P 1700 3250
+F 0 "C?" H 1725 3350 50  0000 L CNN
+F 1 "10uF" H 1725 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1738 3100 50  0001 C CNN
+F 3 "" H 1700 3250 50  0000 C CNN
+	1    1700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3000 1700 3100
+Connection ~ 1900 3000
+Wire Wire Line
+	1700 3400 1700 3500
+Connection ~ 1700 3500
 $EndSCHEMATC

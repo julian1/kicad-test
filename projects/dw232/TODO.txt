@@ -5,5 +5,5 @@ without keepout layer
 maybe because there were no zones.
 
 - markings for pin headers.
-- tidy position 
+- done - tidy position 
 

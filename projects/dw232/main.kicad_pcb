@@ -3,9 +3,9 @@
   (general
     (links 52)
     (no_connects 0)
-    (area 40 29 139.000001 54.000001)
+    (area 39.949999 28.949999 139.050001 54.050001)
     (thickness 1.6)
-    (drawings 8)
+    (drawings 12)
     (tracks 164)
     (zones 0)
     (modules 27)
@@ -20,14 +20,14 @@
     (31 B.Cu signal hide)
     (33 F.Adhes user hide)
     (36 B.SilkS user hide)
-    (37 F.SilkS user)
-    (38 B.Mask user hide)
-    (39 F.Mask user hide)
+    (37 F.SilkS user hide)
+    (38 B.Mask user)
+    (39 F.Mask user)
     (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
     (42 Eco1.User user hide)
     (43 Eco2.User user hide)
-    (44 Edge.Cuts user hide)
+    (44 Edge.Cuts user)
     (45 Margin user hide)
     (47 F.CrtYd user hide)
     (49 F.Fab user hide)
@@ -62,11 +62,11 @@
     (grid_origin 28 21)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x012a0_80000007)
+      (layerselection 0x010f0_80000007)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
-      (plotframeref false)
+      (plotframeref true)
       (viasonmask false)
       (mode 1)
       (useauxorigin false)
@@ -976,7 +976,11 @@
       (net 11 "Net-(R508-Pad1)"))
   )
 
-  (gr_text "Ver. 0.1 (C) JA, 2017\nGNU" (at 109 51) (layer F.SilkS)
+  (gr_line (start 40 54) (end 40 29) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 139 54) (end 40 54) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 139 29) (end 139 54) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 40 29) (end 139 29) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_text "Ver. 0.1 (C) JA, 2017\nGNU GPL" (at 109 51) (layer F.SilkS)
     (effects (font (size 1.5 1) (thickness 0.25)))
   )
   (gr_text "AGND\n" (at 44.8 49.2) (layer F.SilkS)
@@ -1166,21 +1170,6 @@
   (segment (start 63.2433 46) (end 60.27 48.9733) (width 0.75) (layer B.Cu) (net 18))
   (segment (start 79.46 46) (end 63.2433 46) (width 0.75) (layer B.Cu) (net 18) (status 10))
 
-  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 58A3B142) (hatch edge 0.508)
-    (connect_pads (clearance 0.508))
-    (min_thickness 0.254)
-    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
-    (polygon
-      (pts
-        (xy 139 54) (xy 40 54) (xy 40 29) (xy 139 29)
-      )
-    )
-    (filled_polygon
-      (pts
-        (xy 138.873 53.873) (xy 40.127 53.873) (xy 40.127 29.127) (xy 138.873 29.127)
-      )
-    )
-  )
   (zone (net 15) (net_name AGND) (layer In1.Cu) (tstamp 58A3B64D) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
@@ -1685,21 +1674,6 @@
     (filled_polygon
       (pts
         (xy 66.696344 49.2753) (xy 61.396356 49.2753) (xy 63.661656 47.01) (xy 68.961644 47.01)
-      )
-    )
-  )
-  (zone (net 0) (net_name "") (layer B.Mask) (tstamp 58A3B777) (hatch edge 0.508)
-    (connect_pads (clearance 0.508))
-    (min_thickness 0.254)
-    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
-    (polygon
-      (pts
-        (xy 139 54) (xy 40 54) (xy 40 29) (xy 139 29)
-      )
-    )
-    (filled_polygon
-      (pts
-        (xy 138.873 53.873) (xy 40.127 53.873) (xy 40.127 29.127) (xy 138.873 29.127)
       )
     )
   )

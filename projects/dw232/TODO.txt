@@ -1,4 +1,6 @@
 
+now 99x25
+
 without top，bottom solder mask ， - think should be OK. ver
 without keepout layer 
 

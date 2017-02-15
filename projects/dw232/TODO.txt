@@ -1,8 +1,10 @@
 
 now 99x25
 
-without top，bottom solder mask ， - think should be OK. ver
+without top，bottom solder mask 
 without keepout layer 
+
+， - think should be OK. ver
 
 maybe because there were no zones.
 

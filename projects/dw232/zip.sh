@@ -2,6 +2,7 @@
 
 rm -f gerber.zip
 
+date > gerber/date.txt
 
 zip -r gerber.zip gerber
 

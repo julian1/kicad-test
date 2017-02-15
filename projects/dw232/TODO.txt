@@ -8,6 +8,9 @@ without keepout layer
 
 maybe because there were no zones.
 
-- markings for pin headers.
+- done - markings for pin headers.
 - done - tidy position 
+- done - copyright
 
+- there's a problem that the solder mask has no 
+  holes.

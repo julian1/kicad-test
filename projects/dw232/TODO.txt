@@ -1,4 +1,19 @@
 
+- pull out the temperature value eg. 5.6 as a pin - can't believe didn't do this
+
+- more space between traces 0.25 to 0.5.
+- guard traces around op-amp inputs
+- edge mounting holes - based on vias
+- center the resistors vertically on board outline 
+- more space for the text - eg. HGND is not readable 
+- cooling pad for both the transistor collectors
+
+- a 0R resistor to connect AGND and -VE
+  - or an extra pin header - to connect them with a jumper
+
+----
+
+--
 now 99x25
 
 without top，bottom solder mask 
@@ -13,4 +28,41 @@ maybe because there were no zones.
 - done - copyright
 
 - there's a problem that the solder mask has no 
-  holes.
+  h
+
+
+VERY IMPORANT
+  - if need two layers for traces.
+  - then perhaps better to have traces wrapping gnd.
+  - layers .
+    - trace
+    - gnd
+    - trace and -ve
+    - +ve
+  
+    - this gets the traces on each side of the gnd plane, .
+      - although it's harder to understand if they're 
+      not visiablbe
+
+Yes. I think it's correct. The usual advice is that signals
+should be sandwitched. routing them on the bottom plane, means it's referenced to +ve.
+
+But,
+ A signal running over a reference plane, whose voltage happens
+to be at VCC will still return over that reference plane. So the
+argument that somehow having your signal run over GND and not
+VCC is better is basically invalid.
+
+------
+I'm designing a 4 layer PCB and I know that the standard stack-up is
+    Signals
+    GND
+    VCC
+    Singals
+
+This implies that signals route with regard to VCC - and thats ok.
+
+Thinner board - maybe better.
+
+------
+oles.

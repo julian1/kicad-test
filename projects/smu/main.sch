@@ -47,12 +47,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 5200 2850 1500 800 
-U 588183EB
-F0 "2dw232-ref" 60
-F1 "2dw232-ref.sch" 60
-$EndSheet
-$Sheet
 S 1550 2850 1600 750 
 U 58843A43
 F0 "adc" 60

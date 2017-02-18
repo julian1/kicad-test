@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 4
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -208,7 +208,7 @@ Connection ~ 10600 3000
 Wire Wire Line
 	2650 6850 2650 6950
 Wire Wire Line
-	2650 6950 4350 6950
+	2650 6950 3600 6950
 Connection ~ 2850 6950
 Text GLabel 2850 7250 3    60   Input ~ 0
 AGND
@@ -254,7 +254,7 @@ $EndComp
 Wire Wire Line
 	2650 7850 2650 7950
 Wire Wire Line
-	2650 7950 4350 7950
+	2650 7950 3600 7950
 Connection ~ 2850 7950
 Text GLabel 2850 8250 3    60   Input ~ 0
 AGND
@@ -297,8 +297,6 @@ OUT
 Text GLabel 5350 6800 0    60   Input ~ 0
 OUT
 NoConn ~ 5650 7400
-NoConn ~ 5650 7550
-NoConn ~ 5650 7500
 NoConn ~ 11550 4700
 NoConn ~ 11650 4700
 $Comp
@@ -464,30 +462,14 @@ Text GLabel 7900 4300 0    60   Input ~ 0
 V-FB
 Text GLabel 5350 7300 0    60   Input ~ 0
 V-FB
-$Comp
-L CONN_01X12 P401
-U 1 1 58623218
-P 5850 7050
-F 0 "P401" H 5850 7700 50  0000 C CNN
-F 1 "CONN_01X12" V 5950 7050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x12" H 5850 7050 50  0001 C CNN
-F 3 "" H 5850 7050 50  0000 C CNN
-	1    5850 7050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12700 5700 12300 5700
 Connection ~ 3600 6950
-Connection ~ 3850 6950
-Connection ~ 4100 6950
 Connection ~ 3600 7950
-Connection ~ 3850 7950
-Connection ~ 4100 7950
 Wire Wire Line
 	5350 6900 5650 6900
 Wire Wire Line
 	5650 7300 5350 7300
-NoConn ~ 5650 7600
 Wire Wire Line
 	10600 1500 10400 1500
 Wire Wire Line
@@ -774,38 +756,38 @@ $EndComp
 $Comp
 L LM324 U402
 U 2 1 58A7EF6E
-P 9200 7250
-F 0 "U402" H 9200 7450 50  0000 L CNN
-F 1 "LM324" H 9200 7050 50  0000 L CNN
-F 2 "" H 9150 7350 50  0000 C CNN
-F 3 "" H 9250 7450 50  0000 C CNN
-	2    9200 7250
+P 10050 7250
+F 0 "U402" H 10050 7450 50  0000 L CNN
+F 1 "LM324" H 10050 7050 50  0000 L CNN
+F 2 "" H 10000 7350 50  0000 C CNN
+F 3 "" H 10100 7450 50  0000 C CNN
+	2    10050 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L LM324 U402
 U 1 1 58A7EFD7
-P 8250 7250
-F 0 "U402" H 8250 7450 50  0000 L CNN
-F 1 "LM324" H 8250 7050 50  0000 L CNN
-F 2 "" H 8200 7350 50  0000 C CNN
-F 3 "" H 8300 7450 50  0000 C CNN
-	1    8250 7250
+P 9100 7250
+F 0 "U402" H 9100 7450 50  0000 L CNN
+F 1 "LM324" H 9100 7050 50  0000 L CNN
+F 2 "" H 9050 7350 50  0000 C CNN
+F 3 "" H 9150 7450 50  0000 C CNN
+	1    9100 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 7150 7950 7800
+	8800 7150 8800 7800
 Wire Wire Line
-	8900 7800 8900 7150
-Text GLabel 7800 7800 0    60   Input ~ 0
+	9750 7800 9750 7150
+Text GLabel 8650 7800 0    60   Input ~ 0
 AGND
-Connection ~ 8900 7350
-Connection ~ 7950 7350
-Connection ~ 7950 7800
+Connection ~ 9750 7350
+Connection ~ 8800 7350
+Connection ~ 8800 7800
 Wire Wire Line
-	7800 7800 8900 7800
-NoConn ~ 9500 7250
-NoConn ~ 8550 7250
+	8650 7800 9750 7800
+NoConn ~ 10350 7250
+NoConn ~ 9400 7250
 $Comp
 L LM324 U404
 U 4 1 58A8F05C
@@ -856,40 +838,122 @@ Text GLabel 11450 2100 3    60   Input ~ 0
 -VE
 Text GLabel 9150 2700 1    60   Input ~ 0
 +VE
-Text GLabel 13750 1550 3    60   Input ~ 0
+Text GLabel 5250 5650 3    60   Input ~ 0
 +VE
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 58AA88D7
-P 13750 1350
-F 0 "#FLG01" H 13750 1445 50  0001 C CNN
-F 1 "PWR_FLAG" H 13750 1530 50  0000 C CNN
-F 2 "" H 13750 1350 50  0000 C CNN
-F 3 "" H 13750 1350 50  0000 C CNN
-	1    13750 1350
+P 5250 5450
+F 0 "#FLG01" H 5250 5545 50  0001 C CNN
+F 1 "PWR_FLAG" H 5250 5630 50  0000 C CNN
+F 2 "" H 5250 5450 50  0000 C CNN
+F 3 "" H 5250 5450 50  0000 C CNN
+	1    5250 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13750 1350 13750 1550
+	5250 5450 5250 5650
 $Comp
 L PWR_FLAG #FLG02
 U 1 1 58AAC503
-P 14350 1350
-F 0 "#FLG02" H 14350 1445 50  0001 C CNN
-F 1 "PWR_FLAG" H 14350 1530 50  0000 C CNN
-F 2 "" H 14350 1350 50  0000 C CNN
-F 3 "" H 14350 1350 50  0000 C CNN
-	1    14350 1350
+P 5850 5450
+F 0 "#FLG02" H 5850 5545 50  0001 C CNN
+F 1 "PWR_FLAG" H 5850 5630 50  0000 C CNN
+F 2 "" H 5850 5450 50  0000 C CNN
+F 3 "" H 5850 5450 50  0000 C CNN
+	1    5850 5450
 	1    0    0    -1  
 $EndComp
-Text GLabel 14350 1550 3    60   Input ~ 0
+Text GLabel 5850 5650 3    60   Input ~ 0
 -VE
 Wire Wire Line
-	14350 1350 14350 1550
-Text GLabel 5800 5500 0    60   Input ~ 0
+	5850 5450 5850 5650
+Text GLabel 5350 8400 0    60   Input ~ 0
 V-OUT-3
-Text GLabel 5800 5750 0    60   Input ~ 0
+Text GLabel 5350 8500 0    60   Input ~ 0
 V-OUT-4
-NoConn ~ 5800 5500
-NoConn ~ 5800 5750
+Text GLabel 5350 7500 0    60   Input ~ 0
+DAC_CS
+Text GLabel 5350 7600 0    60   Input ~ 0
+DAC_SLCK
+Text GLabel 5350 7700 0    60   Input ~ 0
+DAC_SDI
+Text GLabel 5350 7800 0    60   Input ~ 0
+DAC_SDO
+Text GLabel 5350 7900 0    60   Input ~ 0
+DAC_LDAC
+Text GLabel 5350 8000 0    60   Input ~ 0
+DAC_RST
+$Comp
+L CONN_01X24 P401
+U 1 1 58ACF484
+P 5850 7650
+F 0 "P401" H 5850 8900 50  0000 C CNN
+F 1 "CONN_01X24" V 5950 7650 50  0000 C CNN
+F 2 "" H 5850 7650 50  0000 C CNN
+F 3 "" H 5850 7650 50  0000 C CNN
+	1    5850 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7500 5650 7500
+Wire Wire Line
+	5350 7600 5650 7600
+Wire Wire Line
+	5350 7700 5650 7700
+Wire Wire Line
+	5350 7800 5650 7800
+Wire Wire Line
+	5350 7900 5650 7900
+Wire Wire Line
+	5350 8000 5650 8000
+Text GLabel 2550 2100 0    60   Input ~ 0
+DAC_CS
+Text GLabel 2550 2200 0    60   Input ~ 0
+DAC_SLCK
+Text GLabel 2550 2300 0    60   Input ~ 0
+DAC_SDI
+Text GLabel 2550 2400 0    60   Input ~ 0
+DAC_SDO
+Text GLabel 2550 2500 0    60   Input ~ 0
+DAC_LDAC
+Text GLabel 2550 2600 0    60   Input ~ 0
+DAC_RST
+Wire Wire Line
+	2550 2100 3250 2100
+Wire Wire Line
+	2550 2200 3250 2200
+Wire Wire Line
+	2550 2300 3250 2300
+Wire Wire Line
+	2550 2400 3250 2400
+Wire Wire Line
+	2550 2500 3250 2500
+Wire Wire Line
+	2550 2600 3250 2600
+Text GLabel 3850 5550 0    60   Input ~ 0
+AGND
+Text GLabel 3850 5650 0    60   Input ~ 0
+DGND
+Text GLabel 3850 5750 0    60   Input ~ 0
+REFGND
+Wire Wire Line
+	3850 5550 3850 5750
+Wire Wire Line
+	5350 8200 5650 8200
+Wire Wire Line
+	5350 8300 5650 8300
+Text GLabel 5350 8200 0    60   Input ~ 0
+V-SET
+Text GLabel 5350 8300 0    60   Input ~ 0
+I-SET
+Wire Wire Line
+	5350 8400 5650 8400
+Wire Wire Line
+	5350 8500 5650 8500
+NoConn ~ 5650 7100
+NoConn ~ 5650 8100
+NoConn ~ 5650 8600
+NoConn ~ 5650 8700
+NoConn ~ 5650 8800
 $EndSCHEMATC

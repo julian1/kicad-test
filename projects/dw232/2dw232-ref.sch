@@ -80,17 +80,11 @@ F 3 "" H 6300 1900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 1650 4450 1650
-Wire Wire Line
-	4450 1650 6300 1650
-Wire Wire Line
-	6300 1650 8750 1650
+	3850 1650 8750 1650
 Wire Wire Line
 	6300 1650 6300 1750
 Wire Wire Line
-	6300 2400 6300 2650
-Wire Wire Line
-	6300 2650 6300 2800
+	6300 2400 6300 2800
 Text GLabel 7300 2200 1    60   Input ~ 0
 +VE
 Wire Wire Line
@@ -98,30 +92,22 @@ Wire Wire Line
 Text GLabel 6700 4400 3    60   Input ~ 0
 AGND
 Wire Wire Line
-	6300 2650 6700 2650
-Wire Wire Line
-	6700 2650 7100 2650
+	6300 2650 7100 2650
 Connection ~ 6300 2650
 Wire Wire Line
-	4150 2450 4450 2450
+	4150 2450 7100 2450
 Wire Wire Line
-	4450 2450 7100 2450
-Wire Wire Line
-	3850 4150 4450 4150
-Wire Wire Line
-	4450 4150 6300 4150
-Wire Wire Line
-	6300 4150 6700 4150
+	3850 4150 6700 4150
 Connection ~ 6300 4150
 $Comp
 L R R506
 U 1 1 5881872C
-P 4450 2150
-F 0 "R506" V 4530 2150 50  0000 C CNN
-F 1 "100" V 4450 2150 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 4380 2150 50  0001 C CNN
-F 3 "" H 4450 2150 50  0000 C CNN
-	1    4450 2150
+P 4450 2050
+F 0 "R506" V 4530 2050 50  0000 C CNN
+F 1 "100" V 4450 2050 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_TO-220_Vertical" V 4380 2050 50  0001 C CNN
+F 3 "" H 4450 2050 50  0000 C CNN
+	1    4450 2050
 	1    0    0    -1  
 $EndComp
 Connection ~ 6300 1650
@@ -191,9 +177,7 @@ F 3 "" H 3300 3000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2500 3000 3000 3000
-Wire Wire Line
-	3000 3000 3150 3000
+	2500 3000 3150 3000
 Wire Wire Line
 	3000 3000 3000 3600
 Wire Wire Line
@@ -222,19 +206,13 @@ F 3 "" H 1950 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 3000 1950 3000
-Wire Wire Line
-	1950 3000 2200 3000
+	1700 3000 2200 3000
 Wire Wire Line
 	1950 3000 1950 3100
 Wire Wire Line
-	1950 3400 1950 3500
+	1950 3500 1950 3400
 Wire Wire Line
-	1650 3500 1700 3500
-Wire Wire Line
-	1700 3500 1950 3500
-Wire Wire Line
-	1950 3500 2200 3500
+	1650 3500 2200 3500
 Text GLabel 2600 2700 1    60   Input ~ 0
 +VE
 Wire Wire Line
@@ -261,9 +239,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 4100 3850 4150
 Wire Wire Line
-	6700 3550 6700 4150
-Wire Wire Line
-	6700 4150 6700 4400
+	6700 3550 6700 4400
 Connection ~ 6700 4150
 Wire Wire Line
 	6300 3100 6300 3200
@@ -305,13 +281,9 @@ Text GLabel 1850 950  1    60   Input ~ 0
 Wire Wire Line
 	1850 950  1850 1100
 Wire Wire Line
-	1850 1100 2150 1100
+	1850 1100 2450 1100
 Wire Wire Line
-	2150 1100 2450 1100
-Wire Wire Line
-	1850 1400 2150 1400
-Wire Wire Line
-	2150 1400 2450 1400
+	1850 1400 2450 1400
 Connection ~ 2150 1100
 Connection ~ 2150 1400
 Text GLabel 1850 1600 3    60   Input ~ 0
@@ -375,11 +347,9 @@ Wire Wire Line
 Wire Wire Line
 	4450 2600 4600 2600
 Wire Wire Line
-	4450 2300 4450 2450
+	4450 2200 4450 2600
 Wire Wire Line
-	4450 2450 4450 2600
-Wire Wire Line
-	4450 1650 4450 2000
+	4450 1650 4450 1900
 Connection ~ 4450 1650
 Connection ~ 4450 2450
 Wire Wire Line
@@ -428,13 +398,9 @@ Text GLabel 850  950  1    60   Input ~ 0
 Wire Wire Line
 	850  950  850  1100
 Wire Wire Line
-	850  1100 1150 1100
+	850  1100 1450 1100
 Wire Wire Line
-	1150 1100 1450 1100
-Wire Wire Line
-	850  1400 1150 1400
-Wire Wire Line
-	1150 1400 1450 1400
+	850  1400 1450 1400
 Connection ~ 1150 1100
 Connection ~ 1150 1400
 Text GLabel 850  1600 3    60   Input ~ 0
@@ -459,9 +425,7 @@ $EndComp
 Wire Wire Line
 	3850 3750 3850 3800
 Wire Wire Line
-	3850 3350 3850 3400
-Wire Wire Line
-	3850 3400 3850 3450
+	3850 3350 3850 3450
 Wire Wire Line
 	3850 3400 2800 3400
 $Comp

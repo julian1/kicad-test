@@ -3,6 +3,7 @@
 *.bck
 old*
 tmp
-gerber/gerber.zip
+**gerber.zip
 *.dsn
 *.ses
+

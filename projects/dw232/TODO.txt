@@ -1,5 +1,84 @@
 
+Does anyone have a source for insulated evanohm wire? 
+
+Since I am using dividers - chasing a low TCR is not that critical - only constant tracking TCR. 
+
+If I hand-wound a divider on the same support/substrate material to minimize differential self-heating due to the different voltage-drops, then good TCR tracking should be achievable. 
+
+Also, hand-wiring ought to make it easier to dial in zener TC0 current - by simply adjusting the number turns. And without needing a big box of fixed-resistor parts on hand to mix and match the right values.
+
+http://www.edn.com/design/analog/4427151/2/The-last-half-century--Wirewound-resistors-Part-one
+
+----
+issue is that it needs to be welded.
+
+
+
+Except that Vishay prec are very very accurate resistances 0.01% etc. which if it was a meter of wire - would be 0.1mm difference. 
+
+mws-800
+  http://www.mwswire.com/nickelandresistancewire.html
+  for other names,
+
+  its 800 because it's 800ohms Ω CMF
+
+---
+If both resistors are dissipating the same power levels, then the self-heating
+will be the same and the TCR will track as expected, all else being equal.  If
+the power levels are different, then the self-heating is going to cause an
+apparent TCR mis-tracking which will be blamed on the resistors.  Surprisingly,
+I've seen this mistake made by engineers pretty often.
+
+So in the case of the 12.5K / 1K divider, there is roughly a 15:1 power ratio,
+if this is not taken into consideration when selecting the resistors....it
+isn't going to work like the man (or lady) said it would.
+
+---
+
+I disagree in one aspect: The Vishay hermetically sealed, oil filled resistors
+really are longterm stable, as Vishay claims, i.e << 1ppm/year.  My 4 year long
+monitoring of agroup of 5 VHP resistors show a drift of less than 1 ppm.
+
+In contrast to that, I did not find (yet) wirewound resistors, which are
+promoted to have a similar good long term stability.
+
+---
+
+
+absolute TCR not important - tracking TCR is. so long as divider is made from same compound
+  should be good.
+
+- a softer compound - thermal sikaflex, rather than thermal expoxy might be better.
+
+- what about peliter mounted flat on pcb - with via stiching for heat transfer.
+    - then several - eg. 3 heaters and coolers on the pcb - placed around the components?.
+    - use via stiching up to the pads
+    - two resistors/peltiers on loops. no summing or anything. 
+    - put resistors in vertical alignment to minimize gradient. 
+
+- peltier and nomca? 
+
+- hmmmm - a prec wire-wound divider - on the same device. should be much better for TCR - than
+    two indpendent resistors.
+
+  The TCR of CarTech EVANOHM alloy R can be supplied at ±5 parts per million per
+  °C from - 65 to + 125°C in fine sizes.
+
+nomca are 25ppm. not that great. 5ppm tracking.
+
+with ptf56 being cheap - we could buy a bunch and match them.
+  - only if balanced around 25 
+
+
+- for longer term drift 
+  - perhaps 3x refs. 1x expensive z201, 2x inexpensive ptf56
+
+--------
+PCB
+
 - pull out the temperature value eg. 5.6 as a pin - can't believe didn't do this
+
+- a ring guard around the entire circuit. really important 
 
 - more space between traces 0.25 to 0.5.
 - guard traces around op-amp inputs

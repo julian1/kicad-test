@@ -477,90 +477,12 @@ F 3 "" H 5850 7050 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	12700 5700 12300 5700
-$Comp
-L C C407
-U 1 1 58623221
-P 3600 7100
-F 0 "C407" H 3625 7200 50  0000 L CNN
-F 1 "C" H 3625 7000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3638 6950 50  0001 C CNN
-F 3 "" H 3600 7100 50  0000 C CNN
-	1    3600 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C411
-U 1 1 58623228
-P 4100 7100
-F 0 "C411" H 4125 7200 50  0000 L CNN
-F 1 "C" H 4125 7000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 4138 6950 50  0001 C CNN
-F 3 "" H 4100 7100 50  0000 C CNN
-	1    4100 7100
-	1    0    0    -1  
-$EndComp
 Connection ~ 3600 6950
-Text GLabel 3600 7250 3    60   Input ~ 0
-AGND
-$Comp
-L C C409
-U 1 1 58623231
-P 3850 7100
-F 0 "C409" H 3875 7200 50  0000 L CNN
-F 1 "C" H 3875 7000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3888 6950 50  0001 C CNN
-F 3 "" H 3850 7100 50  0000 C CNN
-	1    3850 7100
-	1    0    0    -1  
-$EndComp
 Connection ~ 3850 6950
-Text GLabel 3850 7250 3    60   Input ~ 0
-AGND
 Connection ~ 4100 6950
-Text GLabel 4100 7250 3    60   Input ~ 0
-AGND
-$Comp
-L C C408
-U 1 1 5862323C
-P 3600 8100
-F 0 "C408" H 3625 8200 50  0000 L CNN
-F 1 "C" H 3625 8000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3638 7950 50  0001 C CNN
-F 3 "" H 3600 8100 50  0000 C CNN
-	1    3600 8100
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C412
-U 1 1 58623243
-P 4100 8100
-F 0 "C412" H 4125 8200 50  0000 L CNN
-F 1 "C" H 4125 8000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 4138 7950 50  0001 C CNN
-F 3 "" H 4100 8100 50  0000 C CNN
-	1    4100 8100
-	1    0    0    -1  
-$EndComp
 Connection ~ 3600 7950
-Text GLabel 3600 8250 3    60   Input ~ 0
-AGND
-$Comp
-L C C410
-U 1 1 5862324C
-P 3850 8100
-F 0 "C410" H 3875 8200 50  0000 L CNN
-F 1 "C" H 3875 8000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3888 7950 50  0001 C CNN
-F 3 "" H 3850 8100 50  0000 C CNN
-	1    3850 8100
-	1    0    0    -1  
-$EndComp
 Connection ~ 3850 7950
-Text GLabel 3850 8250 3    60   Input ~ 0
-AGND
 Connection ~ 4100 7950
-Text GLabel 4100 8250 3    60   Input ~ 0
-AGND
 Wire Wire Line
 	5350 6900 5650 6900
 Wire Wire Line
@@ -964,4 +886,10 @@ Text GLabel 14350 1550 3    60   Input ~ 0
 -VE
 Wire Wire Line
 	14350 1350 14350 1550
+Text GLabel 5800 5500 0    60   Input ~ 0
+V-OUT-3
+Text GLabel 5800 5750 0    60   Input ~ 0
+V-OUT-4
+NoConn ~ 5800 5500
+NoConn ~ 5800 5750
 $EndSCHEMATC

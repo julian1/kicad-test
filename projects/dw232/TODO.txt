@@ -1,3 +1,50 @@
+--------
+PCB
+
+- Use ptf56 for the dividers. and use z201 100 or similar for the current.
+
+- set the current resistor back a bit more from the reference.
+
+- optional larger dampening capacitor - eg. 2.2uF to gnd on the + input.
+
+- pull out the dammn divider as well. so can check for resistor hystersis 
+- maybe need larger resistor - pads for ptf56
+
+- pull out the temperature value eg. 5.6 as a pin - can't believe didn't do this
+
+- a ring guard around the entire circuit. really important 
+
+- more space between traces 0.25 to 0.5.
+- guard traces around op-amp inputs
+- edge mounting holes - based on vias
+- perhaps center the resistors vertically on board outline, they sit at bottom 
+
+- more space for the text - eg. HGND is not readable 
+- cooling pad for both the transistor collectors
+
+- a 0R resistor to connect AGND and -VE
+  - or an extra pin header - to connect them with a jumper
+  - no use a resistor.
+
+----
+
+--
+now 99x25
+
+without top，bottom solder mask 
+without keepout layer 
+
+， - think should be OK. ver
+
+maybe because there were no zones.
+
+- done - markings for pin headers.
+- done - tidy position 
+- done - copyright
+
+- there's a problem that the solder mask has no 
+  h
+
 
 Does anyone have a source for insulated evanohm wire? 
 
@@ -72,42 +119,6 @@ with ptf56 being cheap - we could buy a bunch and match them.
 
 - for longer term drift 
   - perhaps 3x refs. 1x expensive z201, 2x inexpensive ptf56
-
---------
-PCB
-
-- pull out the temperature value eg. 5.6 as a pin - can't believe didn't do this
-
-- a ring guard around the entire circuit. really important 
-
-- more space between traces 0.25 to 0.5.
-- guard traces around op-amp inputs
-- edge mounting holes - based on vias
-- center the resistors vertically on board outline 
-- more space for the text - eg. HGND is not readable 
-- cooling pad for both the transistor collectors
-
-- a 0R resistor to connect AGND and -VE
-  - or an extra pin header - to connect them with a jumper
-
-----
-
---
-now 99x25
-
-without top，bottom solder mask 
-without keepout layer 
-
-， - think should be OK. ver
-
-maybe because there were no zones.
-
-- done - markings for pin headers.
-- done - tidy position 
-- done - copyright
-
-- there's a problem that the solder mask has no 
-  h
 
 
 VERY IMPORANT

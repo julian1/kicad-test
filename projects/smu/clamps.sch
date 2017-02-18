@@ -978,8 +978,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 3200 5800 3200
 Wire Wire Line
-	7000 2800 7350 2800
-Wire Wire Line
 	5650 2200 5650 3200
 Connection ~ 5650 2700
 Wire Wire Line
@@ -989,11 +987,9 @@ Wire Wire Line
 Wire Wire Line
 	7150 2200 5650 2200
 Connection ~ 7150 2200
-Text GLabel 5350 2800 0    60   Input ~ 0
+Text GLabel 5100 2800 0    60   Input ~ 0
 +VE
-Wire Wire Line
-	5350 2800 5800 2800
-Text GLabel 7350 2800 2    60   Input ~ 0
+Text GLabel 7700 2800 2    60   Input ~ 0
 -VE
 Wire Wire Line
 	7150 3200 7000 3200
@@ -1080,4 +1076,34 @@ Text GLabel 5350 6450 0    60   Input ~ 0
 REFGND
 Wire Wire Line
 	5350 6450 5650 6450
+Wire Wire Line
+	5800 2800 5550 2800
+Wire Wire Line
+	5100 2800 5350 2800
+$Comp
+L NET-TIE W402
+U 1 1 58A83D51
+P 7350 2800
+F 0 "W402" H 7350 3050 50  0000 C CNN
+F 1 "NET-TIE" H 7350 2950 50  0000 C CNN
+F 2 "conn-test:NET-TIE" H 7350 2700 50  0001 C CNN
+F 3 "" H 7350 2800 60  0000 C CNN
+	1    7350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2800 7450 2800
+Wire Wire Line
+	7250 2800 7000 2800
+$Comp
+L NET-TIE W401
+U 1 1 58A8468B
+P 5450 2800
+F 0 "W401" H 5450 3050 50  0000 C CNN
+F 1 "NET-TIE" H 5450 2950 50  0000 C CNN
+F 2 "conn-test:NET-TIE" H 5450 2700 50  0001 C CNN
+F 3 "" H 5450 2800 60  0000 C CNN
+	1    5450 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

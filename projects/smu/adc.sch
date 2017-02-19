@@ -66,12 +66,6 @@ F 3 "" H 3500 3000 50  0000 C CNN
 $EndComp
 Text GLabel 2450 2900 0    60   Input ~ 0
 AGND
-Text GLabel 1750 800  2    60   Input ~ 0
-+VE
-Text GLabel 1750 900  2    60   Input ~ 0
-AGND
-Text GLabel 1750 1000 2    60   Input ~ 0
--VE
 Text GLabel 1650 2700 0    60   Input ~ 0
 REF
 Text GLabel 4450 3200 2    60   Input ~ 0
@@ -172,35 +166,6 @@ F 3 "" H 6150 2750 50  0000 C CNN
 	1    6150 2750
 	0    1    1    0   
 $EndComp
-Text GLabel 1750 1200 2    60   Input ~ 0
-REF
-Text GLabel 1750 1300 2    60   Input ~ 0
-IN
-Text GLabel 1750 1500 2    60   Input ~ 0
-3.3V
-Text GLabel 1750 1600 2    60   Input ~ 0
-REF_PLUS_CTL
-Text GLabel 1750 1700 2    60   Input ~ 0
-REF_SUB_CTL
-Text GLabel 1750 1800 2    60   Input ~ 0
-IN_CTL
-Text GLabel 1750 1900 2    60   Input ~ 0
-RESET
-$Comp
-L CONN_01X15 P301
-U 1 1 585C02F8
-P 1300 1500
-F 0 "P301" H 1300 2300 50  0000 C CNN
-F 1 "CONN_01X15" V 1400 1500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 1300 1500 50  0001 C CNN
-F 3 "" H 1300 1500 50  0000 C CNN
-	1    1300 1500
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1750 1100 2    60   Input ~ 0
-AGND
-Text GLabel 1750 1400 2    60   Input ~ 0
-AGND
 $Comp
 L LM741 U304
 U 1 1 585C05C6
@@ -265,18 +230,14 @@ $EndComp
 $Comp
 L LM311N U305
 U 1 1 5860DAF8
-P 9200 2200
-F 0 "U305" H 9200 2450 50  0000 L CNN
-F 1 "LM311N" H 9200 2350 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9200 2200 50  0001 C CNN
-F 3 "" H 9200 2200 50  0000 C CNN
-	1    9200 2200
+P 9500 2200
+F 0 "U305" H 9500 2450 50  0000 L CNN
+F 1 "LM311N" H 9500 2350 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9500 2200 50  0001 C CNN
+F 3 "" H 9500 2200 50  0000 C CNN
+	1    9500 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 2100 2    60   Input ~ 0
-AGND
-Text GLabel 1750 2200 2    60   Input ~ 0
-AGND
 $Comp
 L TEST_1P W301
 U 1 1 5860E975
@@ -288,17 +249,15 @@ F 3 "" H 6950 1650 50  0000 C CNN
 	1    6750 1650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8700 2300 0    60   Input ~ 0
+Text GLabel 9000 2300 0    60   Input ~ 0
 AGND
-Text GLabel 9100 1700 1    60   Input ~ 0
+Text GLabel 9400 1700 1    60   Input ~ 0
 +VE
-Text GLabel 9100 2750 3    60   Input ~ 0
+Text GLabel 9400 2750 3    60   Input ~ 0
 -VE
-Text GLabel 9200 2750 3    60   Input ~ 0
+Text GLabel 9500 2750 3    60   Input ~ 0
 AGND
-Text GLabel 9900 2200 2    60   Input ~ 0
-TRIGGER
-Text GLabel 1750 2000 2    60   Input ~ 0
+Text GLabel 10200 2200 2    60   Input ~ 0
 TRIGGER
 Wire Wire Line
 	4100 2800 4450 2800
@@ -306,12 +265,6 @@ Wire Wire Line
 	2450 2800 2900 2800
 Wire Wire Line
 	2450 2900 2900 2900
-Wire Wire Line
-	1500 800  1750 800 
-Wire Wire Line
-	1500 900  1750 900 
-Wire Wire Line
-	1500 1000 1750 1000
 Wire Wire Line
 	4100 2600 4200 2600
 Wire Wire Line
@@ -391,23 +344,13 @@ Wire Wire Line
 Connection ~ 5550 2100
 Connection ~ 5550 2750
 Wire Wire Line
-	1500 1200 1750 1200
-Wire Wire Line
-	1500 1300 1750 1300
-Wire Wire Line
-	1500 1500 1750 1500
-Wire Wire Line
-	1500 1600 1750 1600
-Wire Wire Line
-	1500 1700 1750 1700
-Wire Wire Line
 	7750 1750 7750 1800
 Wire Wire Line
 	7750 2400 7750 2500
 Wire Wire Line
-	8150 2100 8500 2100
+	8150 2100 8450 2100
 Wire Wire Line
-	8750 2100 8900 2100
+	8750 2100 9200 2100
 Wire Wire Line
 	8300 2100 8300 3550
 Connection ~ 8300 2100
@@ -438,31 +381,17 @@ Wire Wire Line
 	8300 3550 8000 3550
 Connection ~ 8300 3250
 Wire Wire Line
-	8700 2300 8900 2300
+	9000 2300 9200 2300
 Wire Wire Line
-	9100 1700 9100 1900
+	9400 1700 9400 1900
 Wire Wire Line
-	9100 2500 9100 2750
+	9400 2500 9400 2750
 Wire Wire Line
-	9500 2200 9900 2200
+	9800 2200 10200 2200
 Wire Wire Line
-	9200 2500 9200 2750
-Wire Wire Line
-	1500 1100 1750 1100
-Wire Wire Line
-	1500 1400 1750 1400
-Wire Wire Line
-	1500 1800 1750 1800
-Wire Wire Line
-	1500 1900 1750 1900
-Wire Wire Line
-	1500 2000 1750 2000
-Wire Wire Line
-	1500 2100 1750 2100
-Wire Wire Line
-	1750 2200 1500 2200
-NoConn ~ 9500 2300
-NoConn ~ 9300 2500
+	9500 2500 9500 2750
+NoConn ~ 9800 2300
+NoConn ~ 9600 2500
 NoConn ~ 7950 2400
 NoConn ~ 7850 2400
 NoConn ~ 6300 2300
@@ -650,45 +579,22 @@ AGND
 $Comp
 L R R306
 U 1 1 58620487
-P 9750 1850
-F 0 "R306" V 9830 1850 50  0000 C CNN
-F 1 "5k" V 9750 1850 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 9680 1850 50  0001 C CNN
-F 3 "" H 9750 1850 50  0000 C CNN
-	1    9750 1850
+P 10050 1850
+F 0 "R306" V 10130 1850 50  0000 C CNN
+F 1 "5k" V 10050 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9980 1850 50  0001 C CNN
+F 3 "" H 10050 1850 50  0000 C CNN
+	1    10050 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9750 2000 9750 2200
-Connection ~ 9750 2200
-Text GLabel 9750 1550 1    60   Input ~ 0
+	10050 2000 10050 2200
+Connection ~ 10050 2200
+Text GLabel 10050 1550 1    60   Input ~ 0
 +VE
 Wire Wire Line
-	9750 1550 9750 1700
-$Comp
-L CONN_01X03 P302
-U 1 1 58621C5B
-P 9100 950
-F 0 "P302" H 9100 1150 50  0000 C CNN
-F 1 "CONN_01X03" V 9200 950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 9100 950 50  0001 C CNN
-F 3 "" H 9100 950 50  0000 C CNN
-	1    9100 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 2000 7100 850 
-Wire Wire Line
-	7100 850  8900 850 
-Connection ~ 7100 2000
-Wire Wire Line
-	8900 950  8750 950 
-Wire Wire Line
-	8750 950  8750 2100
-Wire Wire Line
-	8900 1050 8500 1050
-Wire Wire Line
-	8500 1050 8500 2100
+	10050 1550 10050 1700
+Connection ~ 7350 2000
 $Comp
 L C C314
 U 1 1 58844007
@@ -704,4 +610,35 @@ Connection ~ 5550 3000
 Wire Wire Line
 	6300 3000 6750 3000
 Connection ~ 6750 3000
+$Comp
+L R R307
+U 1 1 58A9778D
+P 8600 2100
+F 0 "R307" V 8680 2100 50  0000 C CNN
+F 1 "R" V 8600 2100 50  0000 C CNN
+F 2 "" V 8530 2100 50  0000 C CNN
+F 3 "" H 8600 2100 50  0000 C CNN
+	1    8600 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R308
+U 1 1 58A97AC8
+P 8600 1350
+F 0 "R308" V 8680 1350 50  0000 C CNN
+F 1 "R" V 8600 1350 50  0000 C CNN
+F 2 "" V 8530 1350 50  0000 C CNN
+F 3 "" H 8600 1350 50  0000 C CNN
+	1    8600 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 1350 7350 1350
+Wire Wire Line
+	8750 1350 8900 1350
+Wire Wire Line
+	8900 1350 8900 2100
+Connection ~ 8900 2100
+Wire Wire Line
+	7350 1350 7350 2000
 $EndSCHEMATC

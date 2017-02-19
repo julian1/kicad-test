@@ -59,8 +59,6 @@ F 3 "" H 2000 5300 50  0000 C CNN
 $EndComp
 Text GLabel 1800 5050 1    60   Input ~ 0
 +VE
-Text GLabel 5350 5950 0    60   Input ~ 0
-+VE
 NoConn ~ 11550 2100
 NoConn ~ 11650 2100
 $Comp
@@ -138,8 +136,6 @@ Wire Wire Line
 Wire Wire Line
 	12350 3100 12950 3100
 Connection ~ 12700 2450
-Text GLabel 5350 6150 0    60   Input ~ 0
--VE
 Text GLabel 7900 1500 0    60   Input ~ 0
 I-FB
 Text GLabel 7900 1700 0    60   Input ~ 0
@@ -206,7 +202,7 @@ Connection ~ 10600 3000
 Wire Wire Line
 	1800 5050 1800 5150
 Wire Wire Line
-	1800 5150 2750 5150
+	1800 5150 3000 5150
 Connection ~ 2000 5150
 Text GLabel 2000 5450 3    60   Input ~ 0
 AGND
@@ -252,7 +248,7 @@ $EndComp
 Wire Wire Line
 	1800 6050 1800 6150
 Wire Wire Line
-	1800 6150 2750 6150
+	1800 6150 3000 6150
 Connection ~ 2000 6150
 Text GLabel 2000 6450 3    60   Input ~ 0
 AGND
@@ -275,26 +271,9 @@ Text GLabel 2500 6450 3    60   Input ~ 0
 AGND
 Text GLabel 1800 6050 1    60   Input ~ 0
 -VE
-Text GLabel 5350 6050 0    60   Input ~ 0
-AGND
-Text GLabel 5350 6350 0    60   Input ~ 0
-REF
-Wire Wire Line
-	5650 5950 5350 5950
-Wire Wire Line
-	5650 6050 5350 6050
-Wire Wire Line
-	5650 6150 5350 6150
-Wire Wire Line
-	5650 6250 5350 6250
-Text GLabel 5350 6650 0    60   Input ~ 0
-I-FB
 Connection ~ 12700 3100
 Text GLabel 12950 3100 2    60   Input ~ 0
 OUT
-Text GLabel 5350 6250 0    60   Input ~ 0
-OUT
-NoConn ~ 5650 6850
 NoConn ~ 11550 4700
 NoConn ~ 11650 4700
 $Comp
@@ -458,16 +437,10 @@ Text GLabel 7900 4500 0    60   Input ~ 0
 V-SET
 Text GLabel 7900 4300 0    60   Input ~ 0
 V-FB
-Text GLabel 5350 6750 0    60   Input ~ 0
-V-FB
 Wire Wire Line
 	12700 5700 12300 5700
 Connection ~ 2750 5150
 Connection ~ 2750 6150
-Wire Wire Line
-	5350 6350 5650 6350
-Wire Wire Line
-	5650 6750 5350 6750
 Wire Wire Line
 	10600 1500 10400 1500
 Wire Wire Line
@@ -723,8 +696,6 @@ Text GLabel 4300 2900 2    60   Input ~ 0
 V-OUT-3
 Text GLabel 4300 3500 2    60   Input ~ 0
 V-OUT-4
-Wire Wire Line
-	5350 6650 5650 6650
 $Comp
 L LM324 U402
 U 3 1 58A7EDC8
@@ -832,64 +803,6 @@ Text GLabel 11450 2100 3    60   Input ~ 0
 -VE
 Text GLabel 9150 2700 1    60   Input ~ 0
 +VE
-Text GLabel 5250 5100 3    60   Input ~ 0
-+VE
-$Comp
-L PWR_FLAG #FLG01
-U 1 1 58AA88D7
-P 5250 4900
-F 0 "#FLG01" H 5250 4995 50  0001 C CNN
-F 1 "PWR_FLAG" H 5250 5080 50  0000 C CNN
-F 2 "" H 5250 4900 50  0000 C CNN
-F 3 "" H 5250 4900 50  0000 C CNN
-	1    5250 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 4900 5250 5100
-$Comp
-L PWR_FLAG #FLG02
-U 1 1 58AAC503
-P 5850 4900
-F 0 "#FLG02" H 5850 4995 50  0001 C CNN
-F 1 "PWR_FLAG" H 5850 5080 50  0000 C CNN
-F 2 "" H 5850 4900 50  0000 C CNN
-F 3 "" H 5850 4900 50  0000 C CNN
-	1    5850 4900
-	1    0    0    -1  
-$EndComp
-Text GLabel 5850 5100 3    60   Input ~ 0
--VE
-Wire Wire Line
-	5850 4900 5850 5100
-Text GLabel 5350 7850 0    60   Input ~ 0
-V-OUT-3
-Text GLabel 5350 7950 0    60   Input ~ 0
-V-OUT-4
-Text GLabel 5350 6950 0    60   Input ~ 0
-DAC_CS
-Text GLabel 5350 7050 0    60   Input ~ 0
-DAC_SLCK
-Text GLabel 5350 7150 0    60   Input ~ 0
-DAC_SDI
-Text GLabel 5350 7250 0    60   Input ~ 0
-DAC_SDO
-Text GLabel 5350 7350 0    60   Input ~ 0
-DAC_LDAC
-Text GLabel 5350 7450 0    60   Input ~ 0
-DAC_RST
-Wire Wire Line
-	5350 6950 5650 6950
-Wire Wire Line
-	5350 7050 5650 7050
-Wire Wire Line
-	5350 7150 5650 7150
-Wire Wire Line
-	5350 7250 5650 7250
-Wire Wire Line
-	5350 7350 5650 7350
-Wire Wire Line
-	5350 7450 5650 7450
 Text GLabel 1400 1700 0    60   Input ~ 0
 DAC_CS
 Text GLabel 1400 1800 0    60   Input ~ 0
@@ -914,28 +827,6 @@ Wire Wire Line
 	1400 2100 2100 2100
 Wire Wire Line
 	1400 2200 2100 2200
-Text GLabel 3850 5000 0    60   Input ~ 0
-AGND
-Text GLabel 3850 5100 0    60   Input ~ 0
-DGND
-Text GLabel 3850 5200 0    60   Input ~ 0
-REFGND
-Wire Wire Line
-	3850 5000 3850 5200
-Wire Wire Line
-	5350 7650 5650 7650
-Wire Wire Line
-	5350 7750 5650 7750
-Text GLabel 5350 7650 0    60   Input ~ 0
-V-SET
-Text GLabel 5350 7750 0    60   Input ~ 0
-I-SET
-Wire Wire Line
-	5350 7850 5650 7850
-Wire Wire Line
-	5350 7950 5650 7950
-NoConn ~ 5650 6550
-NoConn ~ 5650 7550
 Text GLabel 7350 2900 2    60   Input ~ 0
 +VE
 Text GLabel 5350 2900 0    60   Input ~ 0
@@ -1011,42 +902,6 @@ AGND
 Wire Wire Line
 	7000 3100 7350 3100
 $Comp
-L CONN_01X34 P401
-U 1 1 58AECC4E
-P 5850 7600
-F 0 "P401" H 5850 9350 50  0000 C CNN
-F 1 "CONN_01X34" V 5950 7600 50  0000 C CNN
-F 2 "" H 5850 7600 50  0000 C CNN
-F 3 "" H 5850 7600 50  0000 C CNN
-	1    5850 7600
-	1    0    0    -1  
-$EndComp
-Text GLabel 5300 8150 0    60   Input ~ 0
-REF_IN1
-Text GLabel 5300 8250 0    60   Input ~ 0
-REF_IN2
-Text GLabel 5300 8350 0    60   Input ~ 0
-REF_IN3
-Text GLabel 5300 8450 0    60   Input ~ 0
-REF_IN4
-Wire Wire Line
-	5300 8150 5650 8150
-Wire Wire Line
-	5300 8250 5650 8250
-Wire Wire Line
-	5300 8350 5650 8350
-Wire Wire Line
-	5300 8450 5650 8450
-NoConn ~ 5650 8050
-NoConn ~ 5650 8550
-NoConn ~ 5650 8650
-NoConn ~ 5650 8750
-NoConn ~ 5650 8850
-NoConn ~ 5650 8950
-NoConn ~ 5650 9050
-NoConn ~ 5650 9150
-NoConn ~ 5650 9250
-$Comp
 L C C407
 U 1 1 58AEEE25
 P 2750 5300
@@ -1072,10 +927,6 @@ F 3 "" H 2750 6300 50  0000 C CNN
 $EndComp
 Text GLabel 2750 6450 3    60   Input ~ 0
 AGND
-Text GLabel 5350 6450 0    60   Input ~ 0
-REFGND
-Wire Wire Line
-	5350 6450 5650 6450
 Wire Wire Line
 	5800 2800 5550 2800
 Wire Wire Line
@@ -1106,4 +957,30 @@ F 3 "" H 5450 2800 60  0000 C CNN
 	1    5450 2800
 	1    0    0    -1  
 $EndComp
+$Comp
+L C C409
+U 1 1 58A9EA17
+P 3000 5300
+F 0 "C409" H 3025 5400 50  0000 L CNN
+F 1 "C" H 3025 5200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3038 5150 50  0001 C CNN
+F 3 "" H 3000 5300 50  0000 C CNN
+	1    3000 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 5450 3    60   Input ~ 0
+AGND
+$Comp
+L C C410
+U 1 1 58A9ED73
+P 3000 6300
+F 0 "C410" H 3025 6400 50  0000 L CNN
+F 1 "C" H 3025 6200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3038 6150 50  0001 C CNN
+F 3 "" H 3000 6300 50  0000 C CNN
+	1    3000 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 6450 3    60   Input ~ 0
+AGND
 $EndSCHEMATC

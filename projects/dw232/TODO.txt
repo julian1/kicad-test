@@ -3,6 +3,8 @@ PCB
 
 - Use ptf56 for the dividers. and use z201 100 or similar for the current.
 
+- ferrite bead.  smt.
+
 - set the current resistor back a bit more from the reference.
 
 - optional larger dampening capacitor - eg. 2.2uF to gnd on the + input.

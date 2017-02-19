@@ -861,11 +861,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 2700 5800 2700
 Wire Wire Line
-	7000 3300 7350 3300
-Wire Wire Line
 	7350 3000 7000 3000
-Wire Wire Line
-	5800 3300 5350 3300
 Wire Wire Line
 	5650 3200 5800 3200
 Wire Wire Line
@@ -893,10 +889,6 @@ Text GLabel 7350 2600 2    60   Input ~ 0
 REF_IN2
 Wire Wire Line
 	7000 2600 7350 2600
-Text GLabel 7350 3300 2    60   Input ~ 0
-REF_IN3
-Text GLabel 5350 3300 0    60   Input ~ 0
-REF_IN4
 Text GLabel 7350 3100 2    60   Input ~ 0
 AGND
 Wire Wire Line
@@ -983,4 +975,30 @@ F 3 "" H 3000 6300 50  0000 C CNN
 $EndComp
 Text GLabel 3000 6450 3    60   Input ~ 0
 AGND
+Text GLabel 5100 3300 0    60   Input ~ 0
+3.3V
+$Comp
+L R R417
+U 1 1 58A97CCD
+P 5400 3300
+F 0 "R417" V 5480 3300 50  0000 C CNN
+F 1 "10k" V 5400 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5330 3300 50  0001 C CNN
+F 3 "" H 5400 3300 50  0000 C CNN
+	1    5400 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3300 5250 3300
+Wire Wire Line
+	5550 3300 5800 3300
+Wire Wire Line
+	5650 3550 7150 3550
+Wire Wire Line
+	7150 3550 7150 3300
+Wire Wire Line
+	7150 3300 7000 3300
+Wire Wire Line
+	5650 3550 5650 3300
+Connection ~ 5650 3300
 $EndSCHEMATC

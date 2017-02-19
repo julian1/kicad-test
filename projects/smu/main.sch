@@ -129,14 +129,6 @@ Wire Wire Line
 	2150 2250 2400 2250
 Wire Wire Line
 	2400 2350 2150 2350
-Text GLabel 4800 1000 0    60   Input ~ 0
-+VE
-Text GLabel 4800 1200 0    60   Input ~ 0
--VE
-Text GLabel 4800 1100 0    60   Input ~ 0
-AGND
-Text GLabel 4800 1400 0    60   Input ~ 0
-REF
 Wire Wire Line
 	5100 1000 4800 1000
 Wire Wire Line
@@ -145,13 +137,6 @@ Wire Wire Line
 	5100 1200 4800 1200
 Wire Wire Line
 	5100 1300 4800 1300
-Text GLabel 4800 1700 0    60   Input ~ 0
-I-FB
-Text GLabel 4800 1300 0    60   Input ~ 0
-OUT
-NoConn ~ 5100 1900
-Text GLabel 4800 1800 0    60   Input ~ 0
-V-FB
 Wire Wire Line
 	4800 1400 5100 1400
 Wire Wire Line
@@ -188,22 +173,6 @@ Text GLabel 7650 1500 3    60   Input ~ 0
 -VE
 Wire Wire Line
 	7650 1300 7650 1500
-Text GLabel 4800 2900 0    60   Input ~ 0
-V-OUT-3
-Text GLabel 4800 3000 0    60   Input ~ 0
-V-OUT-4
-Text GLabel 4800 2000 0    60   Input ~ 0
-DAC_CS
-Text GLabel 4800 2100 0    60   Input ~ 0
-DAC_SLCK
-Text GLabel 4800 2200 0    60   Input ~ 0
-DAC_SDI
-Text GLabel 4800 2300 0    60   Input ~ 0
-DAC_SDO
-Text GLabel 4800 2400 0    60   Input ~ 0
-DAC_LDAC
-Text GLabel 4800 2500 0    60   Input ~ 0
-DAC_RST
 Wire Wire Line
 	4800 2000 5100 2000
 Wire Wire Line
@@ -228,43 +197,14 @@ Wire Wire Line
 	4800 2700 5100 2700
 Wire Wire Line
 	4800 2800 5100 2800
-Text GLabel 4800 2700 0    60   Input ~ 0
-V-SET
-Text GLabel 4800 2800 0    60   Input ~ 0
-I-SET
 Wire Wire Line
 	4800 2900 5100 2900
 Wire Wire Line
 	4800 3000 5100 3000
-NoConn ~ 5100 1600
-NoConn ~ 5100 2600
-Text GLabel 4750 3200 0    60   Input ~ 0
-REF_IN1
-Text GLabel 4750 3300 0    60   Input ~ 0
-REF_IN2
-Text GLabel 4750 3400 0    60   Input ~ 0
-REF_IN3
-Text GLabel 4750 3500 0    60   Input ~ 0
-REF_IN4
 Wire Wire Line
 	4750 3200 5100 3200
 Wire Wire Line
 	4750 3300 5100 3300
-Wire Wire Line
-	4750 3400 5100 3400
-Wire Wire Line
-	4750 3500 5100 3500
-NoConn ~ 5100 3100
-NoConn ~ 5100 3600
-NoConn ~ 5100 3700
-NoConn ~ 5100 3800
-NoConn ~ 5100 3900
-NoConn ~ 5100 4000
-NoConn ~ 5100 4100
-NoConn ~ 5100 4200
-NoConn ~ 5100 4300
-Text GLabel 4800 1500 0    60   Input ~ 0
-REFGND
 Wire Wire Line
 	4800 1500 5100 1500
 Text GLabel 4800 1000 0    60   Input ~ 0
@@ -310,34 +250,26 @@ Text GLabel 4800 2800 0    60   Input ~ 0
 I-SET
 NoConn ~ 5100 1600
 NoConn ~ 5100 2600
-$Comp
-L CONN_01X34 P102
-U 1 1 58A9E4F4
-P 5300 2650
-F 0 "P102" H 5300 4400 50  0000 C CNN
-F 1 "CONN_01X34" V 5400 2650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x34" H 5300 2650 50  0001 C CNN
-F 3 "" H 5300 2650 50  0000 C CNN
-	1    5300 2650
-	1    0    0    -1  
-$EndComp
-Text GLabel 4750 3200 0    60   Input ~ 0
-REF_IN1
-Text GLabel 4750 3300 0    60   Input ~ 0
-REF_IN2
-Text GLabel 4750 3400 0    60   Input ~ 0
-REF_IN3
-Text GLabel 4750 3500 0    60   Input ~ 0
-REF_IN4
 NoConn ~ 5100 3100
 NoConn ~ 5100 3600
 NoConn ~ 5100 3700
-NoConn ~ 5100 3800
-NoConn ~ 5100 3900
-NoConn ~ 5100 4000
-NoConn ~ 5100 4100
-NoConn ~ 5100 4200
-NoConn ~ 5100 4300
 Text GLabel 4800 1500 0    60   Input ~ 0
 REFGND
+$Comp
+L CONN_01X28 P102
+U 1 1 58A96BF2
+P 5300 2350
+F 0 "P102" H 5300 3800 50  0000 C CNN
+F 1 "CONN_01X28" V 5400 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x28" H 5300 2350 50  0001 C CNN
+F 3 "" H 5300 2350 50  0000 C CNN
+	1    5300 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 3300 0    60   Input ~ 0
+REF_IN2
+Text GLabel 4750 3200 0    60   Input ~ 0
+REF_IN1
+NoConn ~ 5100 3400
+NoConn ~ 5100 3500
 $EndSCHEMATC

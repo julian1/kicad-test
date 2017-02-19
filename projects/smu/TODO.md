@@ -6,6 +6,8 @@
 
 - inductors for power.
 
+- decoupling for 401 3.3V digital?
+
 - try to implement the end stage - so we have something to test.
     eg. just the to-220 power transistors
 

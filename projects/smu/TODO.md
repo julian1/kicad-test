@@ -4,6 +4,8 @@
 
 - custom diff amp to get the thing onto +OUT and -OUT 
 
+- inductors for power.
+
 - try to implement the end stage - so we have something to test.
     eg. just the to-220 power transistors
 

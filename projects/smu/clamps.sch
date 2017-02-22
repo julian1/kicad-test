@@ -353,7 +353,7 @@ Text GLabel 4300 1900 2    60   Input ~ 0
 -VE
 Text GLabel 4300 1800 2    60   Input ~ 0
 AGND
-Text GLabel 4300 2100 2    60   Input ~ 0
+Text GLabel 5000 1600 1    60   Input ~ 0
 REF
 Text GLabel 4300 2000 2    60   Input ~ 0
 REFGND
@@ -808,7 +808,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2300 3650 2300
 Wire Wire Line
-	3650 2100 4300 2100
+	3650 2100 5000 2100
 Wire Wire Line
 	3700 2100 3700 2200
 Wire Wire Line
@@ -1001,4 +1001,34 @@ F 3 "" H 7400 2800 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7550 2800 7700 2800
+$Comp
+L R R420
+U 1 1 58AD4567
+P 5000 1850
+F 0 "R420" V 5080 1850 50  0000 C CNN
+F 1 "5k" V 5000 1850 50  0000 C CNN
+F 2 "" V 4930 1850 50  0000 C CNN
+F 3 "" H 5000 1850 50  0000 C CNN
+	1    5000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R421
+U 1 1 58AD48B2
+P 5000 2300
+F 0 "R421" V 5080 2300 50  0000 C CNN
+F 1 "5k" V 5000 2300 50  0000 C CNN
+F 2 "" V 4930 2300 50  0000 C CNN
+F 3 "" H 5000 2300 50  0000 C CNN
+	1    5000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2450 4150 2450
+Connection ~ 4150 2450
+Wire Wire Line
+	5000 2000 5000 2150
+Connection ~ 5000 2100
+Wire Wire Line
+	5000 1700 5000 1600
 $EndSCHEMATC

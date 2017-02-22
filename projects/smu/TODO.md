@@ -1,5 +1,8 @@
 
-- fix the damn, net-ties.
+interesting - if do put fpga on board, then rather than have 
+    jumpers and 0R we can use mosfets controlled by fpga.
+
+---
 
 - OTA - for active filter.
 
@@ -14,7 +17,12 @@
 
 - digital control over power rails - mosfet or relay. eg. because sequencing dac turn on is hard.
 
-- lt1021-10 ref  
+- output section.
+
+
+- done - fix the damn, net-ties. (by changing to resistors)
+
+- done - lt1021-10 ref  
 - divider for 10V to 5V for dac? check?
 - done - DG444 to switch the ref current between +ve and -ve.
 - done test points - pads - pin headers

@@ -8,7 +8,7 @@ interesting - if do put fpga on board, then rather than have
 
 - custom diff amp to get the thing onto +OUT and -OUT 
 
-- inductors on supplies for smooth power.
+- inductors on supplies for smooth power. - done for ref.
 
 - decoupling for 401 3.3V digitalls
 
@@ -16,6 +16,8 @@ interesting - if do put fpga on board, then rather than have
     eg. just the to-220 power transistors
 
 - digital control over power rails - mosfet or relay. eg. because sequencing dac turn on is hard.
+      - pchannel on top?  logic level p-channel on top - going to need a bjt.
+      - need to start up cold - 
 
 - output section.
 

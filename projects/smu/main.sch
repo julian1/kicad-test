@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -278,4 +278,56 @@ U 58AD02DE
 F0 "ref-10V" 60
 F1 "ref-10V.sch" 60
 $EndSheet
+$Sheet
+S 8600 3200 1150 700 
+U 58AD87F5
+F0 "power" 60
+F1 "power.sch" 60
+$EndSheet
+$Comp
+L CONN_01X15 P103
+U 1 1 58AE3540
+P 800 1650
+F 0 "P103" H 800 2450 50  0000 C CNN
+F 1 "CONN_01X15" V 900 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 800 1650 50  0001 C CNN
+F 3 "" H 800 1650 50  0000 C CNN
+	1    800  1650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1000 950  2    60   Input ~ 0
+PWR_+VE
+Text GLabel 1000 1150 2    60   Input ~ 0
+PWR_-VE
+NoConn ~ 1000 1250
+NoConn ~ 1000 1350
+NoConn ~ 1000 1450
+NoConn ~ 1000 1550
+NoConn ~ 1000 1650
+NoConn ~ 1000 1750
+NoConn ~ 1000 1850
+NoConn ~ 1000 1950
+NoConn ~ 1000 2050
+NoConn ~ 1000 2150
+NoConn ~ 1000 2250
+NoConn ~ 1000 2350
+Text GLabel 1000 1050 2    60   Input ~ 0
+AGND
+$Comp
+L CONN_01X04 P105
+U 1 1 58AE3ABB
+P 3350 1200
+F 0 "P105" H 3350 1450 50  0000 C CNN
+F 1 "CONN_01X04" V 3450 1200 50  0000 C CNN
+F 2 "" H 3350 1200 50  0000 C CNN
+F 3 "" H 3350 1200 50  0000 C CNN
+	1    3350 1200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3550 1050 2    60   Input ~ 0
+PWR_+VE_CTL
+Text GLabel 3550 1150 2    60   Input ~ 0
+PWR_-VE_CTL
+NoConn ~ 3550 1250
+NoConn ~ 3550 1350
 $EndSCHEMATC

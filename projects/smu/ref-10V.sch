@@ -1,0 +1,1 @@
+/home/meteo/kicad-consolidated2/projects/smu/../../sheets/ref-10V.sch

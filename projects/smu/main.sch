@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -272,4 +272,10 @@ Text GLabel 4750 3200 0    60   Input ~ 0
 REF_IN1
 NoConn ~ 5100 3400
 NoConn ~ 5100 3500
+$Sheet
+S 6650 3550 1350 650 
+U 58AD02DE
+F0 "ref-10V" 60
+F1 "ref-10V.sch" 60
+$EndSheet
 $EndSCHEMATC

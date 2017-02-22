@@ -1,12 +1,13 @@
 
+- fix the damn, net-ties.
 
 - OTA - for active filter.
 
 - custom diff amp to get the thing onto +OUT and -OUT 
 
-- inductors for power.
+- inductors on supplies for smooth power.
 
-- decoupling for 401 3.3V digital?
+- decoupling for 401 3.3V digitalls
 
 - try to implement the end stage - so we have something to test.
     eg. just the to-220 power transistors

@@ -67,17 +67,17 @@ Text GLabel 2400 1150 2    60   Input ~ 0
 Text GLabel 2400 1350 2    60   Input ~ 0
 REF
 Text GLabel 2400 1450 2    60   Input ~ 0
-IN
+ADC_IN
 Text GLabel 2400 1650 2    60   Input ~ 0
 3.3V
 Text GLabel 2400 1750 2    60   Input ~ 0
-REF_PLUS_CTL
+ADC_PLUS_CTL
 Text GLabel 2400 1850 2    60   Input ~ 0
-REF_SUB_CTL
+ADC_MIN_CTL
 Text GLabel 2400 1950 2    60   Input ~ 0
-IN_CTL
+ADC_IN_CTL
 Text GLabel 2400 2050 2    60   Input ~ 0
-RESET
+ADC_RESET
 $Comp
 L CONN_01X15 P101
 U 1 1 58A9D3B8
@@ -98,7 +98,7 @@ AGND
 Text GLabel 2400 2350 2    60   Input ~ 0
 AGND
 Text GLabel 2400 2150 2    60   Input ~ 0
-TRIGGER
+ADC_TRIGGER
 Wire Wire Line
 	2150 950  2400 950 
 Wire Wire Line

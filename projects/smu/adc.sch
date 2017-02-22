@@ -69,7 +69,7 @@ AGND
 Text GLabel 1650 2700 0    60   Input ~ 0
 REF
 Text GLabel 4450 3200 2    60   Input ~ 0
-RESET
+ADC_RESET
 Text GLabel 4450 2900 2    60   Input ~ 0
 3.3V
 $Comp
@@ -103,7 +103,7 @@ $EndComp
 Text GLabel 5750 1900 0    60   Input ~ 0
 AGND
 Text GLabel 2450 3200 0    60   Input ~ 0
-IN_CTL
+ADC_IN_CTL
 Text GLabel 6100 1650 1    60   Input ~ 0
 +VE
 Text GLabel 6100 2400 3    60   Input ~ 0
@@ -150,11 +150,11 @@ NoConn ~ 3550 4500
 Text GLabel 2900 3900 1    60   Input ~ 0
 AGND
 Text GLabel 1650 2500 0    60   Input ~ 0
-REF_PLUS_CTL
+ADC_PLUS_CTL
 Text GLabel 4450 2500 2    60   Input ~ 0
-REF_SUB_CTL
+ADC_MIN_CTL
 Text GLabel 2450 3000 0    60   Input ~ 0
-IN
+ADC_IN
 $Comp
 L C C311
 U 1 1 585BF25E
@@ -258,7 +258,7 @@ Text GLabel 9400 2750 3    60   Input ~ 0
 Text GLabel 9500 2750 3    60   Input ~ 0
 AGND
 Text GLabel 10200 2200 2    60   Input ~ 0
-TRIGGER
+ADC_TRIGGER
 Wire Wire Line
 	4100 2800 4450 2800
 Wire Wire Line
@@ -624,18 +624,18 @@ $EndComp
 $Comp
 L R R308
 U 1 1 58A97AC8
-P 8600 1350
-F 0 "R308" V 8680 1350 50  0000 C CNN
-F 1 "0R" V 8600 1350 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 8530 1350 50  0001 C CNN
-F 3 "" H 8600 1350 50  0000 C CNN
-	1    8600 1350
+P 8400 1350
+F 0 "R308" V 8480 1350 50  0000 C CNN
+F 1 "0R" V 8400 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8330 1350 50  0001 C CNN
+F 3 "" H 8400 1350 50  0000 C CNN
+	1    8400 1350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8450 1350 7350 1350
+	8250 1350 7350 1350
 Wire Wire Line
-	8750 1350 8900 1350
+	8550 1350 8900 1350
 Wire Wire Line
 	8900 1350 8900 2100
 Connection ~ 8900 2100

@@ -1,54 +1,88 @@
+
 --------
 PCB
 
-- Use ptf56 for the dividers. and use z201 100 or similar for the current.
 
-- ferrite bead.  smt.
+- lets try ptf56 - and trimmers.
 
 - set the current resistor back a bit more from the reference.
 
-- optional larger dampening capacitor - eg. 2.2uF to gnd on the + input.
+- Use ptf56 for the dividers. and use z201 100 or similar for the current.
 
-- pull out the dammn divider as well. so can check for resistor hystersis 
-- maybe need larger resistor - pads for ptf56
-
-- pull out the temperature value eg. 5.6 as a pin - can't believe didn't do this
-
-- a ring guard around the entire circuit. really important 
+- a ring guard around the entire circuit. emi really important 
 
 - more space between traces 0.25 to 0.5.
+
 - guard traces around op-amp inputs
+
 - edge mounting holes - based on vias
-- perhaps center the resistors vertically on board outline, they sit at bottom 
+
+- perhaps center the resistors more vertically on board outline, they sit at bottom 
 
 - more space for the text - eg. HGND is not readable 
-- cooling pad for both the transistor collectors
 
-- a 0R resistor to connect AGND and -VE
+
+----
+
+- done - need to decide whether to use z-out or v-out for the temperature set 
+    - the issue is that v-out is not stable and will change whenever current is adjusted.
+    - while z-sense will be more stable - but it is an additional load.
+
+    - it's a 100ohm source - so it's a low-impedance source. so should be
+      ok.
+    - this is the same as veroboard
+
+- done - z-sense, z-sense-gnd, and another jumper?
+
+- done - check edwin's recommended trimpot  3250
+
+- done - 5 resistors. or a trimpot in center?
+    - and with a jumper to decide
+
+- done - probably should have possibility of five resistors 
+
+- no - button - or pin jumper to turn heater on/off 
+  - eg. short the heater control op-amp input to high. Useful for testing.  could just short the resistor divider.
+  - need to analyze circuit.
+  - could do it with two pin headers - no that's what trimpot does.
+
+- done - pull out the temp sense, and tempt set. to local test-pads even if don't pull them all the way. can then solder a pin hook.
+
+- done - pull out the temperature value eg. 5.6 as a pin - can't believe didn't do this
+
+- done - get rid of the -ve rail, or 0R to jump
+
+- done - ferrite bead.  smt.
+
+- no - optional larger dampening capacitor for op-amp input - eg. 2.2uF to gnd 
+  on the + input.
+    - not needed - can just substitute
+
+- no - pull out the dammn divider as well. so can check for resistor hystersis 
+    - just need op-amp output V-OUT. resistor divider will be same as ref - apart
+      from op-amp input offset.
+
+
+- no - need larger resistor - pads for ptf56
+
+- no - cooling pad for both the transistor collectors
+    they don't get very hot
+  
+- done - a 0R resistor to connect AGND and -VE
   - or an extra pin header - to connect them with a jumper
-  - no use a resistor.
+
+
 
 ----
 
 --
-now 99x25
 
-without top，bottom solder mask 
-without keepout layer 
-
-， - think should be OK. ver
-
-maybe because there were no zones.
 
 - done - markings for pin headers.
 - done - tidy position 
 - done - copyright
 
 - there's a problem that the solder mask has no 
-  h
-
-
-Does anyone have a source for insulated evanohm wire? 
 
 Since I am using dividers - chasing a low TCR is not that critical - only constant tracking TCR. 
 
@@ -59,7 +93,7 @@ Also, hand-wiring ought to make it easier to dial in zener TC0 current - by simp
 http://www.edn.com/design/analog/4427151/2/The-last-half-century--Wirewound-resistors-Part-one
 
 ----
-issue is that it needs to be welded.
+issue with evanohm is that it needs to be welded to create solderable connections.
 
 
 
@@ -146,15 +180,10 @@ argument that somehow having your signal run over GND and not
 VCC is better is basically invalid.
 
 ------
-I'm designing a 4 layer PCB and I know that the standard stack-up is
+the standard stack-up is
     Signals
     GND
     VCC
     Singals
 
-This implies that signals route with regard to VCC - and thats ok.
 
-Thinner board - maybe better.
-
-------
-oles.

@@ -3,7 +3,7 @@
 PCB
 
 
-- lets try ptf56 - and trimmers.
+- try ptf56 - and trimmers.
 
 - set the current resistor back a bit more from the reference.
 
@@ -31,6 +31,8 @@ PCB
     - it's a 100ohm source - so it's a low-impedance source. so should be
       ok.
     - this is the same as veroboard
+
+- done - the cap on the -ve input with resistors - is an RC circuit - which is good.
 
 - done - z-sense, z-sense-gnd, and another jumper?
 
@@ -71,12 +73,7 @@ PCB
 - done - a 0R resistor to connect AGND and -VE
   - or an extra pin header - to connect them with a jumper
 
-
-
 ----
-
---
-
 
 - done - markings for pin headers.
 - done - tidy position 

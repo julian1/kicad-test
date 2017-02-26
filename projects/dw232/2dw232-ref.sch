@@ -214,7 +214,7 @@ F 3 "" H 3300 6000 50  0000 C CNN
 	1    3300 6000
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 5150 1    60   Input ~ 0
+Text GLabel 2700 5300 1    60   Input ~ 0
 -VE
 Text GLabel 2700 6350 3    60   Input ~ 0
 AGND
@@ -290,7 +290,7 @@ F 3 "" H 2300 6000 50  0000 C CNN
 	1    2300 6000
 	1    0    0    -1  
 $EndComp
-Text GLabel 1700 5150 1    60   Input ~ 0
+Text GLabel 1700 5300 1    60   Input ~ 0
 +VE
 Text GLabel 1700 6350 3    60   Input ~ 0
 AGND
@@ -358,28 +358,6 @@ T-SET
 Text GLabel 9500 1100 1    60   Input ~ 0
 V-OUT
 $Comp
-L INDUCTOR L502
-U 1 1 58B22D8C
-P 2700 5450
-F 0 "L502" V 2650 5450 50  0000 C CNN
-F 1 "INDUCTOR" V 2800 5450 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 2700 5450 50  0001 C CNN
-F 3 "" H 2700 5450 50  0000 C CNN
-	1    2700 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L INDUCTOR L501
-U 1 1 58B25362
-P 1700 5450
-F 0 "L501" V 1650 5450 50  0000 C CNN
-F 1 "INDUCTOR" V 1800 5450 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 1700 5450 50  0001 C CNN
-F 3 "" H 1700 5450 50  0000 C CNN
-	1    1700 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L POT RV1
 U 1 1 58B2DDB4
 P 7050 2350
@@ -446,7 +424,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 5850 2300 5850
 Wire Wire Line
-	1700 5750 1700 5850
+	1700 5300 1700 5850
 Wire Wire Line
 	5900 2600 6000 2600
 Wire Wire Line
@@ -527,7 +505,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 1350 7050 1400
 Wire Wire Line
-	2700 5750 2700 5850
+	2700 5300 2700 5850
 Wire Wire Line
 	7050 2500 7050 2850
 Wire Wire Line

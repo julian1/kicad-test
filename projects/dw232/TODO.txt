@@ -8,26 +8,32 @@ parallel divider might be better.
 PCB
 
 
-- ry ptf56 - and trimmers.
-
-- set the current resistor back a bit more from the reference.
 
 - Use ptf56 for the dividers. and use z201 100 or similar for the current.
 
-- a ring guard around the entire circuit. emi really important 
+- set the current resistor back a bit more from the reference.
 
-- more space between traces 0.25 to 0.5.
+
+- a ring guard around the entire circuit. emi really important 
+  - actually not sure will do anything - already have gnd around entire circuit
+
 
 - guard traces around op-amp inputs
 
 - edge mounting holes - based on vias
 
-- perhaps center the resistors more vertically on board outline, they sit at bottom 
-
-- more space for the text - eg. HGND is not readable 
 
 
 ----
+
+
+- done - support for trimmers.
+
+- done - perhaps center the resistors more vertically on board outline, not bottom 
+
+- done - more space for the text - eg. HGND is not readable 
+
+- done - more space between traces 0.25 to 0.5.
 
 - done - need to decide whether to use z-out or v-out for the temperature set 
     - the issue is that v-out is not stable and will change whenever current is adjusted.

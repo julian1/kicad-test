@@ -11,11 +11,6 @@ PCB
 
 - Use ptf56 for the dividers. and use z201 100 or similar for the current.
 
-- set the current resistor back a bit more from the reference.
-
-
-- a ring guard around the entire circuit. emi really important 
-  - actually not sure will do anything - already have gnd around entire circuit
 
 
 - guard traces around op-amp inputs
@@ -26,6 +21,11 @@ PCB
 
 ----
 
+- no - a ring guard around the entire circuit. emi really important 
+  - actually not sure will do anything - already have gnd around entire circuit
+
+- done - set the current resistor back a bit more from the reference.
+    we moved it to the other side
 
 - done - support for trimmers.
 

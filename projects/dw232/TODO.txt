@@ -1,9 +1,14 @@
 
+parallel divider might be better.
+  eg. if have 1k trim range. then can just add a 10k in parallel with it.
+  actually it will severely change taper
+  better with 2k + 2k pot
+
 --------
 PCB
 
 
-- try ptf56 - and trimmers.
+- ry ptf56 - and trimmers.
 
 - set the current resistor back a bit more from the reference.
 

@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -330,4 +330,10 @@ Text GLabel 3550 1150 2    60   Input ~ 0
 PWR_-VE_CTL
 NoConn ~ 3550 1250
 NoConn ~ 3550 1350
+$Sheet
+S 1100 4200 1450 700 
+U 58BFA403
+F0 "filter" 60
+F1 "filter.sch" 60
+$EndSheet
 $EndSCHEMATC

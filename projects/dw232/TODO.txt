@@ -1,4 +1,7 @@
 
+For peltier - wait until have boards - then just add an inverter - and current
+  sense resistor.
+
 parallel divider might be better.
   eg. if have 1k trim range. then can just add a 10k in parallel with it.
   actually it will severely change taper
@@ -17,7 +20,7 @@ PCB
 
 - edge mounting holes - based on vias
 
-
+- move the pcb edges in from the out (outline/mechanical)? 
 
 ----
 

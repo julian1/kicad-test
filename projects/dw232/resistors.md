@@ -1,4 +1,11 @@
 
+We can do a good experiment. 
+  Vishay 10k overnight
+  ptf56  10k overnight
+  bourns 1k overnight
+  on DAC. and just plot against temp.
+
+
 -----
 - should do a plot
 19mA 5.1 and 16.8 = 0.7671
@@ -18,8 +25,11 @@
 
   a 5,15      and 1k pot gives 0.714 -> 0.750 which is not too bad. 4% of range.
   a 5.1/15.1  and 1k pot gives 0.715 -> 0.751 - should we try this?  
+  about 18mA to 25mA
 
   bourns have a 3250W 1k,
+
+  it's very easy to just chock another 1k on either side to give a bit more.
 
 # OPTION 2
 
@@ -27,6 +37,8 @@
   20k / (5k + 20k) = 0.8
   20k / (8k + 20k) = 0.71  
   eg. 10% if 5k
+  
+  about 15mA to 30mA if 5k pot.
 
   use either 15 and 5 with 1k adjust. or 20 and 5. and 5k adjust.
 

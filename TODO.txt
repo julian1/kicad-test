@@ -1,4 +1,14 @@
 
+- underscores - in names eg V-SET should be V_SET to be consistent
+- pinout for to-220 transistors. (understand how they're assigned)
+- just need the feedback dividers and multiplexors. 
+- the ability to short the slew control
+
+- ignore the floating output and high-voltage output gain stage.
+- 12MHz crystal for fpga.
+- on-board 3.3V regulators?
+
+------
 TODO
   - definitely add teh comparison op-amp after the clamps - because
     it needs the precision gnd value.

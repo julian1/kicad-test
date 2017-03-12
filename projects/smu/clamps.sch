@@ -59,8 +59,6 @@ F 3 "" H 2000 5300 50  0000 C CNN
 $EndComp
 Text GLabel 1800 5050 1    60   Input ~ 0
 +VE
-NoConn ~ 11550 2100
-NoConn ~ 11650 2100
 $Comp
 L 1N4148 D401
 U 1 1 586230F4
@@ -94,8 +92,6 @@ F 3 "" H 2500 5300 50  0000 C CNN
 	1    2500 5300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 11550 3400
-NoConn ~ 11650 3400
 $Comp
 L 1N4148 D402
 U 1 1 58623121
@@ -214,9 +210,7 @@ AGND
 Text GLabel 1800 6050 1    60   Input ~ 0
 -VE
 Text GLabel 12950 3100 2    60   Input ~ 0
-OUT
-NoConn ~ 11550 4700
-NoConn ~ 11650 4700
+CLAMP_OUT
 $Comp
 L 1N4148 D403
 U 1 1 5862319C
@@ -228,8 +222,6 @@ F 3 "" H 12150 4400 60  0000 C CNN
 	1    12150 4400
 	-1   0    0    1   
 $EndComp
-NoConn ~ 11550 6000
-NoConn ~ 11650 6000
 $Comp
 L 1N4148 D404
 U 1 1 586231B8
@@ -263,8 +255,6 @@ F 3 "" H 8650 5700 50  0000 C CNN
 	1    8650 5700
 	0    1    1    0   
 $EndComp
-NoConn ~ 9250 5900
-NoConn ~ 9350 5900
 $Comp
 L R R412
 U 1 1 586231E6
@@ -339,8 +329,6 @@ F 3 "" H 8650 3100 50  0000 C CNN
 $EndComp
 Text GLabel 9150 3300 3    60   Input ~ 0
 -VE
-NoConn ~ 9250 3300
-NoConn ~ 9350 3300
 Text GLabel 8700 2700 1    60   Input ~ 0
 AGND
 Text GLabel 1400 2600 0    60   Input ~ 0
@@ -415,9 +403,9 @@ I-SET
 Text GLabel 1400 3000 0    60   Input ~ 0
 V-SET
 Text GLabel 4300 2900 2    60   Input ~ 0
-V-OUT-3
+SLEW_SET
 Text GLabel 4300 3500 2    60   Input ~ 0
-V-OUT-4
+V_OUT_4
 $Comp
 L LM324 U402
 U 3 1 58A7EDC8
@@ -782,10 +770,6 @@ Wire Wire Line
 Wire Wire Line
 	8700 2700 8700 2900
 Wire Wire Line
-	1550 2500 2100 2500
-Wire Wire Line
-	1550 2300 1550 4200
-Wire Wire Line
 	1550 2800 2100 2800
 Wire Wire Line
 	2100 2600 1400 2600
@@ -815,15 +799,9 @@ Wire Wire Line
 	3700 2200 3650 2200
 Connection ~ 3700 2100
 Connection ~ 3800 2000
-Wire Wire Line
-	1550 4200 3700 4200
-Wire Wire Line
-	3700 4200 3700 3900
-Wire Wire Line
-	3700 3900 3650 3900
 Connection ~ 1550 2800
 Wire Wire Line
-	3650 3200 4150 3200
+	4150 3200 3650 3200
 Wire Wire Line
 	4150 3400 3650 3400
 Wire Wire Line
@@ -1031,4 +1009,38 @@ Wire Wire Line
 Connection ~ 5000 2100
 Wire Wire Line
 	5000 1700 5000 1600
+$Comp
+L R R422
+U 1 1 58C42516
+P 1850 2500
+F 0 "R422" V 1930 2500 50  0000 C CNN
+F 1 "R" V 1850 2500 50  0000 C CNN
+F 2 "" V 1780 2500 50  0000 C CNN
+F 3 "" H 1850 2500 50  0000 C CNN
+	1    1850 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 2500 1700 2500
+Wire Wire Line
+	2000 2500 2100 2500
+Text GLabel 4300 3900 2    60   Input ~ 0
+DGND
+Wire Wire Line
+	1550 2300 1550 2900
+$Comp
+L R R423
+U 1 1 58C441B3
+P 3900 3900
+F 0 "R423" V 3980 3900 50  0000 C CNN
+F 1 "R" V 3900 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3830 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0000 C CNN
+	1    3900 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3900 3750 3900
+Wire Wire Line
+	4050 3900 4300 3900
 $EndSCHEMATC

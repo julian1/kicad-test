@@ -94,55 +94,11 @@ AGND
 Text GLabel 2400 1550 2    60   Input ~ 0
 AGND
 Text GLabel 2400 2250 2    60   Input ~ 0
-AGND
+DGND
 Text GLabel 2400 2350 2    60   Input ~ 0
 AGND
 Text GLabel 2400 2150 2    60   Input ~ 0
 ADC_TRIGGER
-Wire Wire Line
-	2150 950  2400 950 
-Wire Wire Line
-	2150 1050 2400 1050
-Wire Wire Line
-	2150 1150 2400 1150
-Wire Wire Line
-	2150 1350 2400 1350
-Wire Wire Line
-	2150 1450 2400 1450
-Wire Wire Line
-	2150 1650 2400 1650
-Wire Wire Line
-	2150 1750 2400 1750
-Wire Wire Line
-	2150 1850 2400 1850
-Wire Wire Line
-	2150 1250 2400 1250
-Wire Wire Line
-	2150 1550 2400 1550
-Wire Wire Line
-	2150 1950 2400 1950
-Wire Wire Line
-	2150 2050 2400 2050
-Wire Wire Line
-	2150 2150 2400 2150
-Wire Wire Line
-	2150 2250 2400 2250
-Wire Wire Line
-	2400 2350 2150 2350
-Wire Wire Line
-	5100 1000 4800 1000
-Wire Wire Line
-	5100 1100 4800 1100
-Wire Wire Line
-	5100 1200 4800 1200
-Wire Wire Line
-	5100 1300 4800 1300
-Wire Wire Line
-	4800 1400 5100 1400
-Wire Wire Line
-	5100 1800 4800 1800
-Wire Wire Line
-	4800 1700 5100 1700
 Text GLabel 7050 1500 3    60   Input ~ 0
 +VE
 $Comp
@@ -156,8 +112,6 @@ F 3 "" H 7050 1300 50  0000 C CNN
 	1    7050 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7050 1300 7050 1500
 $Comp
 L PWR_FLAG #FLG02
 U 1 1 58A9E47F
@@ -171,42 +125,12 @@ F 3 "" H 7650 1300 50  0000 C CNN
 $EndComp
 Text GLabel 7650 1500 3    60   Input ~ 0
 -VE
-Wire Wire Line
-	7650 1300 7650 1500
-Wire Wire Line
-	4800 2000 5100 2000
-Wire Wire Line
-	4800 2100 5100 2100
-Wire Wire Line
-	4800 2200 5100 2200
-Wire Wire Line
-	4800 2300 5100 2300
-Wire Wire Line
-	4800 2400 5100 2400
-Wire Wire Line
-	4800 2500 5100 2500
 Text GLabel 9200 1400 0    60   Input ~ 0
 AGND
 Text GLabel 9200 1500 0    60   Input ~ 0
 DGND
 Text GLabel 9200 1600 0    60   Input ~ 0
 REFGND
-Wire Wire Line
-	9200 1400 9200 1600
-Wire Wire Line
-	4800 2700 5100 2700
-Wire Wire Line
-	4800 2800 5100 2800
-Wire Wire Line
-	4800 2900 5100 2900
-Wire Wire Line
-	4800 3000 5100 3000
-Wire Wire Line
-	4750 3200 5100 3200
-Wire Wire Line
-	4750 3300 5100 3300
-Wire Wire Line
-	4800 1500 5100 1500
 Text GLabel 4800 1000 0    60   Input ~ 0
 +VE
 Text GLabel 4800 1200 0    60   Input ~ 0
@@ -215,28 +139,27 @@ Text GLabel 4800 1100 0    60   Input ~ 0
 AGND
 Text GLabel 4800 1400 0    60   Input ~ 0
 REF
-Text GLabel 4800 1700 0    60   Input ~ 0
+Text GLabel 4800 3100 0    60   Input ~ 0
 I-FB
-Text GLabel 4800 1300 0    60   Input ~ 0
-OUT
-NoConn ~ 5100 1900
-Text GLabel 4800 1800 0    60   Input ~ 0
-V-FB
-Text GLabel 4800 2900 0    60   Input ~ 0
-V-OUT-3
+Text GLabel 4800 3200 0    60   Input ~ 0
+CLAMP_OUT
 Text GLabel 4800 3000 0    60   Input ~ 0
-V-OUT-4
-Text GLabel 4800 2000 0    60   Input ~ 0
+V-FB
+Text GLabel 4800 2700 0    60   Input ~ 0
+SLEW_SET
+Text GLabel 4800 2800 0    60   Input ~ 0
+V_OUT_4
+Text GLabel 4800 1700 0    60   Input ~ 0
 DAC_CS
-Text GLabel 4800 2100 0    60   Input ~ 0
+Text GLabel 4800 1800 0    60   Input ~ 0
 DAC_SLCK
-Text GLabel 4800 2200 0    60   Input ~ 0
+Text GLabel 4800 1900 0    60   Input ~ 0
 DAC_SDI
-Text GLabel 4800 2300 0    60   Input ~ 0
+Text GLabel 4800 2000 0    60   Input ~ 0
 DAC_SDO
-Text GLabel 4800 2400 0    60   Input ~ 0
+Text GLabel 4800 2100 0    60   Input ~ 0
 DAC_LDAC
-Text GLabel 4800 2500 0    60   Input ~ 0
+Text GLabel 4800 2200 0    60   Input ~ 0
 DAC_RST
 Text GLabel 9200 1400 0    60   Input ~ 0
 AGND
@@ -244,15 +167,11 @@ Text GLabel 9200 1500 0    60   Input ~ 0
 DGND
 Text GLabel 9200 1600 0    60   Input ~ 0
 REFGND
-Text GLabel 4800 2700 0    60   Input ~ 0
+Text GLabel 4800 2500 0    60   Input ~ 0
 V-SET
-Text GLabel 4800 2800 0    60   Input ~ 0
+Text GLabel 4800 2600 0    60   Input ~ 0
 I-SET
 NoConn ~ 5100 1600
-NoConn ~ 5100 2600
-NoConn ~ 5100 3100
-NoConn ~ 5100 3600
-NoConn ~ 5100 3700
 Text GLabel 4800 1500 0    60   Input ~ 0
 REFGND
 $Comp
@@ -266,9 +185,9 @@ F 3 "" H 5300 2350 50  0000 C CNN
 	1    5300 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 4750 3300 0    60   Input ~ 0
+Text GLabel 4750 3700 0    60   Input ~ 0
 REF_IN2
-Text GLabel 4750 3200 0    60   Input ~ 0
+Text GLabel 4750 3600 0    60   Input ~ 0
 REF_IN1
 NoConn ~ 5100 3400
 NoConn ~ 5100 3500
@@ -336,4 +255,88 @@ U 58BFA403
 F0 "filter" 60
 F1 "filter.sch" 60
 $EndSheet
+Wire Wire Line
+	2150 950  2400 950 
+Wire Wire Line
+	2150 1050 2400 1050
+Wire Wire Line
+	2150 1150 2400 1150
+Wire Wire Line
+	2150 1350 2400 1350
+Wire Wire Line
+	2150 1450 2400 1450
+Wire Wire Line
+	2150 1650 2400 1650
+Wire Wire Line
+	2150 1750 2400 1750
+Wire Wire Line
+	2150 1850 2400 1850
+Wire Wire Line
+	2150 1250 2400 1250
+Wire Wire Line
+	2150 1550 2400 1550
+Wire Wire Line
+	2150 1950 2400 1950
+Wire Wire Line
+	2150 2050 2400 2050
+Wire Wire Line
+	2150 2150 2400 2150
+Wire Wire Line
+	2150 2250 2400 2250
+Wire Wire Line
+	2400 2350 2150 2350
+Wire Wire Line
+	5100 1000 4800 1000
+Wire Wire Line
+	5100 1100 4800 1100
+Wire Wire Line
+	5100 1200 4800 1200
+Wire Wire Line
+	4800 1400 5100 1400
+Wire Wire Line
+	7050 1300 7050 1500
+Wire Wire Line
+	7650 1300 7650 1500
+Wire Wire Line
+	9200 1400 9200 1600
+Wire Wire Line
+	4800 1500 5100 1500
+Wire Wire Line
+	4800 1700 5100 1700
+Wire Wire Line
+	4800 1800 5100 1800
+Wire Wire Line
+	4800 1900 5100 1900
+Wire Wire Line
+	4800 2000 5100 2000
+Wire Wire Line
+	4800 2100 5100 2100
+Wire Wire Line
+	4800 2200 5100 2200
+Text GLabel 4800 2300 0    60   Input ~ 0
+DGND
+Wire Wire Line
+	4800 2300 5100 2300
+Wire Wire Line
+	4800 2500 5100 2500
+Wire Wire Line
+	4800 2600 5100 2600
+Wire Wire Line
+	4800 2700 5100 2700
+Wire Wire Line
+	4800 2800 5100 2800
+NoConn ~ 5100 2400
+NoConn ~ 5100 2900
+Wire Wire Line
+	4800 3000 5100 3000
+Wire Wire Line
+	4800 3100 5100 3100
+Wire Wire Line
+	4800 3200 5100 3200
+NoConn ~ 5100 3300
+Wire Wire Line
+	4750 3600 5100 3600
+Wire Wire Line
+	4750 3700 5100 3700
+NoConn ~ 5100 1300
 $EndSCHEMATC

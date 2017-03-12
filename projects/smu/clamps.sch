@@ -104,9 +104,9 @@ F 3 "" H 12200 3100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7900 1500 0    60   Input ~ 0
-I-FB
+I_FB
 Text GLabel 7900 1700 0    60   Input ~ 0
-I-SET
+I_SET
 $Comp
 L R R408
 U 1 1 58623130
@@ -302,9 +302,9 @@ $EndComp
 Text GLabel 8700 5300 1    60   Input ~ 0
 AGND
 Text GLabel 7900 4500 0    60   Input ~ 0
-V-SET
+V_SET
 Text GLabel 7900 4300 0    60   Input ~ 0
-V-FB
+V_FB
 $Comp
 L R R405
 U 1 1 5862326B
@@ -399,9 +399,9 @@ F 3 "" H 2700 1900 60  0001 C CNN
 $EndComp
 NoConn ~ 2100 1600
 Text GLabel 1400 3800 0    60   Input ~ 0
-I-SET
+I_SET
 Text GLabel 1400 3000 0    60   Input ~ 0
-V-SET
+V_SET
 Text GLabel 4300 2900 2    60   Input ~ 0
 SLEW_SET
 Text GLabel 4300 3500 2    60   Input ~ 0
@@ -542,9 +542,9 @@ Text GLabel 5100 2800 0    60   Input ~ 0
 Text GLabel 7700 2800 2    60   Input ~ 0
 -VE
 Text GLabel 5350 2600 0    60   Input ~ 0
-REF_IN1
+REF_IN_+VE
 Text GLabel 7350 2600 2    60   Input ~ 0
-REF_IN2
+REF_IN_-VE
 Text GLabel 7350 3100 2    60   Input ~ 0
 AGND
 $Comp

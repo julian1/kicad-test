@@ -1,4 +1,4 @@
-update=Wed 15 Feb 2017 09:06:44 AEDT
+update=Mon 13 Mar 2017 10:26:25 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,4 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
+LibName33=relays

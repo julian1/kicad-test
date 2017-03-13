@@ -1,4 +1,71 @@
 
+lm317 - adjustable.  1976
+
+  The LM318 is an adjustable analogue to the popular 78xx fixed regulators. 
+
+
+7805 versus - op-amp (741) and power transistor?
+  I have a precision reference.
+
+  Or even just a zener on the base of a 
+
+---
+Get 5V coil version for best availability - and use 7805 or similar to power.
+
+G6S-2F  2F is the gull wing.
+
+34970a relays are,
+Omron Electronics G6S-2-DC4.5
+
+parametric,
+
+http://www.vishay.com/analog-switches/spst/
+
+----
+VERY IMPORTANT
+  - but if resistor is before switch - then it adds additional resistance. 
+
+  - max326 - 1pA leakage typical. but 1.2k on resistance 
+
+  - dg444  50ohm, 80pA
+      100pA at 10V is 1Gohm
+
+  - dg408  - 1nA leakage
+
+  - dg1411 - 1ohm,  +-2 nA leakage, 90mA continuous.  
+      1k, 10k, 100k  = 10mA, 1mA, 100uA
+      2nA with 10V is 500M, or 5Gohm
+
+  - 100, 10 ohm, and 1 ohm  - can just use 2x n-channel transistors.
+                              or even 3 relays
+
+  - irb540 g/s is 100nA, eg 0.1uA which is fine.. but zero gate voltage drain current is 25uA.
+    2n7000 is 1uA drain current.
+
+
+
+use relays + switches.
+  eg. 1k switch and 10k resistor?
+  10k switch and 100k resistor
+
+  - issue of heat.
+
+
+VERY IMPORTANT - why not measure the load across the resistor
+    and ignore the switch. 
+    - it's more complicated to do differential ended. hmmm. 
+    - the issue is that in parallel - current will go across other switches.
+      so in fact it's not very useful.
+    - so it basically has to be trimmed out.
+
+-----
+
+
+For a bi-directional power switch put two MOSFET's in series, typically two
+P-ch's so you pull down on gates to turn both devices on. This is the way it is
+commonly done in cellphones where USB-OTG can source current or run
+phone/charge battery. You could use N-ch's but you would have to push the gate
+voltage above the switched supplies which is usually not an option.
 
 So bottom line, the FET will conduct in both directions, but it will turn off
 in only one direction. So be careful. If you need it to turn on and off in both

@@ -61,7 +61,9 @@ NoConn ~ 4050 3000
 Wire Wire Line
 	4850 3000 4850 2500
 Wire Wire Line
-	4350 2500 5150 2500
+	4350 2500 4850 2500
+Wire Wire Line
+	4850 2500 5150 2500
 Wire Wire Line
 	5150 2500 5150 3100
 Text GLabel 5800 3000 1    60   Input ~ 0
@@ -78,7 +80,9 @@ F 3 "" H 3650 5800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4750 3000 4750 3500
+	4750 3000 4750 3300
+Wire Wire Line
+	4750 3300 4750 3500
 Wire Wire Line
 	4750 3300 5600 3300
 $Comp
@@ -93,7 +97,9 @@ F 3 "" H 6050 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 3400 7200 3400
+	6200 3400 6450 3400
+Wire Wire Line
+	6450 3400 7200 3400
 Wire Wire Line
 	6450 3950 6450 3400
 Wire Wire Line
@@ -119,7 +125,9 @@ Wire Wire Line
 Wire Wire Line
 	4050 3100 4050 3950
 Wire Wire Line
-	4050 3950 6450 3950
+	4050 3950 5450 3950
+Wire Wire Line
+	5450 3950 6450 3950
 Text GLabel 4750 4150 3    60   Input ~ 0
 AGND
 $Comp
@@ -149,7 +157,9 @@ Wire Wire Line
 NoConn ~ 5900 3700
 NoConn ~ 6000 3700
 Wire Wire Line
-	4350 2250 4350 2700
+	4350 2250 4350 2500
+Wire Wire Line
+	4350 2500 4350 2700
 Wire Wire Line
 	4350 4300 4350 3300
 Text GLabel 1900 4200 0    60   Input ~ 0
@@ -172,7 +182,9 @@ F 3 "" H 1750 4400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2800 4300 4350 4300
+	2800 4300 2900 4300
+Wire Wire Line
+	2900 4300 4350 4300
 $Comp
 L R R604
 U 1 1 58C0EF69
@@ -185,7 +197,9 @@ F 3 "" H 2450 5050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 4400 2200 4400
+	1900 4400 2050 4400
+Wire Wire Line
+	2050 4400 2200 4400
 Wire Wire Line
 	2050 4400 2050 5050
 Wire Wire Line
@@ -250,7 +264,9 @@ $EndComp
 Wire Wire Line
 	4550 3300 4550 5800
 Wire Wire Line
-	2800 5800 3500 5800
+	2800 5800 2900 5800
+Wire Wire Line
+	2900 5800 3500 5800
 Wire Wire Line
 	4550 5800 3800 5800
 $Comp
@@ -285,7 +301,9 @@ Wire Wire Line
 Wire Wire Line
 	2100 6350 2100 5900
 Wire Wire Line
-	1950 5900 2200 5900
+	1950 5900 2100 5900
+Wire Wire Line
+	2100 5900 2200 5900
 Connection ~ 2100 5900
 Wire Wire Line
 	1650 5900 1500 5900
@@ -320,7 +338,9 @@ $EndComp
 Wire Wire Line
 	7550 3200 7550 3650
 Wire Wire Line
-	7200 3000 7200 3850
+	7200 3000 7200 3400
+Wire Wire Line
+	7200 3400 7200 3850
 Wire Wire Line
 	7200 3000 7300 3000
 Connection ~ 6450 3400
@@ -339,7 +359,9 @@ F 3 "" H 7550 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 2600 7550 2800
+	7550 2600 7550 2750
+Wire Wire Line
+	7550 2750 7550 2800
 $Comp
 L 2N3904 Q603
 U 1 1 58C468C3
@@ -366,7 +388,9 @@ F 3 "" H 8050 4150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 2950 8150 3950
+	8150 2950 8150 3400
+Wire Wire Line
+	8150 3400 8150 3950
 $Comp
 L R R608
 U 1 1 58C46AC8
@@ -379,7 +403,9 @@ F 3 "" H 7550 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 4050 7550 4300
+	7550 4050 7550 4150
+Wire Wire Line
+	7550 4150 7550 4300
 Wire Wire Line
 	7900 4150 7550 4150
 Connection ~ 7550 4150
@@ -387,7 +413,9 @@ Wire Wire Line
 	8150 3400 8600 3400
 Connection ~ 8150 3400
 Wire Wire Line
-	8150 2550 8150 2150
+	8150 2000 8150 2150
+Wire Wire Line
+	8150 2150 8150 2550
 Wire Wire Line
 	8150 2150 7550 2150
 Wire Wire Line
@@ -397,7 +425,17 @@ Wire Wire Line
 Wire Wire Line
 	7550 4750 8150 4750
 Wire Wire Line
-	8150 4750 8150 4350
+	8150 4350 8150 4750
+Wire Wire Line
+	8150 4750 8150 4900
 Text GLabel 8600 3400 2    60   Input ~ 0
 OUT
+Text GLabel 8150 2000 1    60   Input ~ 0
++VE
+Connection ~ 8150 2150
+Text GLabel 8150 4900 3    60   Input ~ 0
+-VE
+Connection ~ 8150 4750
+Text Notes 6500 2300 0    60   ~ 0
+we can control the current resistors with mosfets \nif we really want - or even a VtoI converter\n\n
 $EndSCHEMATC

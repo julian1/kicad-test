@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:relays
 LIBS:main-cache
 EELAYER 25 0
 EELAYER END
@@ -318,4 +319,15 @@ U 58C4BEDB
 F0 "feedback" 60
 F1 "feedback.sch" 60
 $EndSheet
+$Comp
+L Omron_G6S RL?
+U 1 1 58C5ED1C
+P 8500 5500
+F 0 "RL?" H 9350 5650 50  0000 L CNN
+F 1 "Omron_G6S" H 9350 5550 50  0000 L CNN
+F 2 "" H 8500 5500 60  0000 C CNN
+F 3 "" H 8500 5500 60  0000 C CNN
+	1    8500 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

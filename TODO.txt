@@ -1,4 +1,79 @@
 
+http://www.ti.com/lit/an/slyt612/slyt612.pdf
+
+-----
+Good article,
+  http://www.ti.com/lit/an/slyt612/slyt612.pdf
+
+  Typical gate - is a p and n channel - with inverted gate drive. so that they balance.
+
+DG1411 is really very good - even if tssop
+  On-resistance: 1.5 
+  On-resistance flatness: 0.3 
+  250mA
+  2nA typical leakage.
+
+
+1,10,100,1k -  relayor two mosfets...
+10k,100k,1M, - dg1411
+more         - max626
+
+So - don't use analog switches - just use simple mosfets.
+    issue of leakage. 
+
+--------
+flatness
+
+TS12A44513
+  1ohm flatness. 0-12V, leakage 10nA  
+
+rON(flat)
+
+1ohm  - if we use it will need to be relay.
+10ohm - 
+
+-------
+JFETs typically allow current in both directions so two aren’t needed for
+bidirectional operation like with MOSFE
+
+j111 is 30ohm with 0V VGS,
+  leakage is 1nA when G is -10V
+
+j108 is 8ohm with 0V, leakage is 10nA with -10V 
+
+
+
+-------
+10k is 1mA  - ie 10V range for 1mA.   I think 100nA leakage is not very good.
+    just use dg444 which adds 50ohm. 
+    but flatness is 10ohm over range.  1 in 1000 non-linearity.
+
+    jfet might be better. 
+
+---
+http://www.onsemi.com/pub/Collateral/NTJD4001N-D.PDF
+  1uA leakage, 250mA current,  
+
+http://assets.nexperia.com/documents/data-sheet/BSH105.pdf
+  bsh105
+    100nA leakage, rds(on) 250 mOhm, logic level. 
+
+
+low drain/leakage.
+http://electronics.stackexchange.com/questions/98597/low-drain-source-mosfet-leakage
+
+---
+If we are potentially going to have 10V across the current-sense - then we loose that
+as headroom.
+
+  out
+
+----
+The problem is not the conductivity of the switch inside the relay but the
+leckage currents because of the isolation material!  Switching nA or pA with
+relays should be avoided. 
+
+-----
 lm317 - adjustable.  1976
 
   The LM318 is an adjustable analogue to the popular 78xx fixed regulators. 
@@ -13,6 +88,14 @@ lm317 - adjustable.  1976
 Get 5V coil version for best availability - and use 7805 or similar to power.
 
 G6S-2F  2F is the gull wing.
+  
+  - G6S-2F - minimum permissible load,  10μA, 10 mVDC
+  THIS IS OK - FOR THE HIGHER VALUES.
+  - for low values - we can never turn off. but just use max326
+
+  - this is the same, as 238 design - which always has high-value resistors in circuit.n 
+
+  - hmmmm - need gold plated contacts for nA.
 
 34970a relays are,
 Omron Electronics G6S-2-DC4.5
@@ -30,7 +113,8 @@ VERY IMPORTANT
   - dg444  50ohm, 80pA
       100pA at 10V is 1Gohm
 
-  - dg408  - 1nA leakage
+  - dg408  - 0.5 nA leakage
+      100ohm,   eg. dg444 is better in all ways.
 
   - dg1411 - 1ohm,  +-2 nA leakage, 90mA continuous.  
       1k, 10k, 100k  = 10mA, 1mA, 100uA

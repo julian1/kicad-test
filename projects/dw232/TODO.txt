@@ -1,4 +1,181 @@
 
+- another alternative - run two or three of them at slightly different TC0 offsets. to flatten the 
+  peak. issue is still self heating.
+
+- compensate non-linearity with a micro. 
+- 
+
+
+
+Important - can test resistor temp stability - by just spraying with isopropyl. 
+- increase the small op-amp resistor?
+
+-------
+6.263,800
+
+----
+CRITICAL THE ZENER needs to be buffered.
+  - if this was the problem - it may be possible to use adjustment pots.
+
+the zener sense is coming after the 200. so feeding off that to get out temp-set voltage isn't great. 
+
+  - it should be pretty easy - to just use out instead - and divide it down - with a pot. as as test.
+  - we know the actual temp-set voltage as well.
+
+  - we just need a 10k on top. as well.
+
+-----
+ok 5.495 is about 48C . but why is there a curve back???? 385 ohms...
+
+  - is it the ciruit - we should be using a divider - using out. rather than the zener   
+
+----
+OK - I think there's a real problem.gg
+
+-------
+run 36
+5k + 2.5k + 1k / 10k.
+
+peak is 5.55 = 52C
+
+
+-------------------------------------
+run35
+
+5k + 2.5k / 10k. = out 1.094
+apex is at 5.490. case temp about 40C. so need another 10C = 1mA 
+  so need about 1.104 out V or a bit more.
+  1k is 11.24gg
+
+
+-------------------------------------
+run34 after adjusting to 10.6V
+
+(10.6 - 6.236) / 200 = 0.02182 = 21.8mA
+  it looks like - need another 15C = 2mA
+
+If we can calculate the damn output voltage we just need to try a few resistors.
+
+need 10.9-11V
+
+-------------------------------------
+run33
+
+looks like a peak around 5.440, ambient. 22C
+
+  - current current = (9.97 - 6.236) / 200 = 18.6mA  
+  -
+  - for 50C operating temp - need 50 - 22 = +30C / 7.5  = 4 more mA
+  - so need 23mA
+
+   (0.023 * 200) + 6.236
+    10.836 out voltage
+
+  - we only have 10.6V range - lets try that
+
+
+
+
+full right out 10.596, ref 6.246
+full left  out 9.97  , ref 6.235 
+
+-----
+So try 
+  1. use prec resistors - and plot
+  2. use prec trimpots - and plot
+  3. replace trimpots with resistors
+  
+
+-----
+If we had a DAC - we could dial in the set current - on the inverter. we have 100/1 range. 
+  - can do this by paralleizing the dac output - with the prec-resistors.  
+  - the or even a digital pot - in parallel?.
+
+once we have the needed values - then we sould be able to just lock int the values.
+
+----
+run-32
+
+done - hook it up - heater off - and characterize it.
+  run-30
+  - heater turned off.
+  - ambient (start) is t-sense of 5.446   eg. 22C
+  - apex is at t-sense 5.456              eg. 30C
+
+calculate required apex for running temp - eg. 50C
+  - need to move TC0 point up 20C.  
+  - TC0 moves 10C/mA,  so need 2mA more current - actually 7.5C/mA 
+  - V out is 10.10V. (10.10 - 6.25) / 200 = 19.2mA 
+  - if Vout is set to 10.55 that should give 20.25mA
+
+run again - with heater on
+  TC0 apex now at t-sense 5.485, which looks to be about 43C, which is ok, which might be delayed. 
+
+  - so lets just set t-set to 5.485
+
+adjust current for TC, test, using heater on - to heat as well.
+
+
+
+dial in the set temp.
+
+issue is we have to have the heater - on to do the tests - that's ok just wire it on - and plot.
+
+Good.
+
+------
+  5.1k / 10k
+  full-right -       out = 10.045V,    3.791V                             17.5mA
+  full left -        out = 9.120V,    2.887V across 200ohm resistor, eg. 14mA. 
+
+  5.1k + 500 / 10k
+    ref = 6.258      out = 10.372  max.  = 4.114 = 20.5mA   - starts rising.
+    ref = 6.241      out = 9.420V min    = 3.179 = 15.5mA   - immediately starts falling.
+        May not be quite right - because didn't have enough voltage.
+
+  5.1k + 1k / 10k.
+          6.264      out = 10.686   max  - rises - eg abou    - 23mA
+          6.246      out =  9.70   min  - holds about steady  - 18mA
+
+          this is a bit strange. looks like the max is set...
+  
+          CAREFUL - needs more than 12V. about 12
+
+-----
+temp-set,   
+  full left is 5.213V
+
+current-set, 
+
+Should test minimum and max range. actually can calculate it.
+
+-----
+TODO
+  - ferrite bead on inputs.
+  - ok - we *must* use out. and not zener ref. for the voltage control.
+  - should keep the heat generating 200ohm over near the hot 2dw232
+  - invert and current resistor for peltier driver?
+  - manually change the routes going to the 
+
+Right - issue - is that we can't connect probes have 
+
+VERY IMPORTANT - maybe pull out temp sense. and 
+
+The sense is wrong. should be pulled out before the 10k. But it should still work - we just
+  can easily know the temp-sense voltage.
+
+there is an additional issue - that some current 1mA is being sunk through the sense. 
+  but it should be more stable.
+
+think can get rid of the dicky resistors.
+
+inverter so that we can peltier? 
+
+---- hmmm - maybe it isn't wrong - since it's the value on the input op-amp 
+  no it's the loop charge variable. not the temp sense. 
+
+
+----
 For peltier - wait until have boards - then just add an inverter - and current
   sense resistor.
 
@@ -10,11 +187,9 @@ parallel divider might be better.
 --------
 PCB
 
-
+- move the short resistors in under the trimpots. 
 
 - Use ptf56 for the dividers. and use z201 100 or similar for the current.
-
-
 
 - guard traces around op-amp inputs
 

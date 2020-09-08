@@ -1,4 +1,4 @@
-update=Tue 08 Sep 2020 11:21:28 AM AEST
+update=Tue 08 Sep 2020 11:29:04 AM AEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,4 +37,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=
+LibDir=../../lib
+[eeschema/libraries]
+LibName1=my
+LibName2=Carlolib-disc

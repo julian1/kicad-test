@@ -1,4 +1,4 @@
-update=Wed 08 Mar 2017 16:08:03 AEDT
+update=Tue 08 Sep 2020 11:21:28 AM AEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,12 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[eeschema]
-version=1
-LibDir=/home/me/devel/kicad-test/lib 
-[eeschema/libraries]
-LibName2=my
-LibName3=Carlolib-disc
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -41,3 +35,6 @@ NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[eeschema]
+version=1
+LibDir=

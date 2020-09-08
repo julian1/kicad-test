@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../lib
+LibDir=/home/me/devel/kicad-test/lib 
 [eeschema/libraries]
 LibName2=my
 LibName3=Carlolib-disc
